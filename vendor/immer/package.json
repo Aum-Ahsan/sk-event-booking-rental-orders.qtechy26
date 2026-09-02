@@ -1,0 +1,57 @@
+{
+  "name": "immer",
+  "version": "11.1.16",
+  "description": "Create your next immutable state by mutating the current one",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/immer.legacy-esm.js",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "react-native": {
+        "types": "./dist/immer.d.ts",
+        "default": "./dist/immer.legacy-esm.js"
+      },
+      "import": {
+        "types": "./dist/immer.d.ts",
+        "default": "./dist/immer.mjs"
+      },
+      "require": {
+        "types": "./dist/immer.d.ts",
+        "default": "./dist/cjs/index.js"
+      }
+    }
+  },
+  "jsnext:main": "dist/immer.mjs",
+  "source": "src/immer.ts",
+  "types": "./dist/immer.d.ts",
+  "sideEffects": false,
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/immerjs/immer.git"
+  },
+  "keywords": [
+    "immutable",
+    "mutable",
+    "copy-on-write"
+  ],
+  "author": "Michel Weststrate <info@michel.codes>",
+  "license": "MIT",
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/immer"
+  },
+  "bugs": {
+    "url": "https://github.com/immerjs/immer/issues"
+  },
+  "homepage": "https://github.com/immerjs/immer#readme",
+  "files": [
+    "dist",
+    "compat",
+    "src"
+  ]
+}

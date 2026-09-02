@@ -1,0 +1,17 @@
+export {
+  AboutPage,
+  ContactPage,
+  EventPlanningConsultationPage,
+  FaqPage,
+  GenericPublicPage,
+  HelpCentrePage,
+  LegalPage,
+  OurStoryPage,
+  PlatformDirectoryPage,
+  PublicNotFoundPage,
+  ReferralPage,
+  ReviewsRatingsPage,
+  RoadmapPage,
+  SitemapPage,
+  genericPages,
+} from "../public-content/sections/PublicContentSections";
