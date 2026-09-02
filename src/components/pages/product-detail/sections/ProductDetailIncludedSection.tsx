@@ -6,13 +6,13 @@ export function ProductDetailIncludedSection({ p }: { p: HireProduct }) {
   return (
     <section className="detail-split reverse" id="included">
       <div>
-        <div className="eyebrow">Your hire includes</div>
-        <h2>Included with your hire</h2>
+        <div className="eyebrow">{pageData.extracted.text_20}</div>
+        <h2>{pageData.extracted.text_21}</h2>
         {pageData.included.map((x) => (
-          <p key={x}>✓ &nbsp;{x}</p>
+          <p key={x}>{pageData.extracted.text_22}{x}</p>
         ))}
       </div>
-      <img src={p.image} alt="Chair finish detail" />
+      <img src={p.image} alt={pageData.extracted.attr_23} />
     </section>
   );
 }

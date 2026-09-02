@@ -98,5 +98,9 @@
     ],
     "image": "/images/hero-event.png",
     "imageAlt": "Completed event prepared by SK Event Hire"
+  },
+  "extracted": {
+    "text_1": "S",
+    "text_2": "K"
   }
 }

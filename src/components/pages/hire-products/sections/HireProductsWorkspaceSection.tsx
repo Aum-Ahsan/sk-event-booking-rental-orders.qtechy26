@@ -2,6 +2,7 @@ import React from "react";
 import data from "../../../../data/pages/products.json";
 import type { HireProduct } from "../../../../types/commerce";
 import eventTypes from "../../../../data/commerce/eventTypes.json";
+import pageData from "../../../../data/pages/hire-products.json";
 
 interface HireProductsWorkspaceSectionProps {
   clearFilters: () => void;
@@ -66,11 +67,11 @@ export function HireProductsWorkspaceSection({
               checked={availableOnly}
               onChange={(e) => setAvailableOnly(e.target.checked)}
             />
-            {workspace.availableForDates}<small>42</small>
+            {workspace.availableForDates}<small>{pageData.extracted.text_13}</small>
           </label>
           <label>
             <input type="checkbox" />
-            {workspace.showAlternatives}<small>8</small>
+            {workspace.showAlternatives}<small>{pageData.extracted.text_14}</small>
           </label>
         </fieldset>
         <fieldset>
@@ -131,7 +132,7 @@ export function HireProductsWorkspaceSection({
         <fieldset className="price-range-filter">
           <legend>{workspace.priceLegend}</legend>
           <div>
-            <span>$0</span>
+            <span>{pageData.extracted.text_15}</span>
             <output>${maxPrice.toLocaleString()}</output>
           </div>
           <input
@@ -144,14 +145,14 @@ export function HireProductsWorkspaceSection({
             onChange={(e) => setMaxPrice(Number(e.target.value))}
           />
           <small>
-            Showing items priced up to ${maxPrice.toLocaleString()}
+            {pageData.extracted.text_16}{maxPrice.toLocaleString()}
           </small>
         </fieldset>
       </aside>
       <div className="catalogue-results">
         <div className="results-head">
           <div>
-            <h2>{listing.length} products</h2>
+            <h2>{listing.length} {pageData.extracted.text_17}</h2>
             <small>{availability}</small>
           </div>
           <div>
@@ -211,23 +212,21 @@ export function HireProductsWorkspaceSection({
                 </h3>
                 <span className="stars">
                   ★ {p.rating ?? `4.${9 - (i % 3)}`}{" "}
-                  <small>({p.reviews ?? 12 + i} reviews)</small>
+                  <small>({p.reviews ?? 12 + i} {pageData.extracted.text_18}</small>
                 </span>
-                <p>● &nbsp;Available · Professional unit prepared</p>
+                <p>{pageData.extracted.text_19}</p>
                 <div className="colour-dot">
-                  ● &nbsp;{(i % 3) + 1} colour{i % 3 ? "s" : ""}
+                  {pageData.extracted.text_20}{(i % 3) + 1} {pageData.extracted.text_21}{i % 3 ? "s" : ""}
                 </div>
                 <b className="catalogue-price">
                   <strong>{p.price}</strong>{" "}
                   <small>
-                    per item
-                    <br />
-                    GST calculated at checkout
-                  </small>
+                    {pageData.extracted.text_22}<br />
+                    {pageData.extracted.text_23}</small>
                 </b>
                 <footer>
-                  <a href={`/product-${p.slug}`}>Rent now</a>
-                  <a href={`/basket?add=${p.slug}`}>Book now</a>
+                  <a href={`/product-${p.slug}`}>{pageData.extracted.text_24}</a>
+                  <a href={`/basket?add=${p.slug}`}>{pageData.extracted.text_25}</a>
                 </footer>
               </div>
             </article>
@@ -246,8 +245,7 @@ export function HireProductsWorkspaceSection({
               disabled={page === 1}
               onClick={() => goToPage(page - 1)}
             >
-              ← Previous
-            </button>
+              {pageData.extracted.text_26}</button>
             {Array.from({ length: pageCount }, (_, i) => i + 1).map((n) => (
               <button
                 className={page === n ? "active" : ""}
@@ -262,8 +260,7 @@ export function HireProductsWorkspaceSection({
               disabled={page === pageCount}
               onClick={() => goToPage(page + 1)}
             >
-              Next →
-            </button>
+              {pageData.extracted.text_27}</button>
           </nav>
         )}
         <section className="catalogue-advice">

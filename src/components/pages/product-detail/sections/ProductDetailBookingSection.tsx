@@ -1,4 +1,5 @@
 ﻿import React from "react";
+import pageData from "../../../../data/pages/product-detail.json";
 
 export function ProductDetailBookingSection({
   startDate, setStartDate,
@@ -10,14 +11,11 @@ export function ProductDetailBookingSection({
 }: any) {
   return (
     <section className="booking-panel-detail">
-      <h3>When do you need it?</h3>
-      <p className="date-format-note">
-        Enter dates in day / month / year order.
-      </p>
+      <h3>{pageData.extracted.text_8}</h3>
+      <p className="date-format-note">{pageData.ui.booking.dateFormatNote}</p>
       <div className="booking-date-grid">
         <label>
-          Event / start date
-          <input
+          {pageData.extracted.text_9}<input
             type="date"
             value={startDate}
             onChange={(e) => {
@@ -28,8 +26,7 @@ export function ProductDetailBookingSection({
           <small>{startDate.split("-").reverse().join(" / ")}</small>
         </label>
         <label>
-          Start time
-          <input
+          {pageData.extracted.text_10}<input
             type="time"
             value={startTime}
             onChange={(e) => {
@@ -39,8 +36,7 @@ export function ProductDetailBookingSection({
           />
         </label>
         <label>
-          Return date
-          <input
+          {pageData.extracted.text_11}<input
             type="date"
             min={startDate}
             value={returnDate}
@@ -52,8 +48,7 @@ export function ProductDetailBookingSection({
           <small>{returnDate.split("-").reverse().join(" / ")}</small>
         </label>
         <label>
-          Return time
-          <input
+          {pageData.extracted.text_12}<input
             type="time"
             value={returnTime}
             onChange={(e) => {
@@ -65,7 +60,7 @@ export function ProductDetailBookingSection({
       </div>
       <div className="quantity-availability-row">
         <label>
-          Quantity{" "}
+          {pageData.extracted.text_13}{" "}
           <span>
             <button
               onClick={() => {
@@ -95,8 +90,7 @@ export function ProductDetailBookingSection({
         </label>
         {checked && (
           <small>
-            <b>155 available</b> on your selected dates
-          </small>
+            <b>{pageData.extracted.text_14}</b> {pageData.extracted.text_15}</small>
         )}
       </div>
       <button

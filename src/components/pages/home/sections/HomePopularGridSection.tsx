@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import pageData from "../../../../data/pages/home.json";
 
 export function HomePopularGridSection() {
@@ -6,26 +6,26 @@ export function HomePopularGridSection() {
     <section className="home-section cool">
       <div className="home-heading">
         <div>
-          <div className="eyebrow">Customer favourites</div>
-          <h2>Popular with Melbourne hosts</h2>
-          <p>Practical favourites for celebrations of every size.</p>
+          <div className="eyebrow">{pageData.popularGrid.eyebrow}</div>
+          <h2>{pageData.popularGrid.title}</h2>
+          <p>{pageData.popularGrid.description}</p>
         </div>
-        <a href="/products">Browse all products →</a>
+        <a href="/products">{pageData.popularGrid.ctaText}</a>
       </div>
       <div className="popular-grid">
         {pageData.popular.map((x) => (
-          <article key={x[0]}>
-            <a href={x[4]}>
-              <img src={x[3]} alt={x[0]} />
+          <article key={x.name}>
+            <a href={x.url}>
+              <img src={x.image} alt={x.name} />
             </a>
             <div>
-              <small>{x[1]}</small>
-              <h3>{x[0]}</h3>
+              <small>{x.category}</small>
+              <h3>{x.name}</h3>
               <span>
-                ★★★★★ <em>4.9</em>
+                ★★★★★ <em>{pageData.extracted.text_11}</em>
               </span>
-              <b>{x[2]}</b>
-              <a href={x[4]}>＋</a>
+              <b>{x.price}</b>
+              <a href={x.url}>＋</a>
             </div>
           </article>
         ))}

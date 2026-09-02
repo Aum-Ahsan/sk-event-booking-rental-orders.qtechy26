@@ -29,5 +29,8 @@
   "separation": {
     "title": "Separate frontends. Shared business data.",
     "description": "The public website never drops visitors into account or admin screens. Customer and admin applications are packaged and deployed independently, while approved APIs can share inventory, quotation and booking records."
+  },
+  "extracted": {
+    "text_1": "APPLICATION"
   }
 }

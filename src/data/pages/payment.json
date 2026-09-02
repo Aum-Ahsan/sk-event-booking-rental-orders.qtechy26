@@ -6,23 +6,72 @@
     "Confirm"
   ],
   "methods": [
-    [
-      "payid",
-      "📲",
-      "PayID",
-      "Transfer using your banking app to the event PayID."
-    ],
-    [
-      "bank",
-      "🏦",
-      "Bank transfer",
-      "Direct EFT transfer using the account details provided."
-    ],
-    [
-      "cash",
-      "💵",
-      "Cash",
-      "Cash payment arranged and receipted via the event team."
-    ]
-  ]
+    {
+      "id": "payid",
+      "icon": "📲",
+      "title": "PayID",
+      "description": "Transfer using your banking app to the event PayID."
+    },
+    {
+      "id": "bank",
+      "icon": "🏦",
+      "title": "Bank transfer",
+      "description": "Direct EFT transfer using the account details provided."
+    },
+    {
+      "id": "cash",
+      "icon": "💵",
+      "title": "Cash",
+      "description": "Cash payment arranged and receipted via the event team."
+    }
+  ],
+  "summary": {
+    "kicker": "SECURE PAYMENT",
+    "title": "Deposit for event",
+    "amount": "$880.00",
+    "due": "Due 30 October",
+    "ref": "Reference Q-260724-084",
+    "badge": "Encrypted session"
+  },
+  "extracted": {
+    "text_1": "SECURE BOOKING PAYMENT",
+    "text_2": "Complete your booking payment",
+    "text_3": "Choose a payment method, verify the authorised payer and review\n              the amount before confirming. Your booking is protected against\n              duplicate charges.",
+    "text_4": "▣ Secure checkout",
+    "text_5": "Payment information is encrypted and never displayed in full.",
+    "text_6": "Payment help →",
+    "text_7": "← Back",
+    "text_8": "Step",
+    "text_9": "of 5",
+    "text_10": "PAYMENT METHOD",
+    "text_11": "PCI-secure",
+    "text_12": "How would you like to pay?",
+    "text_13": "Select an available payment option. Instructions and timing\n                  are shown before confirmation.",
+    "text_14": "Payer name *",
+    "text_15": "Payment reference *",
+    "text_16": "Instructions",
+    "text_17": "I am authorised to make\n                this",
+    "text_18": "payment for booking SKB-10482.",
+    "text_19": "Payment timing",
+    "text_20": "$880.00 is due for the confirmed products and services. Use\n                  booking reference SKB-10482 with the selected payment method.",
+    "text_21": "IDENTITY VERIFICATION",
+    "text_22": "Verify this payment",
+    "text_23": "Confirm that you will use booking reference",
+    "text_24": "SKB-10482",
+    "text_25": "so the payment can be matched to the correct order.",
+    "text_26": "Change mobile number",
+    "text_27": "FINAL PAYMENT REVIEW",
+    "text_28": "Edit booking",
+    "text_29": "Review before you pay",
+    "text_30": "Confirm the booking, payment method and amount. Totals are\n                  recalculated securely when submitted.",
+    "text_31": "I authorise SK Event\n                Hire to record the $880.00 payment and agree to the payment, cancellation,\n                damage/bond and privacy terms.",
+    "text_32": "Authorise this payment",
+    "text_33": "Amount due for booking SKB-10482",
+    "text_34": "Payer",
+    "text_35": "Amelia Thompson",
+    "text_36": "Method",
+    "text_37": "Booking",
+    "text_38": "SKB-10482",
+    "text_39": "No card details are requested for this\n        transaction."
+  }
 }

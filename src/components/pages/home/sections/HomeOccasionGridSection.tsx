@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import pageData from "../../../../data/pages/home.json";
 
 export function HomeOccasionGridSection() {
@@ -6,21 +6,21 @@ export function HomeOccasionGridSection() {
     <section className="home-section">
       <div className="home-heading">
         <div>
-          <div className="eyebrow">Plan by occasion</div>
-          <h2>Planning for a special event?</h2>
-          <p>Choose your event and explore practical packages, products and services.</p>
+          <div className="eyebrow">{pageData.occasionsGrid.eyebrow}</div>
+          <h2>{pageData.occasionsGrid.title}</h2>
+          <p>{pageData.occasionsGrid.description}</p>
         </div>
-        <a href="/collections">Explore all event types →</a>
+        <a href="/collections">{pageData.occasionsGrid.ctaText}</a>
       </div>
       <div className="occasion-grid">
         {pageData.occasions.map((x, i) => (
           <a
             className={i === 0 ? "occasion-main" : ""}
-            href={x[2]}
-            key={x[0]}
+            href={x.url}
+            key={x.name}
           >
-            <img src={x[1]} alt={x[0]} />
-            <span>{x[0]}</span>
+            <img src={x.image} alt={x.name} />
+            <span>{x.name}</span>
           </a>
         ))}
       </div>

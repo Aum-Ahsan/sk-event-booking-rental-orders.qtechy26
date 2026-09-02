@@ -1,5 +1,6 @@
 ﻿import React from "react";
 import type { HireProduct } from "../../../../types/commerce";
+import pageData from "../../../../data/pages/product-detail.json";
 
 export function ProductDetailGallerySection({ 
   p, 
@@ -37,7 +38,7 @@ export function ProductDetailGallerySection({
         <img src={selectedImage} alt={p.name} />
       </button>
       <div className="image-assurance">
-        <span>◉ Real product image supplied for this rental item</span>
+        <span>{pageData.extracted.text_19}</span>
         <button onClick={() => setZoomed(!zoomed)}>
           ⌕ {zoomed ? "Reset zoom" : "Zoom image"}
         </button>

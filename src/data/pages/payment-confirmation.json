@@ -1,5 +1,22 @@
 {
-  "amount": "$1,250.00",
-  "reference": "SK-2025-0312",
-  "timing": "Processed within 1 business day"
+  "hero": {
+    "kicker": "PAYMENT CONFIRMED",
+    "title": "Thanks—your payment is processing.",
+    "description": "A tax receipt has been generated. This payment will clear within one business day."
+  },
+  "actions": {
+    "primary": "Continue browsing →",
+    "contact": "Contact support"
+  },
+  "extracted": {
+    "text_1": "PAYMENT APPROVED",
+    "text_2": "Thank you, your payment is complete.",
+    "text_3": "Your payment of",
+    "text_4": "for booking",
+    "text_5": "was\n              successful. A tax receipt has been emailed to Amelia Thompson.",
+    "text_6": "Amount paid",
+    "text_7": "Reference",
+    "text_8": "Status",
+    "attr_9": "SK Event Hire payment confirmation"
+  }
 }

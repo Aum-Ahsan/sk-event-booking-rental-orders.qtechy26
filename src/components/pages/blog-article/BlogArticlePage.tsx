@@ -3,6 +3,7 @@ import { PublicHeader } from "../../common/PublicHeader";
 import { PublicFooter } from "../../common/PublicFooter";
 import { type BlogGuide, blogGuides, articleSections } from "../../../../app/blogData";
 import pageData from "../../../data/pages/blog-article.json";
+import { KeepPlanningSection } from "./sections/KeepPlanningSection";
 
 export function BlogArticlePage({ guide }: { guide: BlogGuide }) {
   const sections =
@@ -22,7 +23,7 @@ export function BlogArticlePage({ guide }: { guide: BlogGuide }) {
         <article className="guide-article">
           <header>
             <div>
-              <span>{guide.category.toUpperCase()} GUIDE</span>
+              <span>{guide.category.toUpperCase()} {pageData.extracted.text_1}</span>
               <h1>{guide.title}</h1>
               <p>{guide.summary}</p>
               <small>
@@ -57,7 +58,7 @@ export function BlogArticlePage({ guide }: { guide: BlogGuide }) {
                   </h2>
                   <p>{section[1]}</p>
                   <p>
-                    For “{guide.title},” {pageData.sectionFooter}
+                    {pageData.extracted.text_2}{guide.title},” {pageData.sectionFooter}
                   </p>
                   {index === 2 && (
                     <img
@@ -77,19 +78,7 @@ export function BlogArticlePage({ guide }: { guide: BlogGuide }) {
             </div>
           </div>
         </article>
-        <section className="keep-planning editorial-section article-related">
-          <span>{pageData.related.kickerPrefix} {guide.category.toUpperCase()}</span>
-          <h2>{pageData.related.title}</h2>
-          <div>
-            {related.map((item) => (
-              <article key={item.slug}>
-                <img src={item.image} alt={item.title} />
-                <h3>{item.title}</h3>
-                <a href={"/blog-" + item.slug}>{pageData.related.linkText}</a>
-              </article>
-            ))}
-          </div>
-        </section>
+        <KeepPlanningSection />
       </main>
       <PublicFooter />
     </div>

@@ -1,0 +1,15 @@
+{
+  "hero": {
+    "badge": "404",
+    "title": "Resource isolated",
+    "description": "Customer and admin applications are intentionally separated from public navigation. Use the public catalogue, quotation or contact pages to continue."
+  },
+  "actions": {
+    "home": "Return home",
+    "contact": "Contact support"
+  },
+  "extracted": {
+    "text_1": "PAGE NOT FOUND",
+    "text_2": "This page is not part of the public landing site."
+  }
+}

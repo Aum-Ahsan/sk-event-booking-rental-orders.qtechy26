@@ -1,0 +1,31 @@
+{
+  "extracted": {
+    "text_1": "EVENT TYPE",
+    "text_2": "EVENT DATE",
+    "text_3": "RETURN DATE",
+    "text_4": "POSTCODE",
+    "text_5": "NUMBER OF GUESTS",
+    "text_6": "Sort by",
+    "text_7": "Recommended",
+    "text_8": "A to Z",
+    "text_9": "Z to A",
+    "text_10": "Price: low to high",
+    "text_11": "Price: high to low",
+    "text_12": "Newest first",
+    "text_13": "42",
+    "text_14": "8",
+    "text_15": "$0",
+    "text_16": "Showing items priced up to $",
+    "text_17": "products",
+    "text_18": "reviews)",
+    "text_19": "● &nbsp;Available · Professional unit prepared",
+    "text_20": "● &nbsp;",
+    "text_21": "colour",
+    "text_22": "per item",
+    "text_23": "GST calculated at checkout",
+    "text_24": "Rent now",
+    "text_25": "Book now",
+    "text_26": "← Previous",
+    "text_27": "Next →"
+  }
+}

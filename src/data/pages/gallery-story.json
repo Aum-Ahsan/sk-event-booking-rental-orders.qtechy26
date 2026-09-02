@@ -4,44 +4,62 @@
     "description": "An 80-guest outdoor wedding in Richmond combining warm timber furniture, festoon lighting and a practical wet-weather marquee plan.",
     "meta": "Wedding · Richmond · 80 guests · March 2025",
     "stats": [
-      [
-        "80",
-        "Guests seated"
-      ],
-      [
-        "3",
-        "Days of hire"
-      ],
-      [
-        "6×9m",
-        "Marquee cover"
-      ],
-      [
-        "12h",
-        "Event duration"
-      ]
+      {
+        "label": "80",
+        "value": "Guests seated"
+      },
+      {
+        "label": "3",
+        "value": "Days of hire"
+      },
+      {
+        "label": "6×9m",
+        "value": "Marquee cover"
+      },
+      {
+        "label": "12h",
+        "value": "Event duration"
+      }
     ],
     "products": [
-      [
-        "Cross-Back Chairs",
-        "x 80",
-        "$2.50/chair/day"
-      ],
-      [
-        "Round Timber Tables",
-        "x 10",
-        "$12.00/table/day"
-      ],
-      [
-        "6×9m Marquee",
-        "x 1",
-        "$180/day"
-      ],
-      [
-        "Festoon Lighting Set",
-        "x 3",
-        "$45.00/set/day"
-      ]
-    ]
+      {
+        "name": "Cross-Back Chairs",
+        "desc": "x 80",
+        "price": "$2.50/chair/day"
+      },
+      {
+        "name": "Round Timber Tables",
+        "desc": "x 10",
+        "price": "$12.00/table/day"
+      },
+      {
+        "name": "6×9m Marquee",
+        "desc": "x 1",
+        "price": "$180/day"
+      },
+      {
+        "name": "Festoon Lighting Set",
+        "desc": "x 3",
+        "price": "$45.00/set/day"
+      }
+    ],
+    "brief": {
+      "kicker": "THE BRIEF",
+      "title": "A warm outdoor celebration with a practical weather plan",
+      "description": "The couple wanted an intimate garden atmosphere without risking comfort or logistics. The plan paired natural timber furniture with covered dining, layered lighting and a clear wet-weather fallback."
+    },
+    "whatMadeItWork": {
+      "kicker": "WHAT MADE IT WORK",
+      "title": "Products and services working as one plan"
+    },
+    "moreFromThisEvent": {
+      "title": "More from this event"
+    },
+    "cta": {
+      "title": "Planning a similar event?",
+      "description": "We can help recreate this look or tailor a package for your venue.",
+      "btnPrimary": "Browse products",
+      "btnSecondary": "Get a quote"
+    }
   }
 }

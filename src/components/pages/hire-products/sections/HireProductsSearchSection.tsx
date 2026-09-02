@@ -1,5 +1,6 @@
 import React from "react";
 import data from "../../../../data/pages/products.json";
+import pageData from "../../../../data/pages/hire-products.json";
 
 interface HireProductsSearchSectionProps {
   query: string;
@@ -28,14 +29,14 @@ export function HireProductsSearchSection({
         <button type="button">{search.buttonText}</button>
       </label>
       <span>
-        Sort by{" "}
+        {pageData.extracted.text_6}{" "}
         <select value={sort} onChange={(e) => setSort(e.target.value)}>
-          <option value="recommended">Recommended</option>
-          <option value="az">A to Z</option>
-          <option value="za">Z to A</option>
-          <option value="low">Price: low to high</option>
-          <option value="high">Price: high to low</option>
-          <option value="new">Newest first</option>
+          <option value="recommended">{pageData.extracted.text_7}</option>
+          <option value="az">{pageData.extracted.text_8}</option>
+          <option value="za">{pageData.extracted.text_9}</option>
+          <option value="low">{pageData.extracted.text_10}</option>
+          <option value="high">{pageData.extracted.text_11}</option>
+          <option value="new">{pageData.extracted.text_12}</option>
         </select>
       </span>
     </section>

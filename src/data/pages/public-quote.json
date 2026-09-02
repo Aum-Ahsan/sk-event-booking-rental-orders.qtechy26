@@ -4,5 +4,41 @@
     "Products needed",
     "Delivery & logistics",
     "Review & submit"
-  ]
+  ],
+  "hero": {
+    "kicker": "REQUEST RECEIVED",
+    "title": "Thanks—your request is with the team.",
+    "description": "We will check date-range stock, logistics and pricing before sending a versioned quotation. Nothing has been reserved and no payment has been taken."
+  },
+  "actions": {
+    "primary": "Continue browsing →",
+    "contact": "Contact the booking team"
+  },
+  "labels": {
+    "target": "Response target",
+    "date": "Event date",
+    "contact": "Contact"
+  },
+  "extracted": {
+    "text_1": "Quotation request QR-260731-184",
+    "text_2": "Your request is with our event team.",
+    "text_3": "Within 1 business day",
+    "text_4": "14 November 2026",
+    "text_5": "Email and SMS",
+    "text_6": "Return to homepage",
+    "text_7": "Public quotation request",
+    "text_8": "Tell us what the event needs.",
+    "text_9": "A clear, no-payment request covering products, timing, venue and\n            contact details.",
+    "text_10": "Event overview",
+    "text_11": "Quotation only",
+    "text_12": "Submitting does not reserve stock or create a booking. We\n                confirm availability, GST and the final price first.",
+    "text_13": "Back to basket",
+    "text_14": "Review & submit request",
+    "attr_15": "Event type",
+    "attr_16": "Guest count",
+    "attr_17": "Event date",
+    "attr_18": "Venue suburb / postcode",
+    "attr_19": "Products or package",
+    "attr_20": "Event notes"
+  }
 }

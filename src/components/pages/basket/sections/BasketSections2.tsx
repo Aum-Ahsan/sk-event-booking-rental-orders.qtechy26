@@ -8,43 +8,42 @@ export function CheckoutCustomerCard({ step }: { step: number }) {
     <section className="checkout-card" hidden={step !== 1}>
       <header>
         <div>
-          <span>CUSTOMER & EVENT</span>
-          <h2>Your contact details</h2>
-          <p>Enter the booking contact details for this event.</p>
+          <span>{pageData.ui.customerCard.kicker}</span>
+          <h2>{pageData.ui.customerCard.title}</h2>
+          <p>{pageData.ui.customerCard.desc}</p>
         </div>
-        <a href="/contact">Need help?</a>
+        <a href="/contact">{pageData.ui.customerCard.help}</a>
       </header>
       <div className="checkout-form two">
-        <Field label="First name" value="Amelia" />
-        <Field label="Last name" value="Thompson" />
-        <Field label="Email" value="amelia.t@example.com" />
-        <Field label="Mobile" value="0412 345 678" />
-        <Field label="Company / organisation" value="Optional" />
-        <Field label="ABN / purchase order" value="Optional" />
+        <Field label={pageData.ui.customerCard.fields.firstName} value="Amelia" />
+        <Field label={pageData.ui.customerCard.fields.lastName} value="Thompson" />
+        <Field label={pageData.ui.customerCard.fields.email} value="amelia.t@example.com" />
+        <Field label={pageData.ui.customerCard.fields.mobile} value="0412 345 678" />
+        <Field label={pageData.ui.customerCard.fields.company} value="Optional" />
+        <Field label={pageData.ui.customerCard.fields.abn} value="Optional" />
       </div>
-      <h3>Where is the event?</h3>
+      <h3>{pageData.ui.customerCard.eventTitle}</h3>
       <div className="checkout-form two">
-        <Field label="Event type" value="Wedding reception" />
-        <Field label="Guest count" value="60" />
-        <Field label="Venue name" value="Willow & Stone Estate" />
-        <Field label="Postcode" value="3000" />
+        <Field label={pageData.ui.customerCard.eventFields.type} value="Wedding reception" />
+        <Field label={pageData.ui.customerCard.eventFields.guests} value="60" />
+        <Field label={pageData.ui.customerCard.eventFields.venue} value="Willow & Stone Estate" />
+        <Field label={pageData.ui.customerCard.eventFields.postcode} value="3000" />
         <Field
           wide
-          label="Event address"
+          label={pageData.ui.customerCard.eventFields.address}
           value="18 Garden Lane, Melbourne VIC 3000"
         />
         <Field
           wide
-          label="On-site contact"
+          label={pageData.ui.customerCard.eventFields.contact}
           value="Jordan Lee · 0412 000 111"
         />
       </div>
       <label className="checkbox-line">
-        Event setting:{" "}
-        <input type="radio" name="setting" defaultChecked /> Indoor{" "}
-        <input type="radio" name="setting" /> Outdoor{" "}
-        <input type="radio" name="setting" /> Both
-      </label>
+        {pageData.extracted.text_1}{" "}
+        <input type="radio" name="setting" defaultChecked /> {pageData.extracted.text_2}{" "}
+        <input type="radio" name="setting" /> {pageData.extracted.text_3}{" "}
+        <input type="radio" name="setting" /> {pageData.extracted.text_4}</label>
     </section>
   );
 }
@@ -54,39 +53,37 @@ export function CheckoutFulfilmentCard({ step }: { step: number }) {
     <section className="checkout-card" hidden={step !== 2}>
       <header>
         <div>
-          <span>FULFILMENT</span>
-          <h2>Delivery and return</h2>
-          <p>
-            Choose both journeys so labour and timing can be confirmed.
-          </p>
+          <span>{pageData.extracted.text_5}</span>
+          <h2>{pageData.extracted.text_6}</h2>
+          <p>{pageData.ui.logisticsCard.desc1}</p>
         </div>
       </header>
-      <h3>How will you receive the items?</h3>
+      <h3>{pageData.extracted.text_7}</h3>
       <div className="choice-cards">
         {pageData.deliveryChoices.map((x, i) => (
-          <label className={i === 2 ? "selected" : ""} key={x[0]}>
+          <label className={i === 2 ? "selected" : ""} key={x.label}>
             <input
               name="receive"
               type="radio"
               defaultChecked={i === 2}
             />
-            <b>{x[0]}</b>
-            <small>{x[1]}</small>
+            <b>{x.label}</b>
+            <small>{x.desc}</small>
             <em>{i === 2 ? "From $240" : ""}</em>
           </label>
         ))}
       </div>
-      <h3>How will the items come back?</h3>
+      <h3>{pageData.extracted.text_8}</h3>
       <div className="choice-cards">
         {pageData.returnChoices.map((x, i) => (
-          <label className={i === 1 ? "selected" : ""} key={x[0]}>
+          <label className={i === 1 ? "selected" : ""} key={x.label}>
             <input
               name="return"
               type="radio"
               defaultChecked={i === 1}
             />
-            <b>{x[0]}</b>
-            <small>{x[1]}</small>
+            <b>{x.label}</b>
+            <small>{x.desc}</small>
             <em>{i === 1 ? "From $85" : ""}</em>
           </label>
         ))}
@@ -100,41 +97,38 @@ export function CheckoutAccessCard({ step }: { step: number }) {
     <section className="checkout-card access-card" hidden={step !== 2}>
       <header>
         <div>
-          <span>VENUE ACCESS</span>
-          <h2>Tell us about access</h2>
-          <p>
-            Clear access details help us allocate the right crew and
-            vehicle.
-          </p>
+          <span>{pageData.extracted.text_9}</span>
+          <h2>{pageData.extracted.text_10}</h2>
+          <p>{pageData.ui.logisticsCard.desc2}</p>
         </div>
       </header>
       <div className="access-layout">
         <img
           src="/images/warehouse-team.png"
-          alt="Event delivery and venue access"
+          alt={pageData.extracted.attr_11}
         />
         <div className="checkout-form two">
           <Field
-            label="Parking / loading area"
+            label={pageData.extracted.attr_12}
             value="Venue loading bay"
           />
-          <Field label="Distance to setup" value="Under 25 metres" />
+          <Field label={pageData.extracted.attr_13} value="Under 25 metres" />
           <Field
-            label="Stairs or lift"
+            label={pageData.extracted.attr_14}
             value="Ground floor · no stairs"
           />
-          <Field label="Stairs / doorway width" value="1.2 metres" />
-          <Field label="Ground surface" value="Lawn and paved path" />
+          <Field label={pageData.extracted.attr_15} value="1.2 metres" />
+          <Field label={pageData.extracted.attr_16} value="Lawn and paved path" />
           <Field
-            label="Power available"
+            label={pageData.extracted.attr_17}
             value="Yes · standard outlet"
           />
           <Field
-            label="Anchoring permitted"
+            label={pageData.extracted.attr_18}
             value="Ground stakes permitted"
           />
           <Field
-            label="Venue restrictions"
+            label={pageData.extracted.attr_19}
             value="No vehicle access after 3:00 pm"
           />
         </div>

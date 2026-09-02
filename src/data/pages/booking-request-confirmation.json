@@ -1,6 +1,21 @@
 {
-  "reference": "BR-2025-0312",
-  "event": "Saturday 15 March 2025 · 80 guests",
-  "delivery": "Friday 14 March, 10:00 – 14:00",
-  "collection": "Sunday 16 March, 08:00 – 12:00"
+  "hero": {
+    "kicker": "REQUEST RECEIVED",
+    "title": "Thanks—your request is with the team.",
+    "description": "We are reviewing stock availability, vehicle schedules and crew for your dates."
+  },
+  "actions": {
+    "primary": "Continue after approval →",
+    "contact": "Contact the booking team",
+    "return": "Return to products"
+  },
+  "extracted": {
+    "text_1": "We’ve received your booking request.",
+    "text_2": "Booking",
+    "text_3": "is awaiting availability and logistics approval.\n              This request is saved on its own confirmation screen and is not\n              yet a confirmed booking.",
+    "text_4": "Event",
+    "text_5": "Delivery window",
+    "text_6": "SK collection",
+    "attr_7": "SK Event Hire team reviewing a booking request"
+  }
 }

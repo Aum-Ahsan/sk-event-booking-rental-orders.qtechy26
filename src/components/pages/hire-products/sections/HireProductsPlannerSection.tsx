@@ -1,6 +1,7 @@
 import React from "react";
 import data from "../../../../data/pages/products.json";
 import eventTypes from "../../../../data/commerce/eventTypes.json";
+import pageData from "../../../../data/pages/hire-products.json";
 
 interface HireProductsPlannerSectionProps {
   availability: string;
@@ -48,7 +49,7 @@ export function HireProductsPlannerSection({
       </div>
       <div className="search-fields catalogue-availability-fields">
         <label>
-          <span>EVENT TYPE</span>
+          <span>{pageData.extracted.text_1}</span>
           <select
             value={eventType === "All" ? eventTypes[0] : eventType}
             onChange={(e) => {
@@ -62,7 +63,7 @@ export function HireProductsPlannerSection({
           </select>
         </label>
         <label>
-          <span>EVENT DATE</span>
+          <span>{pageData.extracted.text_2}</span>
           <input
             id="event-date"
             type="date"
@@ -71,7 +72,7 @@ export function HireProductsPlannerSection({
           />
         </label>
         <label>
-          <span>RETURN DATE</span>
+          <span>{pageData.extracted.text_3}</span>
           <input
             id="return-date"
             type="date"
@@ -81,7 +82,7 @@ export function HireProductsPlannerSection({
           />
         </label>
         <label>
-          <span>POSTCODE</span>
+          <span>{pageData.extracted.text_4}</span>
           <input
             id="event-postcode"
             inputMode="numeric"
@@ -92,7 +93,7 @@ export function HireProductsPlannerSection({
           />
         </label>
         <label>
-          <span>NUMBER OF GUESTS</span>
+          <span>{pageData.extracted.text_5}</span>
           <input
             type="number"
             min="1"

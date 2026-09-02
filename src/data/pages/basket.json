@@ -9,52 +9,217 @@
     "Review"
   ],
   "deliveryChoices": [
-    [
-      "Warehouse pickup",
-      "Collect from our warehouse. Ring before you arrive."
-    ],
-    [
-      "Delivery to venue",
-      "We deliver to the address or suburb you specify."
-    ],
-    [
-      "Express delivery",
-      "Same or next-day delivery to Melbourne metro."
-    ]
+    {
+      "label": "Warehouse pickup",
+      "desc": "Collect from our warehouse. Ring before you arrive."
+    },
+    {
+      "label": "Delivery to venue",
+      "desc": "We deliver to the address or suburb you specify."
+    },
+    {
+      "label": "Express delivery",
+      "desc": "Same or next-day delivery to Melbourne metro."
+    }
   ],
   "returnChoices": [
-    [
-      "Warehouse return",
-      "Drop items back to our warehouse after your event."
-    ],
-    [
-      "SK collection",
-      "We collect items from your venue after the event."
-    ]
+    {
+      "label": "Warehouse return",
+      "desc": "Drop items back to our warehouse after your event."
+    },
+    {
+      "label": "SK collection",
+      "desc": "We collect items from your venue after the event."
+    }
   ],
   "extras": [
-    [
-      "setup",
-      "Setup and pack-down",
-      "Team sets up and packs away on the day.",
-      "/images/warehouse-team.png"
-    ],
-    [
-      "linen",
-      "Table linen package",
-      "White or ivory linen for your hired tables.",
-      "/images/tableware-product.png"
-    ],
-    [
-      "damage",
-      "Damage waiver",
-      "Covers accidental damage during your event.",
-      "/images/decor-product.png"
-    ]
+    {
+      "id": "setup",
+      "title": "Setup and pack-down",
+      "desc": "Team sets up and packs away on the day.",
+      "image": "/images/warehouse-team.png"
+    },
+    {
+      "id": "linen",
+      "title": "Table linen package",
+      "desc": "White or ivory linen for your hired tables.",
+      "image": "/images/tableware-product.png"
+    },
+    {
+      "id": "damage",
+      "title": "Damage waiver",
+      "desc": "Covers accidental damage during your event.",
+      "image": "/images/decor-product.png"
+    }
   ],
   "paymentOptions": [
     "PayID",
     "Bank transfer",
     "Cash"
-  ]
+  ],
+  "intro": {
+    "kicker": "SECURE EVENT HIRE CHECKOUT",
+    "title": "Complete your booking request",
+    "description": "Confirm your dates, venue, delivery and payment preference. We’ll verify stock and logistics before the booking becomes final.",
+    "privacyLink": "Read our privacy policy →",
+    "privacyText": "Saved securely"
+  },
+  "ui": {
+    "intro": {
+      "desc": "Confirm your dates, venue, delivery and payment preference. We’ll verify stock and logistics before the booking becomes final.",
+      "privacyText": "Your progress is protected on this device.",
+      "privacyLink": "Read our privacy policy →"
+    },
+    "actions": {
+      "back": "← Back",
+      "stepOf": "Step {step} of 6",
+      "confirmPay": "Confirm payment to continue",
+      "saveContinue": "Save & continue →"
+    },
+    "basketCard": {
+      "kicker": "YOUR BASKET",
+      "title": "Your event hire basket",
+      "desc": "Check quantities, options and dates before checkout.",
+      "continueShopping": "Continue shopping",
+      "available": "● Available",
+      "viewProduct": "View product details",
+      "quantity": "Quantity",
+      "perDay": "per day · GST at checkout",
+      "adjustedKicker": "Availability adjusted",
+      "adjustedDesc": "One item has limited stock across the selected dates.",
+      "viewAlternatives": "View alternatives"
+    },
+    "scheduleCard": {
+      "kicker": "EVENT SCHEDULE",
+      "title": "Confirm your hire dates",
+      "desc": "We use these dates to calculate the hire period and availability.",
+      "saved": "✓ Saved",
+      "labels": {
+        "from": "Event required from",
+        "starts": "Event starts",
+        "ends": "Event ends",
+        "returned": "Items returned by"
+      },
+      "earlyCheck": "My venue can receive items one day early",
+      "chargeableTitle": "3 chargeable days",
+      "chargeableDesc": "Saturday 12 September, Sunday 13 September and Monday 14 September."
+    },
+    "customerCard": {
+      "kicker": "CUSTOMER & EVENT",
+      "title": "Your contact details",
+      "desc": "Enter the booking contact details for this event.",
+      "help": "Need help?",
+      "fields": {
+        "firstName": "First name",
+        "lastName": "Last name",
+        "email": "Email",
+        "mobile": "Mobile",
+        "company": "Company / organisation",
+        "abn": "ABN / purchase order"
+      },
+      "eventTitle": "Where is the event?",
+      "eventFields": {
+        "type": "Event type",
+        "guests": "Guest count",
+        "venue": "Venue name",
+        "postcode": "Postcode",
+        "address": "Event address",
+        "contact": "On-site contact"
+      }
+    },
+    "logisticsCard": {
+      "kicker": "LOGISTICS & DELIVERY",
+      "title": "Access details",
+      "desc1": "Choose both journeys so labour and timing can be confirmed.",
+      "desc2": "Clear access details help us allocate the right crew and vehicle.",
+      "fields": {
+        "delivery": "Delivery access",
+        "collection": "Collection access",
+        "lift": "Lift access required",
+        "stairs": "Stairs required",
+        "loadingDock": "Loading dock available",
+        "parking": "On-site parking available"
+      }
+    },
+    "extrasCard": {
+      "kicker": "OPTIONAL ADD-ONS",
+      "title": "Useful extras",
+      "desc": "Add practical extras now and we’ll confirm final stock and pricing.",
+      "promoTitle": "Have a promo code?",
+      "promoDesc": "Promotions are validated before your total updates.",
+      "promoBtn": "Apply"
+    },
+    "paymentCard": {
+      "kicker": "PAYMENT PREFERENCE",
+      "title": "Confirm payment preference",
+      "desc": "No charge is made until your booking conditions are ready.",
+      "bondTitle": "Bond hold",
+      "bondDesc": "A standard equipment bond may apply to this quote.",
+      "authBtn": "Authorise payment method",
+      "authNote": "Authorisation is valid for 7 days. Your bank may hold these funds.",
+      "approvedCodeDesc": "Code sent to your phone. Enter code to approve.",
+      "verifiedTitle": "Authorised",
+      "verifiedDesc": "Your card is approved for the quoted amount."
+    },
+    "summaryCard": {
+      "kicker": "SUMMARY",
+      "title": "Submit your request",
+      "desc": "Check the important details before sending your request.",
+      "details": {
+        "start": "Start",
+        "duration": "Duration",
+        "setup": "Setup",
+        "items": "items",
+        "collection": "Collection"
+      },
+      "subtotal": "Subtotal",
+      "delivery": "Estimated delivery",
+      "tax": "GST (10%)",
+      "total": "Estimated Total",
+      "btnSubmit": "Submit booking request →",
+      "legalText": "By submitting, you agree to our Terms of Hire and Privacy Policy."
+    }
+  },
+  "extracted": {
+    "text_1": "Event setting:",
+    "text_2": "Indoor",
+    "text_3": "Outdoor",
+    "text_4": "Both",
+    "text_5": "FULFILMENT",
+    "text_6": "Delivery and return",
+    "text_7": "How will you receive the items?",
+    "text_8": "How will the items come back?",
+    "text_9": "VENUE ACCESS",
+    "text_10": "Tell us about access",
+    "attr_11": "Event delivery and venue access",
+    "attr_12": "Parking / loading area",
+    "attr_13": "Distance to setup",
+    "attr_14": "Stairs or lift",
+    "attr_15": "Stairs / doorway width",
+    "attr_16": "Ground surface",
+    "attr_17": "Power available",
+    "attr_18": "Anchoring permitted",
+    "attr_19": "Venue restrictions",
+    "text_20": "Choose how you’d like to pay",
+    "text_21": "Confirm payment preference",
+    "text_22": "FINAL REVIEW",
+    "text_23": "Review your booking request",
+    "text_24": "Edit",
+    "text_25": "I agree to the rental\n        terms, cancellation policy, damage policy and payment\n        conditions.",
+    "text_26": "← Back to payment",
+    "text_27": "Send booking request",
+    "text_28": "BOOKING ESTIMATE",
+    "text_29": "Your booking estimate",
+    "text_30": "Wedding reception",
+    "text_31": "12–14 September 2026 · Melbourne VIC",
+    "text_32": "Estimated total",
+    "text_33": "Final total is confirmed after stock and logistics review.",
+    "text_34": "Continue to review",
+    "text_35": "Secure checkout · Details protected",
+    "text_36": "PLANNING SUPPORT",
+    "text_37": "Need help before your event?",
+    "text_38": "Talk to our event team about quantities, venue access, setup or\n          schedule changes.",
+    "text_39": "Call 03 9000 0000",
+    "text_40": "Message our team"
+  }
 }

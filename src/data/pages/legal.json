@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "eyebrow": "LEGAL & CUSTOMER INFORMATION",
+    "title": "Terms, policies and",
+    "titleBreak": "important information",
+    "description": "Please read the applicable terms carefully before confirming your booking. All hires are subject to these conditions."
+  },
+  "tabs": {
+    "rental": "Rental agreement",
+    "payment": "Payment & bonds",
+    "cancellation": "Cancellation policy",
+    "privacy": "Privacy policy"
+  },
+  "actions": {
+    "download": "Download as PDF",
+    "contact": "Contact support"
+  },
+  "extracted": {
+    "text_1": "✓ Current policies · Effective 1 July 2026 · Victoria, Australia",
+    "text_2": "POLICY LIBRARY",
+    "text_3": "One place for every policy",
+    "text_4": "Select a category. Its complete content updates inside the card\n              below.",
+    "text_5": "Effective",
+    "text_6": "1 July 2026",
+    "text_7": "Version",
+    "text_8": "3.2",
+    "text_9": "Region",
+    "text_10": "Victoria",
+    "text_11": "Language",
+    "text_12": "English",
+    "text_13": "Plain-language summary",
+    "text_14": "Essential cookies",
+    "text_15": "Always on for security and core site functions.",
+    "text_16": "Optional analytics",
+    "text_17": "Reject optional",
+    "text_18": "Accept optional",
+    "text_19": "The accepted quotation and any written special conditions form\n                part of the agreement for a specific booking.",
+    "text_20": "Ask a policy question →"
+  }
+}

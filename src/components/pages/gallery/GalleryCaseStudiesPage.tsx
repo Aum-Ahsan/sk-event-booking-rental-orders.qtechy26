@@ -20,17 +20,14 @@ export function GalleryCaseStudiesPage({ story = false }: { story?: boolean }) {
       <main>
         <section className="gallery-restored-hero">
           <div>
-            <span>REAL EVENT INSPIRATION</span>
-            <h1>Ideas brought to life.</h1>
-            <p>
-              Explore real Melbourne celebrations and see how furniture,
-              lighting, marquees and practical planning came together.
-            </p>
-            <a href="#gallery-browser">Explore the gallery ↓</a>
+            <span>{pageData.hero.eyebrow}</span>
+            <h1>{pageData.hero.title}</h1>
+            <p>{pageData.hero.description}</p>
+            <a href="#gallery-browser">{pageData.hero.ctaText}</a>
           </div>
           <img
             src="/images/hero-event.png"
-            alt="Warm outdoor wedding reception prepared by SK Event Hire"
+            alt={pageData.extracted.attr_2}
           />
         </section>
         <section
@@ -39,7 +36,7 @@ export function GalleryCaseStudiesPage({ story = false }: { story?: boolean }) {
         >
           <div className="editorial-section">
             <div className="filter-pills gallery-chip-bar">
-              {["All", "Wedding", "Outdoor", "Warm lighting"].map((tag) => (
+              {pageData.filters.map((tag) => (
                 <button
                   className={activeTag === tag ? "active" : ""}
                   onClick={() => {
@@ -61,7 +58,7 @@ export function GalleryCaseStudiesPage({ story = false }: { story?: boolean }) {
                     aria-label={`Preview ${x.title}`}
                   >
                     <img src={x.image} alt={x.title} />
-                    <span>View image</span>
+                    <span>{pageData.ui.viewImage}</span>
                   </button>
                   <div className="gallery-card-details">
                     <div className="gallery-card-tags">
@@ -81,7 +78,7 @@ export function GalleryCaseStudiesPage({ story = false }: { story?: boolean }) {
                       className="gallery-view-action"
                       href={`/gallery-event-${x.slug}`}
                     >
-                      View event details <span>→</span>
+                      {pageData.ui.viewDetails.replace(" →", "")} <span>→</span>
                     </a>
                   </div>
                 </article>
@@ -92,7 +89,7 @@ export function GalleryCaseStudiesPage({ story = false }: { story?: boolean }) {
                 className="load-more"
                 onClick={() => setVisible(visible + 4)}
               >
-                Load more events
+                {pageData.ui.loadMore}
               </button>
             )}
           </div>
@@ -120,8 +117,7 @@ export function GalleryCaseStudiesPage({ story = false }: { story?: boolean }) {
                   <span>{preview.meta}</span>
                 </div>
                 <a href={`/gallery-event-${preview.slug}`}>
-                  View event details →
-                </a>
+                  {pageData.extracted.text_1}</a>
               </footer>
             </div>
           </div>

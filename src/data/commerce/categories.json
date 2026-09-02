@@ -1,32 +1,32 @@
 [
-  [
-    "Chairs",
-    "Kids and adult bistro seating",
-    "https://padvgroup.com.au/images/PadV/Chairs/Aram%20chair/IMG-20241215-WA0007.jpg",
-    "From $1.50"
-  ],
-  [
-    "Tables",
-    "Kids and six-foot folding tables",
-    "https://padvgroup.com.au/images/PadV/Table/IMG-20241215-WA0014.jpg",
-    "From $8"
-  ],
-  [
-    "Lighting",
-    "Portable temporary event lighting",
-    "https://padvgroup.com.au/images/PadV/Outdoor%20Light/IMG-20241215-WA0030.jpg",
-    "From $15"
-  ],
-  [
-    "Tableware",
-    "Buffet serving and food-warming equipment",
-    "https://padvgroup.com.au/images/PadV/Chafing%20dish/IMG-20241215-WA0033.jpg",
-    "From $9"
-  ],
-  [
-    "Lounge & bar",
-    "Outdoor heating and compatible LPG fuel",
-    "https://padvgroup.com.au/images/PadV/Heater/IMG-20241215-WA0019.jpg",
-    "From $35"
-  ]
+  {
+    "name": "Chairs",
+    "description": "Kids and adult bistro seating",
+    "image": "https://padvgroup.com.au/images/PadV/Chairs/Aram%20chair/IMG-20241215-WA0007.jpg",
+    "price": "From $1.50"
+  },
+  {
+    "name": "Tables",
+    "description": "Kids and six-foot folding tables",
+    "image": "https://padvgroup.com.au/images/PadV/Table/IMG-20241215-WA0014.jpg",
+    "price": "From $8"
+  },
+  {
+    "name": "Lighting",
+    "description": "Portable temporary event lighting",
+    "image": "https://padvgroup.com.au/images/PadV/Outdoor%20Light/IMG-20241215-WA0030.jpg",
+    "price": "From $15"
+  },
+  {
+    "name": "Tableware",
+    "description": "Buffet serving and food-warming equipment",
+    "image": "https://padvgroup.com.au/images/PadV/Chafing%20dish/IMG-20241215-WA0033.jpg",
+    "price": "From $9"
+  },
+  {
+    "name": "Lounge & bar",
+    "description": "Outdoor heating and compatible LPG fuel",
+    "image": "https://padvgroup.com.au/images/PadV/Heater/IMG-20241215-WA0019.jpg",
+    "price": "From $35"
+  }
 ]

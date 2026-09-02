@@ -108,5 +108,33 @@
       "details": "A coastal birthday with a covered lounge, casual dining and a practical wind-and-weather plan.",
       "slug": "relaxed-marquee-lounge"
     }
-  ]
+  ],
+  "hero": {
+    "eyebrow": "REAL EVENT INSPIRATION",
+    "title": "Ideas brought to life.",
+    "description": "Explore real Melbourne celebrations and see how furniture, lighting, marquees and practical planning came together.",
+    "ctaText": "Explore the gallery ↓"
+  },
+  "filters": [
+    "All",
+    "Wedding",
+    "Outdoor",
+    "Warm lighting"
+  ],
+  "ui": {
+    "viewImage": "View image",
+    "viewDetails": "View event details →",
+    "loadMore": "Load more events"
+  },
+  "extracted": {
+    "text_1": "View event details →",
+    "attr_2": "Warm outdoor wedding reception prepared by SK Event Hire",
+    "text_3": "← Back to gallery",
+    "text_4": "THE FINAL RESULT",
+    "attr_5": "Weather-ready garden reception",
+    "attr_6": "Event planners reviewing the setup plan",
+    "attr_7": "Detail shot",
+    "attr_8": "Detail shot",
+    "attr_9": "Detail shot"
+  }
 }

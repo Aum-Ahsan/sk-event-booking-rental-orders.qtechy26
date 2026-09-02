@@ -273,5 +273,8 @@
       "$1,900",
       "/images/flooring-product.png"
     ]
-  ]
+  ],
+  "extracted": {
+    "text_1": "Plan this event →"
+  }
 }

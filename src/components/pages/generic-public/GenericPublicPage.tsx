@@ -19,23 +19,23 @@ export function GenericPublicPage({ type }: { type: string }) {
             <h1>{activeData.title}</h1>
             <p>{activeData.text}</p>
             <div>
-              <a href="/request-quote">Request a quote →</a>
-              <a href="/products">Explore hire products</a>
+              <a href="/request-quote">{pageData.extracted.text_1}</a>
+              <a href="/products">{pageData.extracted.text_2}</a>
             </div>
           </div>
           <figure>
             <img src={activeData.image} alt={activeData.title} />
             <figcaption>
-              <b>Information prepared for real events</b>
-              <span>Clean · Checked · Event-ready</span>
+              <b>{pageData.extracted.text_3}</b>
+              <span>{pageData.extracted.text_4}</span>
             </figcaption>
           </figure>
         </section>
         <section className="about-expect">
           <header>
-            <span>WHAT TO EXPECT</span>
-            <h2>Key principles</h2>
-            <p>Simple standards guide every interaction with SK Event Hire.</p>
+            <span>{pageData.extracted.text_5}</span>
+            <h2>{pageData.extracted.text_6}</h2>
+            <p>{pageData.extracted.text_7}</p>
           </header>
           <div>
             {activeData.items.map((x: [string, string], i: number) => (

@@ -10,33 +10,27 @@ export function PackageDetailSection({ selected }: { selected: any }) {
           {selected.event} · {selected.guests}
         </div>
         <h1>{selected.title}</h1>
-        <p>
-          A curated starting point that stays fully editable. Change
-          quantities, finishes or substitute products before availability
-          and the final price are confirmed.
-        </p>
+        <p>{pageData.ui.packageDetailText}</p>
         <div className="package-price">
           {selected.price}
-          <small>Indicative package price incl. GST</small>
+          <small>{pageData.extracted.text_2}</small>
         </div>
-        <h3>Starting inclusions</h3>
+        <h3>{pageData.extracted.text_3}</h3>
         <p>{selected.items}</p>
         <div className="package-options">
           <label>
-            <span>Guest count</span>
+            <span>{pageData.extracted.text_4}</span>
             <input defaultValue={selected.guests.split(" ")[0]} />
           </label>
           <label>
-            <span>Service</span>
+            <span>{pageData.extracted.text_5}</span>
             <select>
-              <option>Delivery & collection</option>
-              <option>Warehouse pickup & return</option>
+              <option>{pageData.extracted.text_6}</option>
+              <option>{pageData.extracted.text_7}</option>
             </select>
           </label>
         </div>
-        <a className="public-cta" href="/request-quote">
-          Customise this package
-        </a>
+        <a className="public-cta" href="/request-quote">{pageData.ui.customiseText}</a>
       </div>
     </section>
   );
@@ -45,17 +39,12 @@ export function PackageDetailSection({ selected }: { selected: any }) {
 export function PackagesListHeroSection() {
   return (
     <section className="image-hero">
-      <img src="/images/hero-event.png" alt="Curated event hire package" />
+      <img src="/images/hero-event.png" alt={pageData.extracted.attr_10} />
       <div>
-        <div className="eyebrow">Editable hire packages</div>
-        <h1>Start complete. Make it yours.</h1>
-        <p>
-          Choose a guest-ready bundle, then adjust quantities, finishes,
-          logistics and optional extras around your real venue.
-        </p>
-        <a className="public-cta" href="/collections">
-          Browse by event type
-        </a>
+        <div className="eyebrow">{pageData.extracted.text_8}</div>
+        <h1>{pageData.extracted.text_9}</h1>
+        <p>{pageData.ui.browsePackagesText}</p>
+        <a className="public-cta" href="/collections">{pageData.ui.browseByEventText}</a>
       </div>
     </section>
   );
@@ -76,7 +65,7 @@ export function PackagesListGridSection() {
               <p>{p.items}</p>
               <footer>
                 <b>{p.price}</b>
-                <a href={`/package-${p.slug}`}>View & customise →</a>
+                <a href={`/package-${p.slug}`}>{pageData.ui.viewCustomiseText}</a>
               </footer>
             </div>
           </article>

@@ -1,21 +1,20 @@
 ﻿import React from "react";
+import pageData from "../../../../data/pages/product-detail.json";
 
 export function ProductDetailReviewSection() {
   return (
     <section className="review-band" id="reviews">
-      <div className="eyebrow">Verified customer feedback</div>
-      <h2>What customers say</h2>
+      <div className="eyebrow">{pageData.extracted.text_48}</div>
+      <h2>{pageData.extracted.text_49}</h2>
       <div>
         <aside>
-          <b>4.9</b>
+          <b>{pageData.extracted.text_50}</b>
           <span>★★★★★</span>
-          <small>Based on 142 verified hires</small>
+          <small>{pageData.extracted.text_51}</small>
         </aside>
         <blockquote>
-          “The chairs arrived spotless and looked beautiful for our
-          ceremony. Quantities and delivery timing were easy to confirm.”
-          <footer>Verified wedding customer · Carlton North</footer>
-          <a>Read all 142 reviews</a>
+          {pageData.extracted.text_52}<footer>{pageData.extracted.text_53}</footer>
+          <a>{pageData.ui.review.readAll.replace('{count}', '142')}</a>
         </blockquote>
       </div>
     </section>

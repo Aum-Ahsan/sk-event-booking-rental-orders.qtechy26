@@ -8,17 +8,14 @@ export function CheckoutIntroSection() {
   return (
     <section className="checkout-intro">
       <div>
-        <span>SECURE EVENT HIRE CHECKOUT</span>
-        <h1>Complete your booking request</h1>
-        <p>
-          Confirm your dates, venue, delivery and payment preference. We’ll
-          verify stock and logistics before the booking becomes final.
-        </p>
+        <span>{pageData.intro.kicker}</span>
+        <h1>{pageData.intro.title}</h1>
+        <p>{pageData.ui.intro.desc}</p>
       </div>
       <aside>
-        <b>Saved securely</b>
-        <small>Your progress is protected on this device.</small>
-        <a href="/privacy">Read our privacy policy →</a>
+        <b>{pageData.intro.privacyText}</b>
+        <small>{pageData.ui.intro.privacyText}</small>
+        <a href="/privacy">{pageData.ui.intro.privacyLink}</a>
       </aside>
     </section>
   );
@@ -52,14 +49,14 @@ export function CheckoutActionsSection({ step, setStep, otpVerified, nextCheckou
         onClick={() => setStep((x: number) => Math.max(0, x - 1))}
         disabled={step === 0}
       >
-        ← Back
+        {pageData.ui.actions.back}
       </button>
-      <span>Step {step + 1} of 6</span>
+      <span>{pageData.ui.actions.stepOf.replace("{step}", String(step + 1))}</span>
       {step < 5 && (
         <button className="next" type="button" onClick={nextCheckout}>
           {step === 4 && !otpVerified
-            ? "Confirm payment to continue"
-            : "Save & continue →"}
+            ? pageData.ui.actions.confirmPay
+            : pageData.ui.actions.saveContinue}
         </button>
       )}
     </div>
@@ -71,23 +68,23 @@ export function CheckoutBasketCard({ step, basketItems, quantities, setQuantitie
     <section className="checkout-card basket-card" hidden={step !== 0}>
       <header>
         <div>
-          <span>YOUR BASKET</span>
-          <h2>Your event hire basket</h2>
-          <p>Check quantities, options and dates before checkout.</p>
+          <span>{pageData.ui.basketCard.kicker}</span>
+          <h2>{pageData.ui.basketCard.title}</h2>
+          <p>{pageData.ui.basketCard.desc}</p>
         </div>
-        <a href="/products">Continue shopping</a>
+        <a href="/products">{pageData.ui.basketCard.continueShopping}</a>
       </header>
       {basketItems.map((product) => (
         <article className="checkout-item" key={product.slug}>
           <img src={product.image} alt={product.name} />
           <div>
-            <small>● Available</small>
+            <small>{pageData.ui.basketCard.available}</small>
             <h3>{product.name}</h3>
             <p>{product.dimensions}</p>
-            <a href={`/product-${product.slug}`}>View product details</a>
+            <a href={`/product-${product.slug}`}>{pageData.ui.basketCard.viewProduct}</a>
           </div>
           <label>
-            Quantity
+            {pageData.ui.basketCard.quantity}
             <input
               type="number"
               value={quantities[product.slug] || 1}
@@ -105,17 +102,16 @@ export function CheckoutBasketCard({ step, basketItems, quantities, setQuantitie
               (Number(product.price.replace(/[^0-9.]/g, "")) || 0) *
               (quantities[product.slug] || 1)
             ).toFixed(2)}
-            <small>per day · GST at checkout</small>
+            <small>{pageData.ui.basketCard.perDay}</small>
           </strong>
         </article>
       ))}
       <footer>
         <b>!</b>
         <span>
-          <strong>Availability adjusted</strong> One item has limited
-          stock across the selected dates.
+          <strong>{pageData.ui.basketCard.adjustedKicker}</strong> {pageData.ui.basketCard.adjustedDesc}
         </span>
-        <a href="/products">View alternatives</a>
+        <a href="/products">{pageData.ui.basketCard.viewAlternatives}</a>
       </footer>
     </section>
   );
@@ -126,31 +122,24 @@ export function CheckoutScheduleCard({ step }: { step: number }) {
     <section className="checkout-card" hidden={step !== 1}>
       <header>
         <div>
-          <span>EVENT SCHEDULE</span>
-          <h2>Confirm your hire dates</h2>
-          <p>
-            We use these dates to calculate the hire period and
-            availability.
-          </p>
+          <span>{pageData.ui.scheduleCard.kicker}</span>
+          <h2>{pageData.ui.scheduleCard.title}</h2>
+          <p>{pageData.ui.scheduleCard.desc}</p>
         </div>
-        <em>✓ Saved</em>
+        <em>{pageData.ui.scheduleCard.saved}</em>
       </header>
       <div className="checkout-form two">
-        <Field label="Event required from" value="12 Sep 2026 · 11:00 am" />
-        <Field label="Event starts" value="12 Sep 2026 · 4:00 pm" />
-        <Field label="Event ends" value="13 Sep 2026 · 11:00 pm" />
-        <Field label="Items returned by" value="14 Sep 2026 · 12:00 pm" />
+        <Field label={pageData.ui.scheduleCard.labels.from} value="12 Sep 2026 · 11:00 am" />
+        <Field label={pageData.ui.scheduleCard.labels.starts} value="12 Sep 2026 · 4:00 pm" />
+        <Field label={pageData.ui.scheduleCard.labels.ends} value="13 Sep 2026 · 11:00 pm" />
+        <Field label={pageData.ui.scheduleCard.labels.returned} value="14 Sep 2026 · 12:00 pm" />
       </div>
       <label className="checkbox-line">
-        <input type="checkbox" /> My venue can receive items one day
-        early
+        <input type="checkbox" /> {pageData.ui.scheduleCard.earlyCheck}
       </label>
       <div className="days-note">
-        <b>3 chargeable days</b>
-        <span>
-          Saturday 12 September, Sunday 13 September and Monday 14
-          September.
-        </span>
+        <b>{pageData.ui.scheduleCard.chargeableTitle}</b>
+        <span>{pageData.ui.scheduleCard.chargeableDesc}</span>
       </div>
     </section>
   );

@@ -40,22 +40,22 @@
       "intro": "The rules for using the SK Event Hire website, customer account, quotations and online services.",
       "summary": "Use the platform lawfully, keep account access secure and confirm that information you submit is accurate.",
       "sections": [
-        [
-          "Using the platform",
-          "You may browse publicly available content and use account features for genuine event-hire enquiries and bookings. Automated scraping, interference, impersonation and unlawful use are prohibited."
-        ],
-        [
-          "Account responsibility",
-          "Keep verification codes and account access private. Tell us promptly if you believe an account or booking has been accessed without permission."
-        ],
-        [
-          "Website information",
-          "Images, availability, dimensions and guide content help with planning but do not replace the final accepted quotation and product-specific instructions."
-        ],
-        [
-          "Intellectual property",
-          "Site copy, branding, photography and interface elements remain protected. They may not be reproduced commercially without written permission."
-        ]
+        {
+          "title": "Using the platform",
+          "content": "You may browse publicly available content and use account features for genuine event-hire enquiries and bookings. Automated scraping, interference, impersonation and unlawful use are prohibited."
+        },
+        {
+          "title": "Account responsibility",
+          "content": "Keep verification codes and account access private. Tell us promptly if you believe an account or booking has been accessed without permission."
+        },
+        {
+          "title": "Website information",
+          "content": "Images, availability, dimensions and guide content help with planning but do not replace the final accepted quotation and product-specific instructions."
+        },
+        {
+          "title": "Intellectual property",
+          "content": "Site copy, branding, photography and interface elements remain protected. They may not be reproduced commercially without written permission."
+        }
       ]
     },
     "rental": {
@@ -65,22 +65,22 @@
       "intro": "The core conditions for quotations, confirmed bookings, hire periods, safe use and return.",
       "summary": "Products are reserved after confirmation and required payment. Keep every item safe and return it on time in the agreed condition.",
       "sections": [
-        [
-          "Quote and confirmation",
-          "A product is not reserved until availability is checked, the current quotation is accepted and the required payment is received. The accepted quotation records dates, quantities, pricing and special conditions."
-        ],
-        [
-          "Hire period",
-          "The hire starts and ends at the times shown in the booking. An extension is valid only after stock, transport and charges are confirmed in writing."
-        ],
-        [
-          "Care and permitted use",
-          "Use products only for their intended event purpose. Protect them from unsafe weather, theft, fire, misuse, unauthorised movement and prohibited attachments."
-        ],
-        [
-          "Return condition",
-          "Return every product, cover, component and accessory grouped and accessible. Fair wear is allowed; excess cleaning, missing components and avoidable damage are assessed separately."
-        ]
+        {
+          "title": "Quote and confirmation",
+          "content": "A product is not reserved until availability is checked, the current quotation is accepted and the required payment is received. The accepted quotation records dates, quantities, pricing and special conditions."
+        },
+        {
+          "title": "Hire period",
+          "content": "The hire starts and ends at the times shown in the booking. An extension is valid only after stock, transport and charges are confirmed in writing."
+        },
+        {
+          "title": "Care and permitted use",
+          "content": "Use products only for their intended event purpose. Protect them from unsafe weather, theft, fire, misuse, unauthorised movement and prohibited attachments."
+        },
+        {
+          "title": "Return condition",
+          "content": "Return every product, cover, component and accessory grouped and accessible. Fair wear is allowed; excess cleaning, missing components and avoidable damage are assessed separately."
+        }
       ]
     },
     "product": {
@@ -90,22 +90,22 @@
       "intro": "Specific expectations for hired furniture, marquees, tableware, linen, lighting and accessories.",
       "summary": "Check product measurements, intended use and quantities before acceptance. Minor batch and screen-colour variation can occur.",
       "sections": [
-        [
-          "Product selection",
-          "The customer must review measurements, capacity, finish, quantity and venue suitability. Our team can advise, but venue approval and final selection remain part of the confirmed order."
-        ],
-        [
-          "Images and finishes",
-          "Photography is representative. Timber, fabric, metal and batch finishes may vary slightly, and screens do not reproduce colour exactly."
-        ],
-        [
-          "Availability and alternatives",
-          "Online availability is indicative. If an item becomes unavailable, we will communicate a suitable alternative; a material substitution is not made to a confirmed order without approval."
-        ],
-        [
-          "Safety instructions",
-          "Weight, anchoring, weather, electrical and assembly instructions must be followed. Only authorised crew may alter installed structures or powered equipment."
-        ]
+        {
+          "title": "Product selection",
+          "content": "The customer must review measurements, capacity, finish, quantity and venue suitability. Our team can advise, but venue approval and final selection remain part of the confirmed order."
+        },
+        {
+          "title": "Images and finishes",
+          "content": "Photography is representative. Timber, fabric, metal and batch finishes may vary slightly, and screens do not reproduce colour exactly."
+        },
+        {
+          "title": "Availability and alternatives",
+          "content": "Online availability is indicative. If an item becomes unavailable, we will communicate a suitable alternative; a material substitution is not made to a confirmed order without approval."
+        },
+        {
+          "title": "Safety instructions",
+          "content": "Weight, anchoring, weather, electrical and assembly instructions must be followed. Only authorised crew may alter installed structures or powered equipment."
+        }
       ]
     },
     "payment": {
@@ -115,22 +115,22 @@
       "intro": "How quotations, GST, deposits, balances, payment methods and approved refunds are handled.",
       "summary": "The invoice shows what is due and when. A booking is not confirmed until the required payment has cleared.",
       "sections": [
-        [
-          "Prices and GST",
-          "Prices are in Australian dollars and include GST unless the quotation clearly states otherwise. Delivery, labour, late access and sourced items are itemised where applicable."
-        ],
-        [
-          "Deposit and balance",
-          "The deposit confirms the booking once stock is rechecked. The remaining balance must be received by the invoice due date and before dispatch."
-        ],
-        [
-          "Payment security",
-          "PayID, approved bank transfer and approved cash payment may be available. Customers must use the supplied booking reference, and cash is only recorded as paid after an authorised receipt is issued."
-        ],
-        [
-          "Refunds and charge review",
-          "Approved refunds return to the original payment source after cancellation, damage, missing items and non-refundable commitments are finalised."
-        ]
+        {
+          "title": "Prices and GST",
+          "content": "Prices are in Australian dollars and include GST unless the quotation clearly states otherwise. Delivery, labour, late access and sourced items are itemised where applicable."
+        },
+        {
+          "title": "Deposit and balance",
+          "content": "The deposit confirms the booking once stock is rechecked. The remaining balance must be received by the invoice due date and before dispatch."
+        },
+        {
+          "title": "Payment security",
+          "content": "PayID, approved bank transfer and approved cash payment may be available. Customers must use the supplied booking reference, and cash is only recorded as paid after an authorised receipt is issued."
+        },
+        {
+          "title": "Refunds and charge review",
+          "content": "Approved refunds return to the original payment source after cancellation, damage, missing items and non-refundable commitments are finalised."
+        }
       ]
     },
     "cancellation": {
@@ -140,22 +140,22 @@
       "intro": "How date, quantity, venue and order changes are reviewed, including weather-related requests.",
       "summary": "Tell us early. Every change remains a request until stock, crew, suppliers, logistics and price are revalidated.",
       "sections": [
-        [
-          "Order changes",
-          "Quantity, product, time, address and access changes may alter availability, labour, transport and price. The revised quotation controls once accepted."
-        ],
-        [
-          "Cancellation timing",
-          "Charges reflect notice, warehouse preparation, reserved logistics, custom items and non-refundable supplier commitments. Your quotation states the applicable schedule."
-        ],
-        [
-          "Weather and venue decisions",
-          "Weather does not automatically cancel a booking. Contact us early to review relocation, walling, anchoring, flooring, heating or an available date change."
-        ],
-        [
-          "Refund timing",
-          "Any approved balance is calculated after committed charges and normally returned to the original payment source."
-        ]
+        {
+          "title": "Order changes",
+          "content": "Quantity, product, time, address and access changes may alter availability, labour, transport and price. The revised quotation controls once accepted."
+        },
+        {
+          "title": "Cancellation timing",
+          "content": "Charges reflect notice, warehouse preparation, reserved logistics, custom items and non-refundable supplier commitments. Your quotation states the applicable schedule."
+        },
+        {
+          "title": "Weather and venue decisions",
+          "content": "Weather does not automatically cancel a booking. Contact us early to review relocation, walling, anchoring, flooring, heating or an available date change."
+        },
+        {
+          "title": "Refund timing",
+          "content": "Any approved balance is calculated after committed charges and normally returned to the original payment source."
+        }
       ]
     },
     "damage": {
@@ -165,22 +165,22 @@
       "intro": "The assessment process for damaged, excessively soiled, altered, stolen or missing hire products.",
       "summary": "Report incidents promptly and keep evidence. Charges are based on reasonable cleaning, repair or replacement cost.",
       "sections": [
-        [
-          "Security amount or bond",
-          "A refundable security amount may be required based on order value, product type, venue and risk. It is not an insurance policy or automatic limit on responsibility."
-        ],
-        [
-          "Damage reporting",
-          "Stop using unsafe equipment and contact us promptly. Provide photos, timing and circumstances so the item can be isolated and assessed."
-        ],
-        [
-          "Missing products",
-          "Missing items and accessories remain on hire until returned or resolved. Search the venue and contact suppliers immediately; replacement and extended-hire costs may apply."
-        ],
-        [
-          "Evidence and review",
-          "Condition records, photographs, repair quotations and replacement cost may support an assessment. You can request the evidence and a fair review."
-        ]
+        {
+          "title": "Security amount or bond",
+          "content": "A refundable security amount may be required based on order value, product type, venue and risk. It is not an insurance policy or automatic limit on responsibility."
+        },
+        {
+          "title": "Damage reporting",
+          "content": "Stop using unsafe equipment and contact us promptly. Provide photos, timing and circumstances so the item can be isolated and assessed."
+        },
+        {
+          "title": "Missing products",
+          "content": "Missing items and accessories remain on hire until returned or resolved. Search the venue and contact suppliers immediately; replacement and extended-hire costs may apply."
+        },
+        {
+          "title": "Evidence and review",
+          "content": "Condition records, photographs, repair quotations and replacement cost may support an assessment. You can request the evidence and a fair review."
+        }
       ]
     },
     "delivery": {
@@ -190,22 +190,22 @@
       "intro": "Access, timing, crew, setup boundaries, waiting time and return responsibilities.",
       "summary": "Provide accurate access details and an authorised contact. Keep the site safe and products ready at the agreed time.",
       "sections": [
-        [
-          "Access and delivery window",
-          "Confirm parking, gates, stairs, lifts, surfaces, doorway sizes, venue restrictions and an on-site contact. Time windows depend on route and crew planning."
-        ],
-        [
-          "Setup boundaries",
-          "Only setup work listed in the accepted quotation is included. Venue preparation, utilities and supplier coordination remain the customer’s responsibility unless contracted."
-        ],
-        [
-          "Collection",
-          "Keep all items dry, grouped, unobstructed and accessible. Waiting, failed collection or extra crew charges may apply if the agreed collection cannot proceed."
-        ],
-        [
-          "Customer pickup and return",
-          "Approved pickups require an appointment, photo identification, suitable enclosed transport and load restraint. Late returns require written approval."
-        ]
+        {
+          "title": "Access and delivery window",
+          "content": "Confirm parking, gates, stairs, lifts, surfaces, doorway sizes, venue restrictions and an on-site contact. Time windows depend on route and crew planning."
+        },
+        {
+          "title": "Setup boundaries",
+          "content": "Only setup work listed in the accepted quotation is included. Venue preparation, utilities and supplier coordination remain the customer’s responsibility unless contracted."
+        },
+        {
+          "title": "Collection",
+          "content": "Keep all items dry, grouped, unobstructed and accessible. Waiting, failed collection or extra crew charges may apply if the agreed collection cannot proceed."
+        },
+        {
+          "title": "Customer pickup and return",
+          "content": "Approved pickups require an appointment, photo identification, suitable enclosed transport and load restraint. Late returns require written approval."
+        }
       ]
     },
     "privacy": {
@@ -215,22 +215,22 @@
       "intro": "What we collect, why we use it, when it is shared and the choices available to you.",
       "summary": "We use information to quote, deliver, support, prevent fraud and meet legal obligations—not to sell personal information.",
       "sections": [
-        [
-          "Information collected",
-          "We may collect contact, account, event, venue, quotation, payment-reference, delivery, condition, support and website-use information."
-        ],
-        [
-          "Purpose and lawful use",
-          "Information supports enquiries, bookings, logistics, payments, safety, customer care, records, fraud prevention and legally required reporting."
-        ],
-        [
-          "Service providers and disclosure",
-          "Approved payment, hosting, communication, delivery, professional and legal providers receive only the information reasonably needed for their role."
-        ],
-        [
-          "Access, correction and retention",
-          "Request access or correction through customer care. Deletion and export requests are handled where law and required business-record periods allow."
-        ]
+        {
+          "title": "Information collected",
+          "content": "We may collect contact, account, event, venue, quotation, payment-reference, delivery, condition, support and website-use information."
+        },
+        {
+          "title": "Purpose and lawful use",
+          "content": "Information supports enquiries, bookings, logistics, payments, safety, customer care, records, fraud prevention and legally required reporting."
+        },
+        {
+          "title": "Service providers and disclosure",
+          "content": "Approved payment, hosting, communication, delivery, professional and legal providers receive only the information reasonably needed for their role."
+        },
+        {
+          "title": "Access, correction and retention",
+          "content": "Request access or correction through customer care. Deletion and export requests are handled where law and required business-record periods allow."
+        }
       ]
     },
     "cookies": {
@@ -240,22 +240,22 @@
       "intro": "Essential website storage, optional analytics and how to change your preference.",
       "summary": "Essential cookies stay on for security and core functions. Optional analytics remain under your control.",
       "sections": [
-        [
-          "Essential storage",
-          "Session, security, quotation and preference storage supports login, navigation, basket and abuse prevention."
-        ],
-        [
-          "Optional analytics",
-          "When enabled, aggregated usage information helps identify performance and usability problems."
-        ],
-        [
-          "Retention",
-          "Cookie duration depends on purpose, from the current session to a maximum period disclosed by the provider."
-        ],
-        [
-          "Changing your choice",
-          "You can disable optional cookies below. Browser controls may also remove stored data, but blocking essentials can affect account and quotation features."
-        ]
+        {
+          "title": "Essential storage",
+          "content": "Session, security, quotation and preference storage supports login, navigation, basket and abuse prevention."
+        },
+        {
+          "title": "Optional analytics",
+          "content": "When enabled, aggregated usage information helps identify performance and usability problems."
+        },
+        {
+          "title": "Retention",
+          "content": "Cookie duration depends on purpose, from the current session to a maximum period disclosed by the provider."
+        },
+        {
+          "title": "Changing your choice",
+          "content": "You can disable optional cookies below. Browser controls may also remove stored data, but blocking essentials can affect account and quotation features."
+        }
       ]
     },
     "accessibility": {
@@ -265,22 +265,22 @@
       "intro": "Our commitment to understandable content, keyboard access, readable layouts and practical support.",
       "summary": "Tell us if a page, document or process is difficult to use. We will provide reasonable assistance or an alternative format.",
       "sections": [
-        [
-          "Design approach",
-          "We aim for semantic structure, visible focus, sufficient contrast, responsive layouts and text that remains readable when enlarged."
-        ],
-        [
-          "Keyboard and assistive technology",
-          "Core navigation, forms, accordions and account tasks are designed for keyboard and common assistive-technology use."
-        ],
-        [
-          "Alternative formats",
-          "Contact us for a policy, invoice, quotation or instruction in a more accessible format."
-        ],
-        [
-          "Feedback",
-          "Include the page, device and difficulty encountered. Accessibility requests are prioritised by customer care."
-        ]
+        {
+          "title": "Design approach",
+          "content": "We aim for semantic structure, visible focus, sufficient contrast, responsive layouts and text that remains readable when enlarged."
+        },
+        {
+          "title": "Keyboard and assistive technology",
+          "content": "Core navigation, forms, accordions and account tasks are designed for keyboard and common assistive-technology use."
+        },
+        {
+          "title": "Alternative formats",
+          "content": "Contact us for a policy, invoice, quotation or instruction in a more accessible format."
+        },
+        {
+          "title": "Feedback",
+          "content": "Include the page, device and difficulty encountered. Accessibility requests are prioritised by customer care."
+        }
       ]
     }
   },
@@ -289,159 +289,177 @@
       "name": "Rental & booking",
       "icon": "▤",
       "items": [
-        [
-          "When is my hire equipment reserved?",
-          "Products are reserved only after availability is rechecked, the current quotation is accepted and the required deposit is received. A draft quote or enquiry does not reserve stock."
-        ],
-        [
-          "How long is the standard hire period?",
-          "The exact start and return times appear on your quotation. Extensions require written approval because later bookings, warehouse preparation and transport schedules may be affected."
-        ],
-        [
-          "Can I change quantities after booking?",
-          "Yes. Submit the requested item and quantity change before the warehouse cut-off. Every change remains subject to stock, labour, transport and revised-price confirmation."
-        ],
-        [
-          "Is there a minimum hire order?",
-          "Minimum product or service values may apply depending on collection, delivery zone, crew requirements and event date. The quotation shows any minimum clearly."
-        ]
+        {
+          "question": "When is my hire equipment reserved?",
+          "answer": "Products are reserved only after availability is rechecked, the current quotation is accepted and the required deposit is received. A draft quote or enquiry does not reserve stock."
+        },
+        {
+          "question": "How long is the standard hire period?",
+          "answer": "The exact start and return times appear on your quotation. Extensions require written approval because later bookings, warehouse preparation and transport schedules may be affected."
+        },
+        {
+          "question": "Can I change quantities after booking?",
+          "answer": "Yes. Submit the requested item and quantity change before the warehouse cut-off. Every change remains subject to stock, labour, transport and revised-price confirmation."
+        },
+        {
+          "question": "Is there a minimum hire order?",
+          "answer": "Minimum product or service values may apply depending on collection, delivery zone, crew requirements and event date. The quotation shows any minimum clearly."
+        }
       ]
     },
     {
       "name": "Deposits & payments",
       "icon": "$",
       "items": [
-        [
-          "How much deposit is required?",
-          "The required deposit is shown on the quotation and depends on order value, sourced products and services. Paying it confirms the booking only while the quotation remains valid."
-        ],
-        [
-          "When is the remaining balance due?",
-          "The balance due date appears on your invoice and is normally before warehouse dispatch. Late payment can delay preparation or release of equipment."
-        ],
-        [
-          "Which payment methods are accepted?",
-          "We accept PayID, approved bank transfer and approved cash payments. Always use the booking reference supplied by SK Event Hire so the payment can be matched correctly."
-        ],
-        [
-          "Are prices inclusive of GST?",
-          "Website and quotation prices are in Australian dollars and include GST unless a line is clearly marked otherwise."
-        ]
+        {
+          "question": "How much deposit is required?",
+          "answer": "The required deposit is shown on the quotation and depends on order value, sourced products and services. Paying it confirms the booking only while the quotation remains valid."
+        },
+        {
+          "question": "When is the remaining balance due?",
+          "answer": "The balance due date appears on your invoice and is normally before warehouse dispatch. Late payment can delay preparation or release of equipment."
+        },
+        {
+          "question": "Which payment methods are accepted?",
+          "answer": "We accept PayID, approved bank transfer and approved cash payments. Always use the booking reference supplied by SK Event Hire so the payment can be matched correctly."
+        },
+        {
+          "question": "Are prices inclusive of GST?",
+          "answer": "Website and quotation prices are in Australian dollars and include GST unless a line is clearly marked otherwise."
+        }
       ]
     },
     {
       "name": "Damage, loss & missing items",
       "icon": "!",
       "items": [
-        [
-          "What happens if an item is damaged?",
-          "Tell us as soon as possible and stop using anything unsafe. We record the condition, review dispatch and return evidence, and provide an itemised repair, specialist-cleaning or replacement assessment."
-        ],
-        [
-          "What if a product is missing at collection?",
-          "Check the venue, packing area and supplier zones immediately. Missing items are recorded during collection and may be charged at reasonable replacement cost if they are not recovered."
-        ],
-        [
-          "How are damage charges decided?",
-          "Charges are based on evidence, product age, repairability, specialist labour, cleaning and reasonable replacement cost. You may request the supporting evidence and a review."
-        ],
-        [
-          "Is a bond or security amount required?",
-          "Some orders require a refundable bond or security amount based on value, venue, risk and product type. Any amount and release conditions are disclosed before acceptance."
-        ],
-        [
-          "What counts as excessive cleaning?",
-          "Wax, paint, tape residue, food contamination, mud, smoke damage or other treatment beyond normal commercial cleaning may attract an itemised specialist-cleaning charge."
-        ]
+        {
+          "question": "What happens if an item is damaged?",
+          "answer": "Tell us as soon as possible and stop using anything unsafe. We record the condition, review dispatch and return evidence, and provide an itemised repair, specialist-cleaning or replacement assessment."
+        },
+        {
+          "question": "What if a product is missing at collection?",
+          "answer": "Check the venue, packing area and supplier zones immediately. Missing items are recorded during collection and may be charged at reasonable replacement cost if they are not recovered."
+        },
+        {
+          "question": "How are damage charges decided?",
+          "answer": "Charges are based on evidence, product age, repairability, specialist labour, cleaning and reasonable replacement cost. You may request the supporting evidence and a review."
+        },
+        {
+          "question": "Is a bond or security amount required?",
+          "answer": "Some orders require a refundable bond or security amount based on value, venue, risk and product type. Any amount and release conditions are disclosed before acceptance."
+        },
+        {
+          "question": "What counts as excessive cleaning?",
+          "answer": "Wax, paint, tape residue, food contamination, mud, smoke damage or other treatment beyond normal commercial cleaning may attract an itemised specialist-cleaning charge."
+        }
       ]
     },
     {
       "name": "Delivery, setup & returns",
       "icon": "▱",
       "items": [
-        [
-          "What information is needed for delivery?",
-          "Provide the full address, parking or loading area, height restrictions, stairs, lift access, surface conditions, venue contact and required setup completion time."
-        ],
-        [
-          "Is setup included in delivery?",
-          "Only setup work listed in the accepted quotation is included. Product placement, styling, venue work and pack-down outside that scope remain the customer’s responsibility."
-        ],
-        [
-          "Can I collect and return products myself?",
-          "Eligible items may be collected by appointment in a suitable enclosed vehicle. Photo identification, safe restraints and compliance with warehouse instructions are required."
-        ],
-        [
-          "What happens if collection is delayed?",
-          "Keep products secure, dry and accessible. Waiting time, additional crew, failed collection or extended-hire charges may apply when the agreed collection cannot proceed."
-        ]
+        {
+          "question": "What information is needed for delivery?",
+          "answer": "Provide the full address, parking or loading area, height restrictions, stairs, lift access, surface conditions, venue contact and required setup completion time."
+        },
+        {
+          "question": "Is setup included in delivery?",
+          "answer": "Only setup work listed in the accepted quotation is included. Product placement, styling, venue work and pack-down outside that scope remain the customer’s responsibility."
+        },
+        {
+          "question": "Can I collect and return products myself?",
+          "answer": "Eligible items may be collected by appointment in a suitable enclosed vehicle. Photo identification, safe restraints and compliance with warehouse instructions are required."
+        },
+        {
+          "question": "What happens if collection is delayed?",
+          "answer": "Keep products secure, dry and accessible. Waiting time, additional crew, failed collection or extended-hire charges may apply when the agreed collection cannot proceed."
+        }
       ]
     },
     {
       "name": "Products & availability",
       "icon": "◇",
       "items": [
-        [
-          "Are website products guaranteed to be available?",
-          "No. Website availability is indicative until your dates, quantities, venue and logistics are checked and the booking is confirmed."
-        ],
-        [
-          "Can product colours or finishes vary?",
-          "Minor variations can occur between batches, natural materials and screen displays. Material colour or finish requirements should be confirmed on the quotation."
-        ],
-        [
-          "Will you substitute an unavailable product?",
-          "We may recommend a suitable alternative, but nothing is substituted in a confirmed order without communicating the material change and obtaining approval where required."
-        ],
-        [
-          "Can indoor products be used outside?",
-          "Only when explicitly approved and protected from rain, wind, mud, heat and uneven surfaces. Products must be moved to safety when conditions change."
-        ]
+        {
+          "question": "Are website products guaranteed to be available?",
+          "answer": "No. Website availability is indicative until your dates, quantities, venue and logistics are checked and the booking is confirmed."
+        },
+        {
+          "question": "Can product colours or finishes vary?",
+          "answer": "Minor variations can occur between batches, natural materials and screen displays. Material colour or finish requirements should be confirmed on the quotation."
+        },
+        {
+          "question": "Will you substitute an unavailable product?",
+          "answer": "We may recommend a suitable alternative, but nothing is substituted in a confirmed order without communicating the material change and obtaining approval where required."
+        },
+        {
+          "question": "Can indoor products be used outside?",
+          "answer": "Only when explicitly approved and protected from rain, wind, mud, heat and uneven surfaces. Products must be moved to safety when conditions change."
+        }
       ]
     },
     {
       "name": "Changes, weather & cancellation",
       "icon": "↻",
       "items": [
-        [
-          "What happens if bad weather is forecast?",
-          "Contact us early. Weather does not automatically cancel a booking, but we can review relocation, walling, anchoring, flooring, heating or an approved date change."
-        ],
-        [
-          "Can I change the event date?",
-          "A date change is a request until products, crew, delivery and sourced items are rechecked. Price differences and committed supplier costs may apply."
-        ],
-        [
-          "How do cancellation charges work?",
-          "Charges depend on notice, supplier commitments, custom or sourced items, warehouse preparation and reserved logistics. The current cancellation policy and accepted quotation control the assessment."
-        ],
-        [
-          "How are approved refunds paid?",
-          "Approved refunds are normally returned to the original payment source after final charges and non-refundable items are confirmed."
-        ]
+        {
+          "question": "What happens if bad weather is forecast?",
+          "answer": "Contact us early. Weather does not automatically cancel a booking, but we can review relocation, walling, anchoring, flooring, heating or an approved date change."
+        },
+        {
+          "question": "Can I change the event date?",
+          "answer": "A date change is a request until products, crew, delivery and sourced items are rechecked. Price differences and committed supplier costs may apply."
+        },
+        {
+          "question": "How do cancellation charges work?",
+          "answer": "Charges depend on notice, supplier commitments, custom or sourced items, warehouse preparation and reserved logistics. The current cancellation policy and accepted quotation control the assessment."
+        },
+        {
+          "question": "How are approved refunds paid?",
+          "answer": "Approved refunds are normally returned to the original payment source after final charges and non-refundable items are confirmed."
+        }
       ]
     },
     {
       "name": "Account, privacy & support",
       "icon": "♡",
       "items": [
-        [
-          "What information does SK Event Hire keep?",
-          "We retain contact, event, venue, quotation, payment-reference, delivery, condition and support records needed to provide the service and meet legal obligations."
-        ],
-        [
-          "Can I access or correct my information?",
-          "Yes. Contact customer care to request access or correction. Deletion and export requests are handled where applicable law and required record-retention periods allow."
-        ],
-        [
-          "Where can I find invoices and booking documents?",
-          "Sign in to the customer account and open Payments & Documents. The current quotation, invoices, receipts and rental agreement remain connected to the booking."
-        ],
-        [
-          "How quickly will support reply?",
-          "Standard enquiries are normally reviewed within one business day. Event-day safety or delivery concerns should use the phone details supplied with the confirmed booking."
-        ]
+        {
+          "question": "What information does SK Event Hire keep?",
+          "answer": "We retain contact, event, venue, quotation, payment-reference, delivery, condition and support records needed to provide the service and meet legal obligations."
+        },
+        {
+          "question": "Can I access or correct my information?",
+          "answer": "Yes. Contact customer care to request access or correction. Deletion and export requests are handled where applicable law and required record-retention periods allow."
+        },
+        {
+          "question": "Where can I find invoices and booking documents?",
+          "answer": "Sign in to the customer account and open Payments & Documents. The current quotation, invoices, receipts and rental agreement remain connected to the booking."
+        },
+        {
+          "question": "How quickly will support reply?",
+          "answer": "Standard enquiries are normally reviewed within one business day. Event-day safety or delivery concerns should use the phone details supplied with the confirmed booking."
+        }
       ]
+    }
+  ],
+  "completeFaqItems": [
+    {
+      "q": "Where can I read the complete {topic} rules?",
+      "a": "Open Terms & Policies from the footer and select the matching category."
+    },
+    {
+      "q": "What details should I provide about {topic}?",
+      "a": "Include your booking or quotation reference, event date, venue, the affected product or service, and clear supporting details so the team can review the correct record."
+    },
+    {
+      "q": "Who should I contact about {topic}?",
+      "a": "Use the Contact page or customer support form."
+    },
+    {
+      "q": "Will a {topic} request change my confirmed booking automatically?",
+      "a": "No. A request does not alter the confirmed order until availability and adjustments are approved and re-issued by the event team."
     }
   ]
 }

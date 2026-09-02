@@ -223,5 +223,18 @@
       "title": "What happens next?",
       "description": "Verification usually takes one to two business days. You can update photo consent from your account."
     }
+  },
+  "extracted": {
+    "text_1": "✓ Verified booking ·",
+    "text_2": "Products and service used for this event",
+    "text_3": "View hire products →",
+    "text_4": "Helpful?",
+    "text_5": "Yes",
+    "text_6": "Report",
+    "text_7": "Published July 2026",
+    "text_8": "1",
+    "text_9": "2",
+    "text_10": "3",
+    "text_11": "4"
   }
 }

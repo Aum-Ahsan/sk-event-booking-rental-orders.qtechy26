@@ -1,23 +1,21 @@
 ﻿import React from "react";
+import pageData from "../../../../data/pages/home.json";
 
 export function HomeReadyBandSection() {
   return (
     <section className="ready-band">
-      <img src="/images/decor-product.png" alt="Event styling details" />
+      <img src="/images/decor-product.png" alt={pageData.extracted.attr_15} />
       <div className="ready-copy">
-        <div className="eyebrow">Let’s make it easy</div>
-        <h2>Ready to start planning?</h2>
-        <p>
-          Check availability, build a hire list or speak with our Melbourne
-          event team.
-        </p>
+        <div className="eyebrow">{pageData.readyBand.eyebrow}</div>
+        <h2>{pageData.readyBand.title}</h2>
+        <p>{pageData.readyBand.description}</p>
         <div>
-          <a href="/request-quote">Request a quote</a>
-          <a href="/products">Browse hire range</a>
-          <a href="/contact">Talk to the team</a>
+          {pageData.readyBand.links.map(link => (
+            <a key={link.href} href={link.href}>{link.text}</a>
+          ))}
         </div>
       </div>
-      <img src="/images/lighting-product.png" alt="Warm event lighting" />
+      <img src="/images/lighting-product.png" alt={pageData.extracted.attr_16} />
     </section>
   );
 }

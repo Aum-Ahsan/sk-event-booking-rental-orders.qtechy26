@@ -5,12 +5,9 @@ export function ProductDetailSafetySection() {
   return (
     <section className="safety-band" id="safety">
       <div>
-        <div className="eyebrow">Care & responsibility</div>
-        <h2>Use it safely</h2>
-        <p>
-          Simple handling and venue checks help protect guests and
-          equipment.
-        </p>
+        <div className="eyebrow">{pageData.extracted.text_54}</div>
+        <h2>{pageData.extracted.text_55}</h2>
+        <p>{pageData.ui.safety.note}</p>
       </div>
       <ol>
         {pageData.safety.map((x) => (

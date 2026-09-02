@@ -12,7 +12,7 @@ export function CompareHeroSection() {
   );
 }
 
-export function CompareTableSection({ ps, rows }: { ps: HireProduct[], rows: [string, (p: HireProduct) => string][] }) {
+export function CompareTableSection({ ps, rows }: { ps: HireProduct[], rows: { label: string; render: (p: HireProduct) => string }[] }) {
   return (
     <section className="compare-wrap">
       <div className="compare-table">
@@ -28,10 +28,10 @@ export function CompareTableSection({ ps, rows }: { ps: HireProduct[], rows: [st
           ))}
         </div>
         {rows.map((r) => (
-          <div className="compare-row" key={r[0]}>
-            <b>{r[0]}</b>
+          <div className="compare-row" key={r.label}>
+            <b>{r.label}</b>
             {ps.map((p) => (
-              <span key={p.slug}>{r[1](p)}</span>
+              <span key={p.slug}>{r.render(p)}</span>
             ))}
           </div>
         ))}

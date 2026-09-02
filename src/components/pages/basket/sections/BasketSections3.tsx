@@ -6,42 +6,37 @@ export function CheckoutExtrasCard({ step, extras, toggleExtra }: { step: number
     <section className="checkout-card extras-card" hidden={step !== 3}>
       <header>
         <div>
-          <span>OPTIONAL ADD-ONS</span>
-          <h2>Useful extras</h2>
-          <p>
-            Add practical extras now and we’ll confirm final stock and
-            pricing.
-          </p>
+          <span>{pageData.ui.extrasCard.kicker}</span>
+          <h2>{pageData.ui.extrasCard.title}</h2>
+          <p>{pageData.ui.extrasCard.desc}</p>
         </div>
       </header>
       <div>
         {pageData.extras.map((x) => (
           <label
-            className={extras.includes(x[0]) ? "selected" : ""}
-            key={x[0]}
+            className={extras.includes(x.id) ? "selected" : ""}
+            key={x.id}
           >
-            <img src={x[3]} alt="" />
+            <img src={x.image} alt="" />
             <span>
-              <b>{x[1]}</b>
-              <small>{x[2]}</small>
+              <b>{x.title}</b>
+              <small>{x.desc}</small>
             </span>
             <input
               type="checkbox"
-              checked={extras.includes(x[0])}
-              onChange={() => toggleExtra(x[0])}
+              checked={extras.includes(x.id)}
+              onChange={() => toggleExtra(x.id)}
             />
           </label>
         ))}
       </div>
       <div className="promo">
         <span>
-          <b>Have a promo code?</b>
-          <small>
-            Promotions are validated before your total updates.
-          </small>
+          <b>{pageData.ui.extrasCard.promoTitle}</b>
+          <small>{pageData.ui.extrasCard.promoDesc}</small>
         </span>
         <input defaultValue="CELEBRATE20" />
-        <button>Apply</button>
+        <button>{pageData.ui.extrasCard.promoBtn}</button>
       </div>
     </section>
   );
@@ -52,11 +47,9 @@ export function CheckoutPaymentCard({ step, paymentMethod, setPaymentMethod, otp
     <section className="checkout-card payment-card" hidden={step !== 4}>
       <header>
         <div>
-          <span>PAYMENT PREFERENCE</span>
-          <h2>Choose how you’d like to pay</h2>
-          <p>
-            No charge is made until your booking conditions are ready.
-          </p>
+          <span>{pageData.ui.paymentCard.kicker}</span>
+          <h2>{pageData.extracted.text_20}</h2>
+          <p>{pageData.ui.paymentCard.desc}</p>
         </div>
       </header>
       <div className="payment-options">
@@ -77,7 +70,7 @@ export function CheckoutPaymentCard({ step, paymentMethod, setPaymentMethod, otp
       </div>
       <div className="verify-checkout">
         <span>
-          <b>Confirm payment preference</b>
+          <b>{pageData.extracted.text_21}</b>
           <small>
             {paymentMethod === "PayID"
               ? "PayID instructions and a unique payment reference will appear after approval."
@@ -103,45 +96,35 @@ export function CheckoutReviewCard({ step, paymentMethod, setStep }: any) {
     >
       <header>
         <div>
-          <span>FINAL REVIEW</span>
-          <h2>Review your booking request</h2>
-          <p>
-            Check the important details before sending your request.
-          </p>
+          <span>{pageData.extracted.text_22}</span>
+          <h2>{pageData.extracted.text_23}</h2>
+          <p>{pageData.ui.summaryCard.desc}</p>
         </div>
       </header>
       <div className="review-summaries">
         {[
-          [
-            "Event and customer",
-            "Amelia Thompson · Wedding reception · 60 guests",
-          ],
-          ["Delivery and return", "Delivery + setup · SK collection"],
-          ["Payment", `${paymentMethod} · preference confirmed`],
+          { label: "Event and customer", value: "Amelia Thompson · Wedding reception · 60 guests" },
+          { label: "Delivery and return", value: "Delivery + setup · SK collection" },
+          { label: "Payment", value: `${paymentMethod} · preference confirmed` },
         ].map((x) => (
-          <article key={x[0]}>
-            <b>{x[0]}</b>
-            <p>{x[1]}</p>
-            <button>Edit</button>
+          <article key={x.label}>
+            <b>{x.label}</b>
+            <p>{x.value}</p>
+            <button>{pageData.extracted.text_24}</button>
           </article>
         ))}
       </div>
       <label className="checkbox-line">
-        <input type="checkbox" defaultChecked /> I agree to the rental
-        terms, cancellation policy, damage policy and payment
-        conditions.
-      </label>
+        <input type="checkbox" defaultChecked /> {pageData.extracted.text_25}</label>
       <footer>
         <button type="button" onClick={() => setStep(4)}>
-          ← Back to payment
-        </button>
+          {pageData.extracted.text_26}</button>
         <button
           onClick={() => {
             window.location.href = "/booking-request-confirmation";
           }}
         >
-          Send booking request
-        </button>
+          {pageData.extracted.text_27}</button>
       </footer>
     </section>
   );
@@ -150,35 +133,34 @@ export function CheckoutReviewCard({ step, paymentMethod, setStep }: any) {
 export function BookingEstimateSidebar({ threeDayHire, gst, estimatedTotal, setStep }: any) {
   return (
     <aside className="booking-estimate">
-      <span>BOOKING ESTIMATE</span>
-      <h2>Your booking estimate</h2>
-      <b>Wedding reception</b>
-      <small>12–14 September 2026 · Melbourne VIC</small>
+      <span>{pageData.extracted.text_28}</span>
+      <h2>{pageData.extracted.text_29}</h2>
+      <b>{pageData.extracted.text_30}</b>
+      <small>{pageData.extracted.text_31}</small>
       {[
-        ["Three-day product hire", `$${threeDayHire.toFixed(2)}`],
-        ["GST", `$${gst.toFixed(2)}`],
-        ["Delivery and setup", "$240.00"],
-        ["Return collection", "$85.00"],
-        ["Damage protection", "$49.00"],
+        { label: "Three-day product hire", value: `$${threeDayHire.toFixed(2)}` },
+        { label: "GST", value: `$${gst.toFixed(2)}` },
+        { label: "Delivery and setup", value: "$240.00" },
+        { label: "Return collection", value: "$85.00" },
+        { label: "Damage protection", value: "$49.00" },
       ].map((x) => (
-        <div key={x[0]}>
-          <span>{x[0]}</span>
-          <b>{x[1]}</b>
+        <div key={x.label}>
+          <span>{x.label}</span>
+          <b>{x.value}</b>
         </div>
       ))}
       <strong>
-        <small>Estimated total</small>${estimatedTotal.toFixed(2)}
+        <small>{pageData.extracted.text_32}</small>${estimatedTotal.toFixed(2)}
       </strong>
-      <p>Final total is confirmed after stock and logistics review.</p>
+      <p>{pageData.extracted.text_33}</p>
       <button
         onClick={() => {
           setStep(5);
           window.scrollTo({ top: 150, behavior: "smooth" });
         }}
       >
-        Continue to review
-      </button>
-      <small>Secure checkout · Details protected</small>
+        {pageData.extracted.text_34}</button>
+      <small>{pageData.extracted.text_35}</small>
     </aside>
   );
 }
@@ -187,15 +169,13 @@ export function CheckoutHelpSection() {
   return (
     <section className="checkout-help">
       <div>
-        <span>PLANNING SUPPORT</span>
-        <h2>Need help before your event?</h2>
+        <span>{pageData.extracted.text_36}</span>
+        <h2>{pageData.extracted.text_37}</h2>
         <p>
-          Talk to our event team about quantities, venue access, setup or
-          schedule changes.
-        </p>
+          {pageData.extracted.text_38}</p>
       </div>
-      <a href="tel:0390000000">Call 03 9000 0000</a>
-      <a href="/contact">Message our team</a>
+      <a href="tel:0390000000">{pageData.extracted.text_39}</a>
+      <a href="/contact">{pageData.extracted.text_40}</a>
     </section>
   );
 }

@@ -1,5 +1,6 @@
-﻿import React from "react";
+import React from "react";
 import categories from "../../../../data/commerce/categories.json";
+import pageData from "../../../../data/pages/home.json";
 
 export function HomeCategoryRailSection() {
   const startCards = categories.slice(0, 8);
@@ -7,18 +8,18 @@ export function HomeCategoryRailSection() {
     <section className="home-section warm">
       <div className="home-heading">
         <div>
-          <div className="eyebrow">Browse the range</div>
-          <h2>Start with what you need</h2>
-          <p>Explore our most popular hire categories for events of every size.</p>
+          <div className="eyebrow">{pageData.categoryRail.eyebrow}</div>
+          <h2>{pageData.categoryRail.title}</h2>
+          <p>{pageData.categoryRail.description}</p>
         </div>
-        <a href="/products">View all products →</a>
+        <a href="/products">{pageData.categoryRail.ctaText}</a>
       </div>
       <div className="category-photo-grid">
         {startCards.map((x) => (
-          <a href="/products" key={x[0]}>
-            <img src={x[2]} alt={x[0]} />
+          <a href="/products" key={x.name}>
+            <img src={x.image} alt={x.name} />
             <span>
-              {x[0]} <b>→</b>
+              {x.name} <b>→</b>
             </span>
           </a>
         ))}

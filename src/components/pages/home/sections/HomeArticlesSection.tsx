@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import pageData from "../../../../data/pages/home.json";
 
 export function HomeArticlesSection() {
@@ -6,18 +6,18 @@ export function HomeArticlesSection() {
     <section className="home-section articles">
       <div className="home-heading">
         <div>
-          <div className="eyebrow">Planning tips & inspiration</div>
-          <h2>Helpful ideas for a smoother event</h2>
+          <div className="eyebrow">{pageData.articlesGrid.eyebrow}</div>
+          <h2>{pageData.articlesGrid.title}</h2>
         </div>
-        <a href="/blog">Visit the planning guide →</a>
+        <a href="/blog">{pageData.articlesGrid.ctaText}</a>
       </div>
       <div>
         {pageData.articles.map((x) => (
-          <article key={x[0]}>
-            <img src={x[1]} alt={x[0]} />
-            <small>PLANNING GUIDE</small>
-            <h3>{x[0]}</h3>
-            <a href="/blog">Read guide →</a>
+          <article key={x.title}>
+            <img src={x.image} alt={x.title} />
+            <small>{pageData.extracted.text_6}</small>
+            <h3>{x.title}</h3>
+            <a href="/blog">{pageData.extracted.text_7}</a>
           </article>
         ))}
       </div>

@@ -1,23 +1,24 @@
 ﻿import React from "react";
+import pageData from "../../../../data/pages/product-detail.json";
 import type { HireProduct } from "../../../../types/commerce";
 
 export function ProductDetailInfoSection({ p, checked }: { p: HireProduct, checked: boolean }) {
   return (
     <>
       <div className="detail-badges">
-        POPULAR {checked && <span>AVAILABLE FOR YOUR DATES</span>}
+        {pageData.ui.info.badgePopular} {checked && <span>{pageData.ui.info.badgeAvailable}</span>}
       </div>
       <h1>{p.name}</h1>
       <div className="rating">
-        ★★★★★ <span>{p.rating ?? 4.7} ({p.reviews ?? 0} reviews) · Write a review</span>
+        ★★★★★ <span>{p.rating ?? 4.7} {pageData.ui.info.reviewsText.replace('{count}', String(p.reviews ?? 0))}</span>
       </div>
       <p>{p.description}</p>
-      <h3>Product specification</h3>
+      <h3>{pageData.ui.info.specTitle}</h3>
       <div className="product-spec-summary">
-        <span><small>Dimensions</small><b>{p.dimensions}</b></span>
-        <span><small>Capacity</small><b>{p.capacity}</b></span>
-        <span><small>Material / finish</small><b>{p.finish}</b></span>
-        <span><small>Hire minimum</small><b>{p.minimum}</b></span>
+        <span><small>{pageData.ui.info.specLabels.dimensions}</small><b>{p.dimensions}</b></span>
+        <span><small>{pageData.ui.info.specLabels.capacity}</small><b>{p.capacity}</b></span>
+        <span><small>{pageData.ui.info.specLabels.finish}</small><b>{p.finish}</b></span>
+        <span><small>{pageData.ui.info.specLabels.minimum}</small><b>{p.minimum}</b></span>
       </div>
     </>
   );

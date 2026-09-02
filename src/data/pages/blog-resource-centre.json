@@ -1,3 +1,58 @@
 {
-  "featured": []
+  "hero": {
+    "eyebrow": "THE SK EVENT PLANNING GUIDE",
+    "title": "The SK Event Planning Guide",
+    "description": "Explore 48 detailed guides covering planning, furniture, marquees, delivery, lighting, weather, venues and the complete guest experience.",
+    "searchPlaceholder": "Search all 48 planning guides",
+    "searchButton": "Search"
+  },
+  "featured": {
+    "kicker": "FEATURED GUIDE"
+  },
+  "guidesList": {
+    "allTopicsText": "All 48 event guides",
+    "topicPrefix": "",
+    "topicSuffix": ": six practical guides",
+    "viewAllBtn": "View all 48 guides"
+  },
+  "subscribe": {
+    "title": "Never miss a guide",
+    "description": "Get new planning tips, product updates and event inspiration sent to your inbox once a month. No spam.",
+    "placeholder": "Email address",
+    "btnPrimary": "Subscribe",
+    "btnSuccess": "✓ Subscribed"
+  },
+  "extracted": {
+    "text_1": "EVENT PLANNING",
+    "text_2": "How Many Tables and Chairs Do I Need?",
+    "text_3": "A simple guest-count guide for ceremony, seated dining and\r\n              cocktail layouts, with practical space and access checks.",
+    "text_4": "Read this guide →",
+    "text_5": "BROWSE BY TOPIC",
+    "text_6": "Browse planning topics",
+    "text_7": "Each topic contains six complete planning articles.",
+    "text_8": "6 detailed articles",
+    "text_9": "Read guide →",
+    "text_10": "No planning guides match “",
+    "text_11": "Show this category’s six articles",
+    "text_12": "FEATURED LONG-FORM GUIDE",
+    "text_13": "Ready for the complete planning guide?",
+    "text_14": "Open the dedicated article page for layouts, quantities, examples\r\n            and venue checks.",
+    "text_15": "Read complete guide →",
+    "text_16": "PRODUCTS IN THIS GUIDE",
+    "text_17": "Products mentioned in this guide",
+    "text_18": "Browse all products",
+    "text_19": "Check availability",
+    "text_20": "PRACTICAL EVENT SUPPORT",
+    "text_21": "Need advice for your event?",
+    "text_22": "Share your guest count and venue details. We’ll help calculate a\r\n              practical starting list.",
+    "text_23": "Ask a planning specialist",
+    "text_24": "No obligation · Melbourne support",
+    "text_25": "KEEP READING",
+    "text_26": "Keep planning",
+    "text_27": "Read guide →",
+    "text_28": "Helpful ideas, occasionally",
+    "text_29": "Practical planning guides and seasonal event advice.",
+    "attr_30": "Elegant event planning notebook and table setting",
+    "attr_31": "Round tables arranged inside a marquee"
+  }
 }

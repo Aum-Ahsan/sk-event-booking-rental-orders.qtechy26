@@ -36,5 +36,14 @@
       "/images/tableware-product.png",
       "/collections?type=christmas"
     ]
-  ]
+  ],
+  "extracted": {
+    "text_1": "Curated event collections",
+    "text_2": "Explore collections ↓",
+    "text_3": "Explore collection",
+    "text_4": "View collection →",
+    "text_5": "Wedding favourites",
+    "text_6": "Build a coordinated look",
+    "text_7": "View →"
+  }
 }

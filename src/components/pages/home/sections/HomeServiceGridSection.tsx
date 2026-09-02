@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import pageData from "../../../../data/pages/home.json";
 
 export function HomeServiceGridSection() {
@@ -6,21 +6,21 @@ export function HomeServiceGridSection() {
     <section className="home-section warm">
       <div className="home-heading">
         <div>
-          <div className="eyebrow">Services that fit your event</div>
-          <h2>A simpler way to hire</h2>
-          <p>Start with a package or select only the support you need.</p>
+          <div className="eyebrow">{pageData.extracted.text_17}</div>
+          <h2>{pageData.extracted.text_18}</h2>
+          <p>{pageData.extracted.text_19}</p>
         </div>
-        <a href="/planning">View all services →</a>
+        <a href="/planning">{pageData.extracted.text_20}</a>
       </div>
       <div className="service-grid">
         {pageData.services.map((x) => (
-          <article key={x[0]}>
-            <img src={x[3]} alt={x[0]} />
+          <article key={x.name}>
+            <img src={x.image} alt={x.name} />
             <div>
-              <small>EVENT HIRE SERVICE</small>
-              <h3>{x[0]}</h3>
-              <p>{x[1]}</p>
-              <b>{x[2]}</b>
+              <small>{pageData.extracted.text_21}</small>
+              <h3>{x.name}</h3>
+              <p>{x.description}</p>
+              <b>{x.price}</b>
             </div>
           </article>
         ))}

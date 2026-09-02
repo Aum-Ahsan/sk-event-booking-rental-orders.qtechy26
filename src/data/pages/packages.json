@@ -38,29 +38,48 @@
     }
   ],
   "landingPackages": [
-    [
-      "Backyard Party",
-      "A complete casual setup.",
-      "From $450",
-      "/images/decor-product.png"
-    ],
-    [
-      "Celebration Dinner",
-      "Elegant dining for 50.",
-      "From $850",
-      "/images/tableware-product.png"
-    ],
-    [
-      "Outdoor Winter",
-      "Heated and weather-proof.",
-      "From $1,200",
-      "/images/marquee-product.png"
-    ],
-    [
-      "Corporate Presentation",
-      "Professional AV and seating.",
-      "From $900",
-      "/images/flooring-product.png"
-    ]
-  ]
+    {
+      "name": "Backyard Party",
+      "description": "A complete casual setup.",
+      "price": "From $450",
+      "image": "/images/decor-product.png"
+    },
+    {
+      "name": "Celebration Dinner",
+      "description": "Elegant dining for 50.",
+      "price": "From $850",
+      "image": "/images/tableware-product.png"
+    },
+    {
+      "name": "Outdoor Winter",
+      "description": "Heated and weather-proof.",
+      "price": "From $1,200",
+      "image": "/images/marquee-product.png"
+    },
+    {
+      "name": "Corporate Presentation",
+      "description": "Professional AV and seating.",
+      "price": "From $900",
+      "image": "/images/flooring-product.png"
+    }
+  ],
+  "ui": {
+    "packageDetailText": "A curated starting point that stays fully editable. Change quantities, finishes or substitute products before availability and the final price are confirmed.",
+    "customiseText": "Customise this package",
+    "browsePackagesText": "Choose a guest-ready bundle, then adjust quantities, finishes, logistics and optional extras around your real venue.",
+    "browseByEventText": "Browse by event type",
+    "viewCustomiseText": "View & customise →"
+  },
+  "extracted": {
+    "text_1": "Packages",
+    "text_2": "Indicative package price incl. GST",
+    "text_3": "Starting inclusions",
+    "text_4": "Guest count",
+    "text_5": "Service",
+    "text_6": "Delivery & collection",
+    "text_7": "Warehouse pickup & return",
+    "text_8": "Editable hire packages",
+    "text_9": "Start complete. Make it yours.",
+    "attr_10": "Curated event hire package"
+  }
 }

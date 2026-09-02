@@ -3,6 +3,7 @@ import { PublicHeader } from "../../common/PublicHeader";
 import { PublicFooter } from "../../common/PublicFooter";
 import { Field } from "../../landing/shared/FormControls";
 import eventTypes from "../../../data/commerce/eventTypes.json";
+import pageData from "../../../data/pages/contact.json";
 export function ContactPage() {
   const [sent, setSent] = useState(false);
   const [submitError, setSubmitError] = useState("");
@@ -99,104 +100,93 @@ export function ContactPage() {
       <main>
         <section className="contact-main-hero">
           <div>
-            <span>CONTACT & SERVICE AREA</span>
-            <h1>Let’s plan your event</h1>
+            <span>{pageData.extracted.text_1}</span>
+            <h1>{pageData.extracted.text_2}</h1>
             <p>
-              Tell us what you’re planning and we’ll help with products,
-              quantities, timing and logistics.
-            </p>
-            <a href="#contact-form">Send an enquiry →</a>
-            <a href="tel:0390000000">Check your area</a>
-            <small>✓ Friendly Melbourne event hire support</small>
+              {pageData.extracted.text_3}</p>
+            <a href="#contact-form">{pageData.extracted.text_4}</a>
+            <a href="tel:0390000000">{pageData.extracted.text_5}</a>
+            <small>{pageData.extracted.text_6}</small>
           </div>
           <img
             src="/images/tableware-product.png"
-            alt="Event planner speaking with a customer"
+            alt={pageData.extracted.attr_162}
           />
         </section>
         <section className="hours editorial-section">
           <div>
-            <span>OPENING HOURS</span>
-            <h2>Trading and collection hours</h2>
+            <span>{pageData.extracted.text_7}</span>
+            <h2>{pageData.extracted.text_8}</h2>
             <p>
-              Collection and return appointments are confirmed with your
-              booking.
-            </p>
+              {pageData.extracted.text_9}</p>
           </div>
           <dl>
             <div>
-              <dt>Monday–Friday</dt>
-              <dd>9:00am–4:00pm</dd>
+              <dt>{pageData.extracted.text_10}</dt>
+              <dd>{pageData.extracted.text_11}</dd>
             </div>
             <div>
-              <dt>Saturday</dt>
-              <dd>By confirmed appointment</dd>
+              <dt>{pageData.extracted.text_12}</dt>
+              <dd>{pageData.extracted.text_13}</dd>
             </div>
             <div>
-              <dt>Sunday</dt>
-              <dd>Closed unless event support is contracted</dd>
+              <dt>{pageData.extracted.text_14}</dt>
+              <dd>{pageData.extracted.text_15}</dd>
             </div>
             <div>
-              <dt>Public holidays and special events</dt>
-              <dd>Times vary and are confirmed in advance.</dd>
+              <dt>{pageData.extracted.text_16}</dt>
+              <dd>{pageData.extracted.text_17}</dd>
             </div>
           </dl>
         </section>
         <section id="location" className="collection-band">
           <div className="collection-map real-map">
             <iframe
-              title="Keilor Park collection location"
+              title={pageData.extracted.attr_163}
               loading="lazy"
               src="https://www.openstreetmap.org/export/embed.html?bbox=144.78%2C-37.76%2C144.91%2C-37.67&amp;layer=mapnik&amp;marker=-37.724%2C144.849"
             />
-            <i>SK</i>
-            <span>Keilor Park</span>
-            <span>Melbourne CBD</span>
-            <span>Airport</span>
+            <i>{pageData.extracted.text_18}</i>
+            <span>{pageData.extracted.text_19}</span>
+            <span>{pageData.extracted.text_20}</span>
+            <span>{pageData.extracted.text_21}</span>
           </div>
           <div>
-            <span>VISIT US IN MELBOURNE</span>
-            <h2>Find us and plan your collection</h2>
+            <span>{pageData.extracted.text_22}</span>
+            <h2>{pageData.extracted.text_23}</h2>
             <article>
-              <b>SK Event Hire collection point</b>
-              <small>Keilor Park VIC 3042 · Appointment required</small>
+              <b>{pageData.extracted.text_24}</b>
+              <small>{pageData.extracted.text_25}</small>
             </article>
             <div>
               {[
-                ["1", "Confirm collection"],
-                ["2", "Parking and arrival"],
-                ["3", "Loading and vehicle suitability"],
-                ["4", "After-hours support"],
+                { step: "1", text: "Confirm collection" },
+                { step: "2", text: "Parking and arrival" },
+                { step: "3", text: "Loading and vehicle suitability" },
+                { step: "4", text: "After-hours support" },
               ].map((x) => (
-                <b key={x[0]}>
-                  <i>{x[0]}</i>
-                  {x[1]}
+                <b key={x.step}>
+                  <i>{x.step}</i>
+                  {x.text}
                 </b>
               ))}
             </div>
-            <a href="/request-quote">Book a collection →</a>
+            <a href="/request-quote">{pageData.extracted.text_26}</a>
           </div>
         </section>
         <section id="contact-form" className="enquiry-wrap">
           <div className="editorial-section">
             <header>
-              <span>EVENT ENQUIRY</span>
-              <h2>Tell us what you know</h2>
+              <span>{pageData.extracted.text_27}</span>
+              <h2>{pageData.extracted.text_28}</h2>
               <p>
-                Complete one clear step at a time. Required fields are marked
-                with *.
-              </p>
+                {pageData.extracted.text_29}</p>
             </header>
             <nav
               className="enquiry-progress"
               aria-label="Event enquiry progress"
             >
-              {[
-                "Your details",
-                "Event details",
-                "Equipment & support",
-                "Review & send",
-              ].map((label, index) => (
+              {pageData.formSteps.map((label, index) => (
                 <button
                   type="button"
                   disabled={index > formStep + 1}
@@ -265,44 +255,39 @@ export function ContactPage() {
                   data-enquiry-step="0"
                 >
                   <h3>
-                    <i>1</i>Your contact details
-                  </h3>
+                    <i>{pageData.extracted.text_30}</i>{pageData.extracted.text_31}</h3>
                   <div className="form-grid contact-fields">
                     <label>
-                      First name *
-                      <input
+                      {pageData.extracted.text_32}<input
                         name="firstName"
                         required
                         autoComplete="given-name"
                         minLength={2}
                         maxLength={60}
-                        placeholder="First name"
+                        placeholder={pageData.extracted.attr_164}
                       />
                     </label>
                     <label>
-                      Last name *
-                      <input
+                      {pageData.extracted.text_33}<input
                         name="lastName"
                         required
                         autoComplete="family-name"
                         minLength={2}
                         maxLength={60}
-                        placeholder="Last name"
+                        placeholder={pageData.extracted.attr_165}
                       />
                     </label>
                     <label>
-                      Email address *
-                      <input
+                      {pageData.extracted.text_34}<input
                         name="email"
                         type="email"
                         required
                         autoComplete="email"
-                        placeholder="name@example.com"
+                        placeholder={pageData.extracted.attr_166}
                       />
                     </label>
                     <label>
-                      Mobile number *
-                      <input
+                      {pageData.extracted.text_35}<input
                         name="mobile"
                         type="tel"
                         required
@@ -310,7 +295,7 @@ export function ContactPage() {
                         inputMode="numeric"
                         pattern="(?:\\+?61|0)4[0-9]{8}"
                         maxLength={12}
-                        placeholder="0412345678"
+                        placeholder={pageData.extracted.attr_167}
                         onInput={(e) => {
                           e.currentTarget.value = e.currentTarget.value.replace(
                             /[^0-9+]/g,
@@ -319,44 +304,38 @@ export function ContactPage() {
                         }}
                       />
                       <small>
-                        Australian mobile only, for example 0412345678.
-                      </small>
+                        {pageData.extracted.text_36}</small>
                     </label>
                     <label>
-                      Preferred contact *
-                      <select name="preferredContact" required defaultValue="">
+                      {pageData.extracted.text_37}<select name="preferredContact" required defaultValue="">
                         <option value="" disabled>
-                          Select contact method
-                        </option>
-                        <option>Email</option>
-                        <option>Mobile call</option>
-                        <option>SMS</option>
-                        <option>Email and mobile</option>
+                          {pageData.extracted.text_38}</option>
+                        <option>{pageData.extracted.text_39}</option>
+                        <option>{pageData.extracted.text_40}</option>
+                        <option>{pageData.extracted.text_41}</option>
+                        <option>{pageData.extracted.text_42}</option>
                       </select>
                     </label>
                     <label>
-                      Best contact time *
-                      <select name="bestContactTime" required defaultValue="">
+                      {pageData.extracted.text_43}<select name="bestContactTime" required defaultValue="">
                         <option value="" disabled>
-                          Select best time
-                        </option>
-                        <option>Weekday morning (9am–12pm)</option>
-                        <option>Weekday afternoon (12pm–5pm)</option>
-                        <option>Weekday evening (5pm–7pm)</option>
-                        <option>Saturday morning</option>
-                        <option>Any business hours</option>
+                          {pageData.extracted.text_44}</option>
+                        <option>{pageData.extracted.text_45}</option>
+                        <option>{pageData.extracted.text_46}</option>
+                        <option>{pageData.extracted.text_47}</option>
+                        <option>{pageData.extracted.text_48}</option>
+                        <option>{pageData.extracted.text_49}</option>
                       </select>
                     </label>
                     <label>
-                      Delivery postcode *
-                      <input
+                      {pageData.extracted.text_50}<input
                         name="deliveryPostcode"
                         required
                         autoComplete="postal-code"
                         inputMode="numeric"
                         pattern="[0-9]{4}"
                         maxLength={4}
-                        placeholder="3000"
+                        placeholder={pageData.extracted.attr_168}
                         onInput={(e) => {
                           e.currentTarget.value = e.currentTarget.value
                             .replace(/\\D/g, "")
@@ -364,36 +343,30 @@ export function ContactPage() {
                         }}
                       />
                       <small>
-                        Used to confirm the correct Melbourne service area.
-                      </small>
+                        {pageData.extracted.text_51}</small>
                     </label>
                   </div>
                   <footer className="enquiry-step-actions">
-                    <span>Step 1 of 4</span>
+                    <span>{pageData.extracted.text_52}</span>
                     <button type="button" onClick={() => goToFormStep(1)}>
-                      Continue →
-                    </button>
+                      {pageData.extracted.text_53}</button>
                   </footer>
                 </section>
                 <section>
                   <h3>
-                    <i>2</i>About your event
-                  </h3>
+                    <i>{pageData.extracted.text_54}</i>{pageData.extracted.text_55}</h3>
                   <div className="form-grid contact-fields">
                     <label>
-                      Event type *
-                      <select name="eventType" required defaultValue="">
+                      {pageData.extracted.text_56}<select name="eventType" required defaultValue="">
                         <option value="" disabled>
-                          Select event type
-                        </option>
+                          {pageData.extracted.text_57}</option>
                         {eventTypes.map((x) => (
                           <option key={x}>{x}</option>
                         ))}
                       </select>
                     </label>
                     <label>
-                      Event date *
-                      <input
+                      {pageData.extracted.text_58}<input
                         name="eventDate"
                         type="date"
                         required
@@ -401,8 +374,7 @@ export function ContactPage() {
                       />
                     </label>
                     <label>
-                      Start time *
-                      <input
+                      {pageData.extracted.text_59}<input
                         name="startTime"
                         type="time"
                         required
@@ -417,8 +389,7 @@ export function ContactPage() {
                       />
                     </label>
                     <label>
-                      Finish time *
-                      <input
+                      {pageData.extracted.text_60}<input
                         name="finishTime"
                         type="time"
                         required
@@ -427,8 +398,7 @@ export function ContactPage() {
                       />
                     </label>
                     <label>
-                      Estimated guest count *
-                      <input
+                      {pageData.extracted.text_61}<input
                         name="guestCount"
                         type="number"
                         required
@@ -436,58 +406,53 @@ export function ContactPage() {
                         min={1}
                         max={2200}
                         step={1}
-                        placeholder="e.g. 80"
+                        placeholder={pageData.extracted.attr_169}
                       />
                     </label>
                     <label>
-                      Venue name
-                      <input
+                      {pageData.extracted.text_62}<input
                         name="venueName"
                         maxLength={120}
-                        placeholder="Venue or property name"
+                        placeholder={pageData.extracted.attr_170}
                       />
                     </label>
                     <label className="wide-field">
-                      Address line 1 *
-                      <input
+                      {pageData.extracted.text_63}<input
                         name="address1"
                         required
                         autoComplete="address-line1"
                         minLength={3}
                         maxLength={120}
-                        placeholder="Street number and street name"
+                        placeholder={pageData.extracted.attr_171}
                       />
                     </label>
                     <label className="wide-field">
-                      Address line 2
-                      <input
+                      {pageData.extracted.text_64}<input
                         name="address2"
                         autoComplete="address-line2"
                         maxLength={120}
-                        placeholder="Unit, level, building (optional)"
+                        placeholder={pageData.extracted.attr_172}
                       />
                     </label>
                     <label>
-                      Suburb *
-                      <input
+                      {pageData.extracted.text_65}<input
                         name="suburb"
                         required
                         autoComplete="address-level2"
                         minLength={2}
                         maxLength={60}
-                        placeholder="Suburb"
+                        placeholder={pageData.extracted.attr_173}
                       />
                     </label>
                     <label>
-                      Postcode *
-                      <input
+                      {pageData.extracted.text_66}<input
                         name="eventPostcode"
                         required
                         autoComplete="postal-code"
                         inputMode="numeric"
                         pattern="[0-9]{4}"
                         maxLength={4}
-                        placeholder="3000"
+                        placeholder={pageData.extracted.attr_174}
                         onInput={(e) => {
                           e.currentTarget.value = e.currentTarget.value
                             .replace(/\\D/g, "")
@@ -496,58 +461,53 @@ export function ContactPage() {
                       />
                     </label>
                     <label>
-                      State *
-                      <select name="state" required defaultValue="VIC">
-                        <option>ACT</option>
-                        <option>NSW</option>
-                        <option>NT</option>
-                        <option>QLD</option>
-                        <option>SA</option>
-                        <option>TAS</option>
-                        <option>VIC</option>
-                        <option>WA</option>
+                      {pageData.extracted.text_67}<select name="state" required defaultValue="VIC">
+                        <option>{pageData.extracted.text_68}</option>
+                        <option>{pageData.extracted.text_69}</option>
+                        <option>{pageData.extracted.text_70}</option>
+                        <option>{pageData.extracted.text_71}</option>
+                        <option>{pageData.extracted.text_72}</option>
+                        <option>{pageData.extracted.text_73}</option>
+                        <option>{pageData.extracted.text_74}</option>
+                        <option>{pageData.extracted.text_75}</option>
                       </select>
                     </label>
                     <label>
-                      Indoor / outdoor *
-                      <select name="setting" required defaultValue="">
+                      {pageData.extracted.text_76}<select name="setting" required defaultValue="">
                         <option value="" disabled>
-                          Select setting
-                        </option>
-                        <option>Indoor</option>
-                        <option>Outdoor</option>
-                        <option>Indoor and outdoor</option>
-                        <option>Not confirmed</option>
+                          {pageData.extracted.text_77}</option>
+                        <option>{pageData.extracted.text_78}</option>
+                        <option>{pageData.extracted.text_79}</option>
+                        <option>{pageData.extracted.text_80}</option>
+                        <option>{pageData.extracted.text_81}</option>
                       </select>
                     </label>
                     <label>
-                      Estimated budget *
-                      <select
+                      {pageData.extracted.text_82}<select
                         name="budget"
                         required
                         value={budget}
                         onChange={(e) => setBudget(e.target.value)}
                       >
-                        <option>Under $1,000</option>
-                        <option>$1,000–$3,000</option>
-                        <option>$3,000–$5,000</option>
-                        <option>$5,000–$10,000</option>
-                        <option>$10,000–$20,000</option>
-                        <option>$20,000+</option>
-                        <option value="custom">Custom amount</option>
+                        <option>{pageData.extracted.text_83}</option>
+                        <option>{pageData.extracted.text_84}</option>
+                        <option>{pageData.extracted.text_85}</option>
+                        <option>{pageData.extracted.text_86}</option>
+                        <option>{pageData.extracted.text_87}</option>
+                        <option>{pageData.extracted.text_88}</option>
+                        <option value="custom">{pageData.extracted.text_89}</option>
                       </select>
                     </label>
                     {budget === "custom" && (
                       <label>
-                        Custom budget amount *
-                        <input
+                        {pageData.extracted.text_90}<input
                           name="customBudget"
                           type="number"
                           required
                           min={1}
                           step={50}
                           inputMode="decimal"
-                          placeholder="Amount in AUD"
+                          placeholder={pageData.extracted.attr_175}
                         />
                       </label>
                     )}
@@ -555,19 +515,9 @@ export function ContactPage() {
                 </section>
                 <section>
                   <h3>
-                    <i>3</i>Equipment and support
-                  </h3>
+                    <i>{pageData.extracted.text_91}</i>{pageData.extracted.text_92}</h3>
                   <div className="contact-checks">
-                    {[
-                      "Chairs",
-                      "Tables",
-                      "Tableware",
-                      "Marquee",
-                      "Lighting",
-                      "Linen",
-                      "Delivery & setup",
-                      "Event planning advice",
-                    ].map((x, i) => (
+                    {pageData.equipmentOptions.map((x, i) => (
                       <label key={x}>
                         <input
                           name="equipment"
@@ -580,107 +530,92 @@ export function ContactPage() {
                     ))}
                   </div>
                   <label className="contact-textarea">
-                    What are you looking to achieve?
-                    <textarea
+                    {pageData.extracted.text_93}<textarea
                       name="eventGoal"
                       maxLength={1000}
-                      placeholder="Describe the style, experience or practical outcome you want."
+                      placeholder={pageData.extracted.attr_176}
                     />
                   </label>
                   <div className="form-grid contact-fields">
                     <label>
-                      Preferred service *
-                      <select name="preferredService" required defaultValue="">
+                      {pageData.extracted.text_94}<select name="preferredService" required defaultValue="">
                         <option value="" disabled>
-                          Select service
-                        </option>
-                        <option>Delivery only</option>
-                        <option>Delivery and setup</option>
-                        <option>Delivery, setup and collection</option>
-                        <option>Customer collection and return</option>
-                        <option>Not sure—please advise</option>
+                          {pageData.extracted.text_95}</option>
+                        <option>{pageData.extracted.text_96}</option>
+                        <option>{pageData.extracted.text_97}</option>
+                        <option>{pageData.extracted.text_98}</option>
+                        <option>{pageData.extracted.text_99}</option>
+                        <option>{pageData.extracted.text_100}</option>
                       </select>
                     </label>
                     <label>
-                      Planning support *
-                      <select name="planningSupport" required defaultValue="">
+                      {pageData.extracted.text_101}<select name="planningSupport" required defaultValue="">
                         <option value="" disabled>
-                          Select support
-                        </option>
-                        <option>Product advice only</option>
-                        <option>Quantity and layout advice</option>
-                        <option>Styling direction</option>
-                        <option>Venue and logistics planning</option>
-                        <option>Full event planning</option>
-                        <option>No planning support</option>
+                          {pageData.extracted.text_102}</option>
+                        <option>{pageData.extracted.text_103}</option>
+                        <option>{pageData.extracted.text_104}</option>
+                        <option>{pageData.extracted.text_105}</option>
+                        <option>{pageData.extracted.text_106}</option>
+                        <option>{pageData.extracted.text_107}</option>
+                        <option>{pageData.extracted.text_108}</option>
                       </select>
                     </label>
                     <label>
-                      Setup surface *
-                      <select name="setupSurface" required defaultValue="">
+                      {pageData.extracted.text_109}<select name="setupSurface" required defaultValue="">
                         <option value="" disabled>
-                          Select setup surface
-                        </option>
-                        <option>Indoor hard floor</option>
-                        <option>Concrete or paving</option>
-                        <option>Garden lawn</option>
-                        <option>Gravel</option>
-                        <option>Sand</option>
-                        <option>Mixed surfaces</option>
-                        <option>Not confirmed</option>
+                          {pageData.extracted.text_110}</option>
+                        <option>{pageData.extracted.text_111}</option>
+                        <option>{pageData.extracted.text_112}</option>
+                        <option>{pageData.extracted.text_113}</option>
+                        <option>{pageData.extracted.text_114}</option>
+                        <option>{pageData.extracted.text_115}</option>
+                        <option>{pageData.extracted.text_116}</option>
+                        <option>{pageData.extracted.text_117}</option>
                       </select>
                     </label>
                     <label>
-                      Vehicle access *
-                      <select name="vehicleAccess" required defaultValue="">
+                      {pageData.extracted.text_118}<select name="vehicleAccess" required defaultValue="">
                         <option value="" disabled>
-                          Select vehicle access
-                        </option>
-                        <option>Direct loading access</option>
-                        <option>Rear loading available</option>
-                        <option>Street loading only</option>
-                        <option>Restricted height or width</option>
-                        <option>Long carry required</option>
-                        <option>No vehicle access</option>
-                        <option>Not confirmed</option>
+                          {pageData.extracted.text_119}</option>
+                        <option>{pageData.extracted.text_120}</option>
+                        <option>{pageData.extracted.text_121}</option>
+                        <option>{pageData.extracted.text_122}</option>
+                        <option>{pageData.extracted.text_123}</option>
+                        <option>{pageData.extracted.text_124}</option>
+                        <option>{pageData.extracted.text_125}</option>
+                        <option>{pageData.extracted.text_126}</option>
                       </select>
                     </label>
                   </div>
                   <label className="contact-textarea">
-                    Anything else we should know?
-                    <textarea
+                    {pageData.extracted.text_127}<textarea
                       name="notes"
                       maxLength={1500}
-                      placeholder="Add access restrictions, wet-weather plans or special timing requirements."
+                      placeholder={pageData.extracted.attr_177}
                     />
                   </label>
                 </section>
                 <section>
                   <h3>
-                    <i>4</i>Attachments and consent
-                  </h3>
+                    <i>{pageData.extracted.text_128}</i>{pageData.extracted.text_129}</h3>
                   <label className="contact-upload">
-                    Drop files here or choose files
-                    <input type="file" multiple accept="image/*,.pdf" />
+                    {pageData.extracted.text_130}<input type="file" multiple accept="image/*,.pdf" />
                   </label>
                   <label className="consent">
-                    <input name="consent" type="checkbox" required /> I agree to
-                    be contacted about this enquiry and accept the privacy
-                    policy. *
-                  </label>
+                    <input name="consent" type="checkbox" required /> {pageData.extracted.text_131}</label>
                   {submitError && (
                     <p className="form-error" role="alert">
                       {submitError}
                     </p>
                   )}
                   <footer>
-                    <a href="/products">Save and finish later</a>
-                    <button type="submit">Send event enquiry →</button>
+                    <a href="/products">{pageData.extracted.text_132}</a>
+                    <button type="submit">{pageData.extracted.text_133}</button>
                   </footer>
                 </section>
               </form>
               <aside>
-                <span>YOUR ENQUIRY SUMMARY</span>
+                <span>{pageData.extracted.text_134}</span>
                 <h3>{summary.eventType}</h3>
                 <p>
                   {summary.eventDate}
@@ -689,7 +624,7 @@ export function ContactPage() {
                   <br />
                   {summary.setting}
                 </p>
-                <b>Selected support</b>
+                <b>{pageData.extracted.text_135}</b>
                 <small>
                   {summary.support}
                   <br />
@@ -701,22 +636,19 @@ export function ContactPage() {
                     disabled={formStep === 0}
                     onClick={() => goToFormStep(formStep - 1)}
                   >
-                    ← Back
-                  </button>
+                    {pageData.extracted.text_136}</button>
                   {formStep < 3 ? (
                     <button
                       type="button"
                       onClick={() => goToFormStep(formStep + 1)}
                     >
-                      Continue →
-                    </button>
+                      {pageData.extracted.text_137}</button>
                   ) : (
                     <button
                       type="button"
                       onClick={() => formRef.current?.requestSubmit()}
                     >
-                      Send enquiry →
-                    </button>
+                      {pageData.extracted.text_138}</button>
                   )}
                 </div>
               </aside>
@@ -724,63 +656,39 @@ export function ContactPage() {
           </div>
         </section>
         <section className="contact-options editorial-section">
-          <span>CHOOSE HOW TO START</span>
-          <h2>How would you like to get in touch?</h2>
+          <span>{pageData.extracted.text_139}</span>
+          <h2>{pageData.extracted.text_140}</h2>
           <div>
             {[
-              ["CALL US", "Prefer to talk?", "03 9000 0000", "tel:0390000000"],
-              [
-                "EMAIL US",
-                "Send the details",
-                "hello@skeventhire.com.au",
-                "mailto:hello@skeventhire.com.au",
-              ],
-              [
-                "VISIT OR COLLECT",
-                "By appointment",
-                "Keilor Park, Melbourne",
-                "#location",
-              ],
-              [
-                "SERVICE AREA",
-                "Plan your event",
-                "Enter the delivery postcode in step one",
-                "#contact-form",
-              ],
+              { type: "CALL US", title: "Prefer to talk?", detail: "03 9000 0000", link: "tel:0390000000" },
+              { type: "EMAIL US", title: "Send the details", detail: "hello@skeventhire.com.au", link: "mailto:hello@skeventhire.com.au" },
+              { type: "VISIT OR COLLECT", title: "By appointment", detail: "Keilor Park, Melbourne", link: "#location" },
+              { type: "SERVICE AREA", title: "Plan your event", detail: "Enter the delivery postcode in step one", link: "#contact-form" },
             ].map((x, i) => (
-              <article key={x[0]}>
+              <article key={x.type}>
                 <i>{["⌕", "✉", "⌖", "◇"][i]}</i>
-                <span>{x[0]}</span>
-                <h3>{x[1]}</h3>
-                <p>{x[2]}</p>
-                <a href={x[3]}>Start here →</a>
+                <span>{x.type}</span>
+                <h3>{x.title}</h3>
+                <p>{x.detail}</p>
+                <a href={x.link}>{pageData.extracted.text_141}</a>
               </article>
             ))}
           </div>
         </section>
         <section className="contact-faq">
           <header>
-            <span>BEFORE YOU CONTACT US</span>
-            <h2>Frequently asked questions</h2>
+            <span>{pageData.extracted.text_142}</span>
+            <h2>{pageData.extracted.text_143}</h2>
           </header>
           <div>
-            {[
-              "How far in advance should I enquire?",
-              "Can I collect my order?",
-              "Is there a minimum hire?",
-              "How much should I budget?",
-              "What is the service area delivery cost?",
-              "What if my venue is regional?",
-            ].map((q, i) => (
+            {pageData.faqs.map((q, i) => (
               <details key={q} open={i === 0}>
                 <summary>
                   {q}
                   <span>＋</span>
                 </summary>
                 <p>
-                  Contact us as soon as your date is known. Availability,
-                  access, crew and transport are confirmed in your quotation.
-                </p>
+                  {pageData.extracted.text_144}</p>
               </details>
             ))}
           </div>
@@ -789,47 +697,40 @@ export function ContactPage() {
           <section className="enquiry-success">
             <i>✓</i>
             <div>
-              <span>ENQUIRY RECEIVED</span>
-              <h2>Thanks—your event enquiry is on its way.</h2>
+              <span>{pageData.extracted.text_145}</span>
+              <h2>{pageData.extracted.text_146}</h2>
               <p>
-                We’ll review the event details and reply within one business
-                day.
-              </p>
-              <b>ENQ-2608-00133</b>
+                {pageData.extracted.text_147}</p>
+              <b>{pageData.extracted.text_148}</b>
               <div>
                 <small>
-                  EVENT DATE
-                  <br />
-                  <b>14 Nov 2026</b>
+                  {pageData.extracted.text_149}<br />
+                  <b>{pageData.extracted.text_150}</b>
                 </small>
                 <small>
-                  CONTACT METHOD
-                  <br />
-                  <b>Email</b>
+                  {pageData.extracted.text_151}<br />
+                  <b>{pageData.extracted.text_152}</b>
                 </small>
                 <small>
-                  NEXT RESPONSE
-                  <br />
-                  <b>Within one business day</b>
+                  {pageData.extracted.text_153}<br />
+                  <b>{pageData.extracted.text_154}</b>
                 </small>
               </div>
               <button onClick={() => setSent(false)}>
-                Send another enquiry
-              </button>
-              <a href="/">Return home</a>
+                {pageData.extracted.text_155}</button>
+              <a href="/">{pageData.extracted.text_156}</a>
             </div>
           </section>
         )}
         <section className="contact-bottom">
           <div>
-            <span>STILL NOT SURE?</span>
-            <h2>Not sure what you need?</h2>
+            <span>{pageData.extracted.text_157}</span>
+            <h2>{pageData.extracted.text_158}</h2>
             <p>
-              Send a simple message and our team will recommend the next step.
-            </p>
+              {pageData.extracted.text_159}</p>
           </div>
-          <a href="mailto:hello@skeventhire.com.au">Send a simple email</a>
-          <a href="tel:0390000000">Call our team</a>
+          <a href="mailto:hello@skeventhire.com.au">{pageData.extracted.text_160}</a>
+          <a href="tel:0390000000">{pageData.extracted.text_161}</a>
         </section>
       </main>
       <PublicFooter />

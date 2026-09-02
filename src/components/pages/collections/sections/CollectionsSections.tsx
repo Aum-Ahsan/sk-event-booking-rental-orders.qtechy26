@@ -6,14 +6,14 @@ export function CollectionsHeroSection({ type, title }: { type?: string, title: 
   return (
     <section className="collection-image-hero">
       <div>
-        <div className="eyebrow">Curated event collections</div>
+        <div className="eyebrow">{pageData.extracted.text_1}</div>
         <h1>{title}</h1>
         <p>
           {type
             ? "Build a coordinated wedding from ceremony seating to reception dining, lighting and late-night lounge areas."
             : "Browse coordinated products and editable packages selected around the type of event you are planning."}
         </p>
-        <a href="#collection-list">Explore collections ↓</a>
+        <a href="#collection-list">{pageData.extracted.text_2}</a>
       </div>
       <img
         src={type ? "/images/hero-event.png" : "/images/marquee-product.png"}
@@ -31,10 +31,10 @@ export function CollectionsListSection() {
           <a href={c[3]} key={c[0]}>
             <img src={c[2]} alt={c[0]} />
             <span>
-              <small>Explore collection</small>
+              <small>{pageData.extracted.text_3}</small>
               <h2>{c[0]}</h2>
               <p>{c[1]}</p>
-              <b>View collection →</b>
+              <b>{pageData.extracted.text_4}</b>
             </span>
           </a>
         ))}
@@ -48,8 +48,8 @@ export function CollectionsWeddingFavouritesSection() {
     <section className="catalogue-section">
       <div className="section-intro">
         <div>
-          <div className="eyebrow">Wedding favourites</div>
-          <h2>Build a coordinated look</h2>
+          <div className="eyebrow">{pageData.extracted.text_5}</div>
+          <h2>{pageData.extracted.text_6}</h2>
         </div>
       </div>
       <div className="product-list-grid">
@@ -64,7 +64,7 @@ export function CollectionsWeddingFavouritesSection() {
               <p>{p.summary}</p>
               <footer>
                 <b>{p.price}</b>
-                <a href={`/product-${p.slug}`}>View →</a>
+                <a href={`/product-${p.slug}`}>{pageData.extracted.text_7}</a>
               </footer>
             </div>
           </article>

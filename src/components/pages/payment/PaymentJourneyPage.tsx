@@ -1,4 +1,4 @@
-﻿import React, { useState } from "react";
+import React, { useState } from "react";
 import { PublicHeader } from "../../common/PublicHeader";
 import { PublicFooter } from "../../common/PublicFooter";
 import { PaymentSummary } from "./sections/PaymentSummary";
@@ -28,20 +28,16 @@ export function PaymentJourneyPage() {
       <main>
         <section className="payment-intro">
           <div>
-            <span>SECURE BOOKING PAYMENT</span>
-            <h1>Complete your booking payment</h1>
+            <span>{pageData.extracted.text_1}</span>
+            <h1>{pageData.extracted.text_2}</h1>
             <p>
-              Choose a payment method, verify the authorised payer and review
-              the amount before confirming. Your booking is protected against
-              duplicate charges.
-            </p>
+              {pageData.extracted.text_3}</p>
           </div>
           <aside>
-            <b>▣ Secure checkout</b>
+            <b>{pageData.extracted.text_4}</b>
             <small>
-              Payment information is encrypted and never displayed in full.
-            </small>
-            <a href="/payment-policy">Payment help →</a>
+              {pageData.extracted.text_5}</small>
+            <a href="/payment-policy">{pageData.extracted.text_6}</a>
           </aside>
         </section>
         <nav className="payment-steps">
@@ -65,9 +61,8 @@ export function PaymentJourneyPage() {
             disabled={step === 0}
             onClick={() => setStep((x) => Math.max(0, x - 1))}
           >
-            ← Back
-          </button>
-          <span>Step {step + 1} of 5</span>
+            {pageData.extracted.text_7}</button>
+          <span>{pageData.extracted.text_8}{step + 1} {pageData.extracted.text_9}</span>
           {step < 3 && (
             <button
               className="next"
@@ -87,37 +82,34 @@ export function PaymentJourneyPage() {
           <div>
             <section className="pay-card">
               <header>
-                <span>PAYMENT METHOD</span>
-                <em>PCI-secure</em>
-                <h2>How would you like to pay?</h2>
+                <span>{pageData.extracted.text_10}</span>
+                <em>{pageData.extracted.text_11}</em>
+                <h2>{pageData.extracted.text_12}</h2>
                 <p>
-                  Select an available payment option. Instructions and timing
-                  are shown before confirmation.
-                </p>
+                  {pageData.extracted.text_13}</p>
               </header>
               <div className="pay-methods">
-                {pageData.methods.map((m) => (
+                {pageData.methods.map((m: any) => (
                   <button
-                    className={method === m[0] ? "selected" : ""}
-                    onClick={() => setMethod(m[0])}
-                    key={m[0]}
+                    className={method === m.id ? "selected" : ""}
+                    onClick={() => setMethod(m.id)}
+                    key={m.id}
                   >
-                    <i>{m[1]}</i>
-                    <b>{m[2]}</b>
-                    <small>{m[3]}</small>
+                    <i>{m.icon}</i>
+                    <b>{m.title}</b>
+                    <small>{m.description}</small>
                   </button>
                 ))}
               </div>
               <div className="pay-fields">
                 <label className="wide">
-                  Payer name *<input value="Amelia Thompson" readOnly />
+                  {pageData.extracted.text_14}<input value="Amelia Thompson" readOnly />
                 </label>
                 <label className="wide">
-                  Payment reference *<input value="SKB-10482" readOnly />
+                  {pageData.extracted.text_15}<input value="SKB-10482" readOnly />
                 </label>
                 <label className="wide">
-                  Instructions
-                  <input
+                  {pageData.extracted.text_16}<input
                     value={
                       method === "payid"
                         ? "Use the approved SK Event Hire PayID and exact booking reference."
@@ -130,26 +122,21 @@ export function PaymentJourneyPage() {
                 </label>
               </div>
               <label className="pay-consent">
-                <input type="checkbox" defaultChecked /> I am authorised to make
-                this {methodLabel} payment for booking SKB-10482.
-              </label>
+                <input type="checkbox" defaultChecked /> {pageData.extracted.text_17}{methodLabel} {pageData.extracted.text_18}</label>
               <div className="pay-timing">
-                <b>Payment timing</b>
+                <b>{pageData.extracted.text_19}</b>
                 <span>
-                  $880.00 is due for the confirmed products and services. Use
-                  booking reference SKB-10482 with the selected payment method.
-                </span>
+                  {pageData.extracted.text_20}</span>
               </div>
             </section>
             <section className="otp-card">
               <div>
-                <span>IDENTITY VERIFICATION</span>
-                <h2>Verify this payment</h2>
+                <span>{pageData.extracted.text_21}</span>
+                <h2>{pageData.extracted.text_22}</h2>
                 <p>
-                  Confirm that you will use booking reference <b>SKB-10482</b>
-                  so the payment can be matched to the correct order.
-                </p>
-                <a href="/contact">Change mobile number</a>
+                  {pageData.extracted.text_23}<b>{pageData.extracted.text_24}</b>
+                  {pageData.extracted.text_25}</p>
+                <a href="/contact">{pageData.extracted.text_26}</a>
               </div>
               <div>
                 <button onClick={() => setVerified(true)}>
@@ -162,44 +149,27 @@ export function PaymentJourneyPage() {
             </section>
             <section className="pay-card pay-review">
               <header>
-                <span>FINAL PAYMENT REVIEW</span>
-                <a href="/basket">Edit booking</a>
-                <h2>Review before you pay</h2>
+                <span>{pageData.extracted.text_27}</span>
+                <a href="/basket">{pageData.extracted.text_28}</a>
+                <h2>{pageData.extracted.text_29}</h2>
                 <p>
-                  Confirm the booking, payment method and amount. Totals are
-                  recalculated securely when submitted.
-                </p>
+                  {pageData.extracted.text_30}</p>
               </header>
               <div>
                 {[
-                  [
-                    "BOOKING",
-                    "SKB-10482",
-                    "Wedding reception · 12–14 September 2026",
-                  ],
-                  [
-                    "PAYMENT METHOD",
-                    methodLabel,
-                    "Amelia Thompson · Reference SKB-10482",
-                  ],
-                  [
-                    "PAYMENT",
-                    "$880.00 due now",
-                    "Full confirmed invoice · $80.00 GST included",
-                  ],
+                  { label: "BOOKING", value: "SKB-10482", note: "Wedding reception · 12–14 September 2026" },
+                  { label: "PAYMENT METHOD", value: methodLabel, note: "Amelia Thompson · Reference SKB-10482" },
+                  { label: "PAYMENT", value: "$880.00 due now", note: "Full confirmed invoice · $80.00 GST included" },
                 ].map((x) => (
-                  <article key={x[0]}>
-                    <small>{x[0]}</small>
-                    <b>{x[1]}</b>
-                    <p>{x[2]}</p>
+                  <article key={x.label}>
+                    <small>{x.label}</small>
+                    <b>{x.value}</b>
+                    <p>{x.note}</p>
                   </article>
                 ))}
               </div>
               <label>
-                <input type="checkbox" defaultChecked /> I authorise SK Event
-                Hire to record the $880.00 payment and agree to the payment, cancellation,
-                damage/bond and privacy terms.
-              </label>
+                <input type="checkbox" defaultChecked /> {pageData.extracted.text_31}</label>
             </section>
           </div>
           <PaymentSummary method={method} pay={pay} paid={paid} />

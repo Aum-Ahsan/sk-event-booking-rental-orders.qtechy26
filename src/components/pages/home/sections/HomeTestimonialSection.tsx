@@ -9,16 +9,16 @@ export function HomeTestimonialSection() {
     <section className="home-section testimonial">
       <div className="home-heading">
         <div>
-          <div className="eyebrow">Verified event reviews</div>
-          <h2>Trusted for events that matter</h2>
-          <p>Real feedback from customers across Melbourne and Victoria.</p>
+          <div className="eyebrow">{pageData.testimonials.eyebrow}</div>
+          <h2>{pageData.testimonials.title}</h2>
+          <p>{pageData.testimonials.description}</p>
         </div>
       </div>
       <div className="testimonial-layout">
         <aside>
-          <b>4.9</b>
+          <b>{pageData.testimonials.ratingAvg}</b>
           <span>★★★★★</span>
-          <small>Average rating from verified event hires</small>
+          <small>{pageData.testimonials.ratingDesc}</small>
         </aside>
         <div className="review-slider">
           {reviews.map((review, i) => (
@@ -28,7 +28,7 @@ export function HomeTestimonialSection() {
                 <div>
                   <b>{review.name}</b>
                   <small>{review.address}</small>
-                  <em>✓ Verified hire</em>
+                  <em>{pageData.extracted.text_22}</em>
                 </div>
                 <div className="review-rating">
                   <span>★★★★★</span>

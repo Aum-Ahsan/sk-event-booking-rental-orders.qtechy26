@@ -5,14 +5,10 @@ import pageData from "../../../data/pages/faq.json";
 
 function completeFaqItems(group: { name: string; items: readonly (readonly [string, string])[] }) {
   const topic = group.name.toLowerCase();
-  const additional: [string, string][] = [
-    [`Where can I read the complete ${topic} rules?`, `Open Terms & Policies from the footer and select the matching category.`],
-    [`What details should I provide about ${topic}?`, `Include your booking or quotation reference, event date, venue, the affected product or service, and clear supporting details so the team can review the correct record.`],
-    [`Who should I contact about ${topic}?`, `Use the Contact page or customer support form.`],
-    [`Will a ${topic} request change my confirmed booking automatically?`, `No. A request does not alter the confirmed order until availability, pricing, logistics and applicable conditions are reviewed.`],
-    [`How will a decision about ${topic} be recorded?`, `Material decisions are recorded against the quotation, booking, invoice, support request or condition report.`],
-    [`Can I ask for a review of a ${topic} decision?`, `Yes. Reply with the relevant reference and supporting information.`],
-  ];
+  const additional: [string, string][] = pageData.completeFaqItems.map(item => [
+    item.q.replace("{topic}", topic),
+    item.a.replace("{topic}", topic)
+  ]);
   return [...group.items, ...additional.slice(0, Math.max(0, 10 - group.items.length))];
 }
 

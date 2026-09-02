@@ -12,7 +12,7 @@ export function PackagesPage({ detail }: { detail?: string }) {
         <PublicHeader />
         <main>
           <div className="product-crumb">
-            <a href="/packages">Packages</a>
+            <a href="/packages">{pageData.extracted.text_1}</a>
             <span>›</span>
             {selected.title}
           </div>

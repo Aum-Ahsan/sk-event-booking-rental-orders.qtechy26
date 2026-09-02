@@ -66,5 +66,100 @@
       "Stacking",
       "Do not stack more than 8 chairs high"
     ]
-  ]
+  ],
+  "ui": {
+    "booking": {
+      "dateFormatNote": "Enter dates in day / month / year order.",
+      "available": "available"
+    },
+    "overview": {
+      "dimensionsNote": "Important dimensions and practical details for planning your layout.",
+      "accessibilityNote": "Use dimensions to plan table spacing and make sure wheelchair paths and accessible aisle clearance are allowed."
+    },
+    "price": {
+      "addQuote": "Add to quote",
+      "bookProduct": "Book this product"
+    },
+    "related": {
+      "note": "Add compatible items without leaving this product.",
+      "availableNote": "Available · Professional unit prepared",
+      "viewDetails": "View details",
+      "quickAdd": "Quick add"
+    },
+    "review": {
+      "readAll": "Read all {count} reviews"
+    },
+    "safety": {
+      "note": "Simple handling and venue checks help protect guests and equipment."
+    },
+    "info": {
+      "badgePopular": "POPULAR",
+      "badgeAvailable": "AVAILABLE FOR YOUR DATES",
+      "reviewsText": "({count} reviews) · Write a review",
+      "specTitle": "Product specification",
+      "specLabels": {
+        "dimensions": "Dimensions",
+        "capacity": "Capacity",
+        "finish": "Material / finish",
+        "minimum": "Hire minimum"
+      }
+    }
+  },
+  "extracted": {
+    "text_1": "Home",
+    "text_2": "Hire Products",
+    "text_3": "Overview",
+    "text_4": "What’s included",
+    "text_5": "Delivery & setup",
+    "text_6": "Safety",
+    "text_7": "Reviews",
+    "text_8": "When do you need it?",
+    "text_9": "Event / start date",
+    "text_10": "Start time",
+    "text_11": "Return date",
+    "text_12": "Return time",
+    "text_13": "Quantity",
+    "text_14": "155 available",
+    "text_15": "on your selected dates",
+    "text_16": "Delivery & collection",
+    "text_17": "How it gets to your event",
+    "attr_18": "Delivery and event setup",
+    "text_19": "◉ Real product image supplied for this rental item",
+    "text_20": "Your hire includes",
+    "text_21": "Included with your hire",
+    "text_22": "✓ &nbsp;",
+    "attr_23": "Chair finish detail",
+    "text_24": "Product details",
+    "text_25": "At a glance",
+    "text_26": "Check your venue layout",
+    "text_27": "Download dimension guide",
+    "attr_28": "Chair dimensions",
+    "text_29": "Estimated rental total",
+    "text_30": "per day ×",
+    "text_31": "day",
+    "text_32": "Selected product",
+    "text_33": "Hire subtotal",
+    "text_34": "Refundable security bond",
+    "text_35": "GST (10%)",
+    "text_36": "Total payable",
+    "text_37": "Bond is $50 up to $300 hire value, $100 above $300, and $200\n        from $1,000. Final availability and delivery charges are\n        confirmed during booking.",
+    "text_38": "Frequently hired together",
+    "text_39": "Complete your setup",
+    "text_40": "★ 4.9",
+    "text_41": "● &nbsp;",
+    "text_42": "from",
+    "text_43": "Related hire products",
+    "text_44": "You may also like",
+    "text_45": "View the complete catalogue →",
+    "text_46": "★ 4.8",
+    "text_47": "from",
+    "text_48": "Verified customer feedback",
+    "text_49": "What customers say",
+    "text_50": "4.9",
+    "text_51": "Based on 142 verified hires",
+    "text_52": "“The chairs arrived spotless and looked beautiful for our\n          ceremony. Quantities and delivery timing were easy to confirm.”",
+    "text_53": "Verified wedding customer · Carlton North",
+    "text_54": "Care & responsibility",
+    "text_55": "Use it safely"
+  }
 }
