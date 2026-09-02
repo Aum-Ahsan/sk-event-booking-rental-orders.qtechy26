@@ -1,0 +1,227 @@
+{
+  "hero": {
+    "eyebrow": "VERIFIED CUSTOMER REVIEWS",
+    "title": "Real events.<br />Honest experiences.",
+    "description": "Read feedback from customers who hired furniture, marquees, lighting and complete event support from SK Event Hire.",
+    "links": [
+      {
+        "text": "Share your experience",
+        "href": "#review-form"
+      },
+      {
+        "text": "Write a review",
+        "href": "#review-list"
+      }
+    ],
+    "small": "✓ Every published review is linked to a completed hire",
+    "image": "/images/hero-event.png",
+    "imageAlt": "Beautiful marquee wedding reception",
+    "caption": {
+      "stars": "★★★★★ 4.8 out of 5",
+      "small": "Based on verified event hires"
+    }
+  },
+  "summary": {
+    "eyebrow": "AT A GLANCE",
+    "title": "Reviews from real SK Event Hire bookings",
+    "description": "Only customers connected to completed bookings can submit verified event feedback.",
+    "overall": "4.8",
+    "outOf": "out of 5",
+    "stars": "★★★★★",
+    "bars": [
+      [
+        5,
+        78
+      ],
+      [
+        4,
+        16
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "nav": [
+      "Hire experience",
+      "Delivery & setup",
+      "Product quality",
+      "Customer care",
+      "Value"
+    ]
+  },
+  "browser": {
+    "eyebrow": "FIND THE RIGHT FEEDBACK",
+    "title": "Find relevant reviews",
+    "filters": {
+      "event": {
+        "label": "Event type",
+        "options": [
+          "All events",
+          "Wedding",
+          "Corporate",
+          "Birthday"
+        ]
+      },
+      "rating": {
+        "label": "Rating",
+        "options": [
+          {
+            "value": "All ratings",
+            "label": "All ratings"
+          },
+          {
+            "value": "5",
+            "label": "5 stars"
+          },
+          {
+            "value": "4",
+            "label": "4 stars"
+          }
+        ]
+      },
+      "service": {
+        "label": "Service",
+        "options": [
+          "All services",
+          "Delivery & setup",
+          "Product hire"
+        ]
+      },
+      "sort": {
+        "label": "Sort by",
+        "options": [
+          "Most helpful",
+          "Newest",
+          "Highest rated"
+        ]
+      }
+    },
+    "countText": "verified reviews",
+    "clearText": "Clear filters",
+    "empty": {
+      "title": "No reviews match these filters.",
+      "description": "Clear one or more filters to see verified event feedback."
+    }
+  },
+  "filterEmpty": {
+    "icon": "⌕",
+    "eyebrow": "FILTERED RESULT",
+    "title": "No reviews match these filters.",
+    "description": "Try another event type, service or rating.",
+    "linkText": "Clear filters",
+    "linkHref": "#review-list"
+  },
+  "postEvent": {
+    "eyebrow": "YOUR COMPLETED EVENT",
+    "title": "How did your event hire go?",
+    "description": "Your verified booking is ready for feedback. Reviews help future customers plan with confidence.",
+    "reference": "SK-260611-084 · Wedding reception",
+    "linkText": "Share your review →",
+    "linkHref": "#review-form",
+    "image": "/images/tableware-product.png",
+    "imageAlt": "Dining setup from completed event",
+    "aside": {
+      "image": "/images/lighting-product.png",
+      "imageAlt": "Event lighting",
+      "title": "Your hire included",
+      "description": "Chairs · tables · lighting · delivery and setup"
+    }
+  },
+  "form": {
+    "eyebrow": "SHARE YOUR EXPERIENCE",
+    "title": "Tell us about your experience",
+    "description": "Your feedback is connected to your completed booking and reviewed before publication.",
+    "section1": {
+      "title": "Rate your experience",
+      "items": [
+        "Overall rating",
+        "Delivery & setup",
+        "Product quality",
+        "Customer care",
+        "Communication",
+        "Value for money"
+      ]
+    },
+    "section2": {
+      "title": "Share the helpful details",
+      "fields": {
+        "title": {
+          "label": "Review title",
+          "defaultValue": "Beautiful products and a very organised team"
+        },
+        "eventDesc": {
+          "label": "Tell us about your event",
+          "defaultValue": "The products arrived clean and beautifully presented. Delivery and collection were both on time, and the team answered every question clearly."
+        },
+        "standOut": {
+          "label": "What stood out most?",
+          "defaultValue": "The care taken with setup and the quality of the furniture."
+        },
+        "type": {
+          "label": "Event type",
+          "value": "Wedding reception"
+        },
+        "suburb": {
+          "label": "Suburb / venue",
+          "value": "Richmond VIC"
+        }
+      }
+    },
+    "section3": {
+      "title": "Add event photos",
+      "optional": "Optional",
+      "uploadTitle": "Drop photos here",
+      "uploadDesc": "JPG or PNG · up to 10MB each",
+      "uploadButton": "Choose photos",
+      "images": [
+        {
+          "src": "/images/hero-event.png",
+          "alt": "Uploaded event photo"
+        },
+        {
+          "src": "/images/tableware-product.png",
+          "alt": "Uploaded table setting"
+        }
+      ]
+    },
+    "section4": {
+      "title": "Before you submit",
+      "checks": [
+        "I confirm this review reflects my genuine experience.",
+        "SK Event Hire may publish my first name, initial and event photos."
+      ],
+      "privacyNote": "Your address, phone number, email and booking value are never displayed publicly.",
+      "footerNote": "Your review will be checked before publication.",
+      "submitButton": "Submit review →"
+    }
+  },
+  "thanks": {
+    "icon": "✓",
+    "eyebrow": "REVIEW RECEIVED",
+    "title": "Thank you for your feedback.",
+    "description": "Your review is being checked against booking SK-260611-084. We’ll let you know when it is published.",
+    "links": [
+      {
+        "text": "View my reviews",
+        "href": "/reviews-account"
+      },
+      {
+        "text": "See event inspiration",
+        "href": "/gallery"
+      }
+    ],
+    "aside": {
+      "title": "What happens next?",
+      "description": "Verification usually takes one to two business days. You can update photo consent from your account."
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "announcement": {
+    "text": "Melbourne event hire · Friendly local support ",
+    "linkText": "Call 03 9000 0000 · Get help"
+  },
+  "brand": {
+    "href": "/",
+    "ariaLabel": "SK Event Hire home",
+    "logoSrc": "/images/sk-event-hire-website-logo.png",
+    "logoAlt": "SK Event Hire"
+  },
+  "navLinks": [
+    {
+      "text": "Home",
+      "href": "/"
+    },
+    {
+      "text": "Hire Products",
+      "href": "/products"
+    },
+    {
+      "text": "Event Planning",
+      "href": "/planning"
+    },
+    {
+      "text": "Packages",
+      "href": "/packages"
+    },
+    {
+      "text": "Gallery",
+      "href": "/gallery"
+    },
+    {
+      "text": "About",
+      "href": "/about"
+    },
+    {
+      "text": "Blog",
+      "href": "/blog"
+    },
+    {
+      "text": "Contact",
+      "href": "/contact"
+    }
+  ],
+  "mobileExtraLinks": [
+    {
+      "text": "Event collections",
+      "href": "/collections"
+    },
+    {
+      "text": "Our story",
+      "href": "/our-story"
+    },
+    {
+      "text": "Request a quote",
+      "href": "/request-quote"
+    }
+  ]
+}

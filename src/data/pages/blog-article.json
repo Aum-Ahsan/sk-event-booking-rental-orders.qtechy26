@@ -1,0 +1,30 @@
+{
+  "backLink": "← Back to planning guides",
+  "meta": {
+    "author": "By SK Event Hire planning team",
+    "updated": "Updated 31 August 2026"
+  },
+  "sidebar": {
+    "title": "In this guide",
+    "helpLink": "Get planning help"
+  },
+  "intro": [
+    "This guide explains the decisions to make, the information to collect and the checks that help customers, venues and suppliers work from the same practical plan.",
+    "Use the recommendations as a structured starting point, then confirm the final quantities, timing, access and responsibilities in your current SK Event Hire quotation. Product availability and venue conditions remain specific to each event."
+  ],
+  "quote": {
+    "label": "Planning principle",
+    "text": "Confirm the facts that affect safety, access, quantities and timing before approving the visual details."
+  },
+  "sectionFooter": "record this information against the current guest count and venue plan. Share changes promptly so product availability, labour and timing can be reviewed before the final quotation is accepted.",
+  "tip": {
+    "title": "Final checklist before confirmation",
+    "text": "Recheck the event date, guest count, venue contact, access instructions, selected products, quantities, service scope and any weather decision. Keep only the latest approved version with the people responsible for setup."
+  },
+  "cta": "Ask us to review your event plan →",
+  "related": {
+    "kickerPrefix": "MORE IN",
+    "title": "Continue with this topic",
+    "linkText": "Read guide →"
+  }
+}

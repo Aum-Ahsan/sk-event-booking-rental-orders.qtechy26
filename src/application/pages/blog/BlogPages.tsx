@@ -1,4 +1,4 @@
-import type { BlogGuide } from "../../../../app/blogData";
+import type { BlogGuide } from "../../../app/blogData";
 import {
   BlogArticleExperience,
   BlogLandingExperience,

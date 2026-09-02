@@ -1,1 +1,1 @@
-export { GalleryCaseStudiesPage as GalleryExperience } from "../../../components/pages/public-content/sections/PublicContentSections";
+export { GalleryCaseStudiesPage as GalleryExperience } from "../pages/gallery/GalleryCaseStudiesPage";

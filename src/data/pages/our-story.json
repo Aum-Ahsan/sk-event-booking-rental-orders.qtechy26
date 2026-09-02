@@ -1,0 +1,102 @@
+{
+  "hero": {
+    "eyebrow": "OUR STORY",
+    "title": "Two brothers.<br />One shared standard.",
+    "description": "SK Event Hire began with a simple idea: bring the care, reliability and trust of a close family partnership into every event.",
+    "linkText": "What SK means ↓",
+    "linkHref": "#what-sk-means",
+    "image": "/images/our-story-brothers-v47.png",
+    "imageAlt": "Sekar and Kajan preparing an SK Event Hire celebration together"
+  },
+  "meaning": {
+    "eyebrow": "THE NAME BEHIND THE BRAND",
+    "title": "S is Sekar. K is Kajan.",
+    "paragraphs": [
+      "Sekar—also known as Shiva—and Kajan are brothers and the founders behind SK Event Hire. The brand name combines the first letter of each brother’s name: S from Sekar and K from Kajan.",
+      "They created the platform to offer practical, dependable event hire supported by clear communication, prepared products and responsible service."
+    ],
+    "aside": {
+      "sName": "Sekar",
+      "sNote": "Also known as Shiva",
+      "kName": "Kajan",
+      "kNote": "Brother and co-founder"
+    }
+  },
+  "principles": {
+    "eyebrow": "WHAT THE STORY MEANS IN PRACTICE",
+    "title": "A relationship translated into reliable service.",
+    "description": "The story matters because it shapes how the company works—not because it needs to be overstated.",
+    "items": [
+      [
+        "Show up",
+        "Be present, prepared and accountable."
+      ],
+      [
+        "Support each other",
+        "Solve problems as one connected team."
+      ],
+      [
+        "Prepare with care",
+        "Treat every customer’s event as important."
+      ],
+      [
+        "Communicate clearly",
+        "Say what is confirmed and what still needs checking."
+      ]
+    ]
+  },
+  "origin": {
+    "image": "/images/warehouse-team.png",
+    "imageAlt": "SK Event Hire equipment being checked before an event",
+    "eyebrow": "FROM A FAMILY IDEA TO EVENT HIRE",
+    "title": "Built around helping people come together.",
+    "paragraphs": [
+      "Sekar and Kajan created the SK brand together. Event hire was a practical direction because successful functions depend on preparation, teamwork and reliable service.",
+      "Today that principle appears in practical details—clean equipment, clear quotations, careful delivery planning and a team that takes ownership from first enquiry to final collection."
+    ],
+    "quote": "SK is not a slogan. It is a reminder to work with the loyalty, honesty and care expected between brothers."
+  },
+  "timeline": {
+    "eyebrow": "THE SK JOURNEY",
+    "title": "How the idea became a working platform.",
+    "items": [
+      [
+        "01",
+        "The relationship",
+        "Two brothers and close friends supporting one another."
+      ],
+      [
+        "02",
+        "The name",
+        "S comes from Sekar and K comes from Kajan: a clear identity for the business they created together."
+      ],
+      [
+        "03",
+        "The purpose",
+        "Build a dependable event-hire service that helps people gather."
+      ],
+      [
+        "04",
+        "The platform",
+        "Connect products, planning, quotations, checkout and support clearly."
+      ]
+    ]
+  },
+  "final": {
+    "eyebrow": "THE NEXT EVENT",
+    "title": "The story continues through the work.",
+    "description": "Every prepared chair, confirmed delivery window and completed setup is another opportunity to live up to the name.",
+    "links": [
+      {
+        "text": "Explore hire products",
+        "href": "/products"
+      },
+      {
+        "text": "Plan an event",
+        "href": "/request-quote"
+      }
+    ],
+    "image": "/images/hero-event.png",
+    "imageAlt": "Completed event prepared by SK Event Hire"
+  }
+}

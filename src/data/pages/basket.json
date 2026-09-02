@@ -1,0 +1,60 @@
+{
+  "checkoutSteps": [
+    "Your items",
+    "Event schedule",
+    "Customer details",
+    "Fulfilment",
+    "Extras",
+    "Payment",
+    "Review"
+  ],
+  "deliveryChoices": [
+    [
+      "Warehouse pickup",
+      "Collect from our warehouse. Ring before you arrive."
+    ],
+    [
+      "Delivery to venue",
+      "We deliver to the address or suburb you specify."
+    ],
+    [
+      "Express delivery",
+      "Same or next-day delivery to Melbourne metro."
+    ]
+  ],
+  "returnChoices": [
+    [
+      "Warehouse return",
+      "Drop items back to our warehouse after your event."
+    ],
+    [
+      "SK collection",
+      "We collect items from your venue after the event."
+    ]
+  ],
+  "extras": [
+    [
+      "setup",
+      "Setup and pack-down",
+      "Team sets up and packs away on the day.",
+      "/images/warehouse-team.png"
+    ],
+    [
+      "linen",
+      "Table linen package",
+      "White or ivory linen for your hired tables.",
+      "/images/tableware-product.png"
+    ],
+    [
+      "damage",
+      "Damage waiver",
+      "Covers accidental damage during your event.",
+      "/images/decor-product.png"
+    ]
+  ],
+  "paymentOptions": [
+    "PayID",
+    "Bank transfer",
+    "Cash"
+  ]
+}

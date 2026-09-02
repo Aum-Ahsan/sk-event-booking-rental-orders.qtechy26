@@ -7,7 +7,7 @@
  * Copyrights licensed under the New BSD License. See the accompanying LICENSE file for terms.
  */
 import type { ForwardRefExoticComponent, MemoExoticComponent } from 'react'
-import { ForwardRef, Memo, isMemo } from '../utils/react-is'
+import { ForwardRef, Memo, isMemo } from "./react-is"
 
 const REACT_STATICS = {
   childContextTypes: true,

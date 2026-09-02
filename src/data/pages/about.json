@@ -1,0 +1,150 @@
+{
+  "standards": [
+    [
+      "Clean, event-ready equipment",
+      "Every piece is washed, inspected and packed for the event."
+    ],
+    [
+      "Clear communication",
+      "Practical updates from quotation to final collection."
+    ],
+    [
+      "Reliable timing",
+      "Delivery and collection windows planned around your venue."
+    ],
+    [
+      "Transparent quotes",
+      "Itemised products, labour, transport and optional extras."
+    ],
+    [
+      "Respectful service",
+      "Friendly people who care for your venue and occasion."
+    ]
+  ],
+  "hero": {
+    "eyebrow": "ABOUT SK EVENT HIRE",
+    "title": "Events feel easier with the right support.",
+    "description": "SK Event Hire provides quality event equipment and practical planning help for celebrations across Melbourne and Victoria.",
+    "links": [
+      {
+        "text": "Request a quote →",
+        "href": "/request-quote"
+      },
+      {
+        "text": "Read our story",
+        "href": "/our-story"
+      },
+      {
+        "text": "Explore hire products",
+        "href": "/products"
+      }
+    ],
+    "small": "✓ Local Melbourne delivery & collection",
+    "image": "/images/warehouse-team.png",
+    "imageAlt": "SK Event Hire team preparing event furniture",
+    "figcaptionTitle": "Equipment prepared for real events",
+    "figcaptionDesc": "Clean · Checked · Event-ready"
+  },
+  "story": {
+    "images": [
+      {
+        "src": "/images/chairs-product.png",
+        "alt": "Chair quality preparation"
+      },
+      {
+        "src": "/images/hero-event.png",
+        "alt": "Completed outdoor event"
+      }
+    ],
+    "imageText": "FROM WAREHOUSE<br />TO EVENT DAY",
+    "eyebrow": "OUR STORY",
+    "title": "How SK Event Hire began",
+    "paragraphs": [
+      "SK Event Hire was created to make event hire clearer, calmer and more dependable. We combine a carefully maintained product range with practical advice, local knowledge and reliable logistics.",
+      "Our role is simple: help customers choose confidently, prepare every item properly and make delivery, setup and collection easier to understand."
+    ],
+    "quote": {
+      "text": "“Hire should feel organised.”",
+      "author": "Clear advice, honest communication and equipment that arrives ready."
+    }
+  },
+  "expect": {
+    "eyebrow": "OUR SERVICE PROMISE",
+    "title": "What customers can expect",
+    "description": "Simple standards guide every product, quotation and event."
+  },
+  "process": {
+    "eyebrow": "HOW WE HELP",
+    "title": "The way we work",
+    "description": "Clear steps from your first idea to final collection.",
+    "steps": [
+      [
+        "01",
+        "Helpful",
+        "Advice based on venue, guests and event style."
+      ],
+      [
+        "02",
+        "Dependable",
+        "Confirmed timing and practical communication."
+      ],
+      [
+        "03",
+        "Careful",
+        "Quality checks before every dispatch."
+      ],
+      [
+        "04",
+        "Inclusive",
+        "Flexible options for different events and budgets."
+      ],
+      [
+        "05",
+        "Straightforward",
+        "Clear quotes, choices and next steps."
+      ]
+    ]
+  },
+  "prepared": {
+    "eyebrow": "QUALITY & CHECKING",
+    "title": "Prepared for every booking",
+    "image": "/images/chairs-product.png",
+    "imageAlt": "Team preparing chairs",
+    "items": [
+      [
+        "Checked",
+        "Items are checked for quality before leaving the warehouse."
+      ],
+      [
+        "Cleaned",
+        "Furniture is wiped, washed or laundered between events."
+      ],
+      [
+        "Protected",
+        "Transported safely in protective covers and strapping."
+      ],
+      [
+        "Supported",
+        "Delivery teams briefed on your specific venue and timings."
+      ]
+    ]
+  },
+  "cta": {
+    "title": "Ready to plan your event?",
+    "description": "Tell us about your occasion and get a clear, itemised quote.",
+    "links": [
+      {
+        "text": "Request a quote",
+        "href": "/request-quote"
+      },
+      {
+        "text": "Browse products",
+        "href": "/products"
+      },
+      {
+        "text": "Contact team",
+        "href": "/contact"
+      }
+    ]
+  }
+}

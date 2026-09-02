@@ -1,0 +1,144 @@
+{
+  "about": {
+    "title": "Event Hire Details",
+    "brand": {
+      "href": "/",
+      "ariaLabel": "SK Event Hire home",
+      "logoSrc": "/images/sk-event-hire-website-logo.png",
+      "logoAlt": "SK Event Hire"
+    },
+    "description": "Professionally prepared furniture, marquees, tableware, lighting and décor with practical delivery, setup and collection support.",
+    "notice": "Indicative website pricing is in AUD and includes GST unless stated otherwise. Final availability, labour and transport appear in your quotation."
+  },
+  "columns": [
+    {
+      "title": "Discover",
+      "links": [
+        {
+          "text": "Product catalogue",
+          "href": "/products"
+        },
+        {
+          "text": "Compare products",
+          "href": "/compare"
+        },
+        {
+          "text": "Event collections",
+          "href": "/collections"
+        },
+        {
+          "text": "Hire packages",
+          "href": "/packages"
+        },
+        {
+          "text": "Request a quote",
+          "href": "/request-quote"
+        }
+      ]
+    },
+    {
+      "title": "Inspiration",
+      "links": [
+        {
+          "text": "Our story",
+          "href": "/our-story"
+        },
+        {
+          "text": "Planning services",
+          "href": "/planning"
+        },
+        {
+          "text": "Gallery & case studies",
+          "href": "/gallery"
+        },
+        {
+          "text": "Customer reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Planning resources",
+          "href": "/blog"
+        },
+        {
+          "text": "Planning roadmap",
+          "href": "/roadmap"
+        }
+      ]
+    },
+    {
+      "title": "Help",
+      "links": [
+        {
+          "text": "Contact & service areas",
+          "href": "/contact"
+        },
+        {
+          "text": "Help centre",
+          "href": "/help"
+        },
+        {
+          "text": "Complete FAQs",
+          "href": "/faq"
+        },
+        {
+          "text": "Referral program",
+          "href": "/referrals"
+        },
+        {
+          "text": "Terms & policies",
+          "href": "/rental-terms"
+        },
+        {
+          "text": "Privacy",
+          "href": "/privacy"
+        },
+        {
+          "text": "Sitemap",
+          "href": "/sitemap"
+        }
+      ]
+    }
+  ],
+  "social": {
+    "logoSrc": "/images/sk-event-hire-social-logo.png",
+    "logoAlt": "SK Event Hire social media logo",
+    "title": "Follow Us",
+    "ariaLabel": "Social media",
+    "links": [
+      {
+        "text": "◎",
+        "href": "#instagram",
+        "ariaLabel": "Instagram"
+      },
+      {
+        "text": "f",
+        "href": "#facebook",
+        "ariaLabel": "Facebook"
+      },
+      {
+        "text": "p",
+        "href": "#pinterest",
+        "ariaLabel": "Pinterest"
+      },
+      {
+        "text": "▶",
+        "href": "#youtube",
+        "ariaLabel": "YouTube"
+      }
+    ]
+  },
+  "payment": {
+    "title": "Payment Methods",
+    "ariaLabel": "Accepted payment methods",
+    "methods": [
+      "PayID",
+      "Cash",
+      "Bank transfer"
+    ],
+    "notice": "Pay by approved PayID, cash or bank transfer using your booking reference."
+  },
+  "bottom": {
+    "copyright": "© 2026 SK Event Hire. All rights reserved.",
+    "location": "Melbourne, Victoria · Prices shown in AUD"
+  }
+}

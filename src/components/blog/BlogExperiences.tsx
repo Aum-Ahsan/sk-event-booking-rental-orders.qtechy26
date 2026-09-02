@@ -1,4 +1,2 @@
-export {
-  BlogArticlePage as BlogArticleExperience,
-  BlogResourceCentrePage as BlogLandingExperience,
-} from "../../../components/pages/public-content/sections/PublicContentSections";
+export { BlogArticlePage as BlogArticleExperience } from "../pages/blog-article/BlogArticlePage";
+export { BlogResourceCentrePage as BlogLandingExperience } from "../pages/blog-resource-centre/BlogResourceCentrePage";

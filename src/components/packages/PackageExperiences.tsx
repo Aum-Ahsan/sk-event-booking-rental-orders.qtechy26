@@ -1,8 +1,6 @@
-import {
-  CollectionsPage,
-  PackagesPage,
-} from "../../../components/pages/public-commerce/sections/PublicCommerceSections";
-import { PackagesCollectionsLanding } from "../../../components/pages/public-content/sections/PublicContentSections";
+import { CollectionsPage } from "../pages/collections/CollectionsPage";
+import { PackagesPage } from "../pages/packages/PackagesPage";
+import { PackagesCollectionsLanding } from "../pages/packages-collections-landing/PackagesCollectionsLanding";
 
 export function PackagesLandingExperience() {
   return <PackagesCollectionsLanding />;

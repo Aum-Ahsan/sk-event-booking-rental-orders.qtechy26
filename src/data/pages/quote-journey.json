@@ -1,0 +1,195 @@
+{
+  "top": {
+    "eyebrow": "NO PAYMENT REQUIRED",
+    "title": "Request your event hire quote",
+    "description": "Review your products and tell us about your event. We’ll confirm availability, logistics and the final price before anything is booked."
+  },
+  "aside": {
+    "title": "Need help with quantities?",
+    "description": "Our team can check your selection and venue requirements.",
+    "linkText": "Talk to our event hire specialists →",
+    "linkHref": "/contact"
+  },
+  "steps": [
+    "Your items",
+    "Event details",
+    "Your details",
+    "Review"
+  ],
+  "actions": {
+    "back": "← Back",
+    "stepPrefix": "Step",
+    "stepSuffix": "of 4",
+    "saveNext": "Save & continue →",
+    "submit": "Submit quote request →"
+  },
+  "step1": {
+    "eyebrow": "STEP 1",
+    "title": "Your selected items",
+    "addLink": "＋ Add products",
+    "addHref": "/products",
+    "items": [
+      {
+        "name": "White Tiffany Chair",
+        "desc": "100 × white",
+        "price": "$330.00",
+        "image": "/images/chairs-product.png"
+      },
+      {
+        "name": "1.8m Round Banquet Table",
+        "desc": "8 × white top",
+        "price": "$174.00",
+        "image": "/images/tables-product.png"
+      },
+      {
+        "name": "Warm Festoon Lighting",
+        "desc": "3 × 20m runs",
+        "price": "$180.00",
+        "image": "/images/lighting-product.png"
+      }
+    ],
+    "qtyLabel": "Qty"
+  },
+  "step2": {
+    "eyebrow": "STEP 2",
+    "title": "Tell us about the event",
+    "saved": "✓ Saved",
+    "fields": [
+      {
+        "label": "Event type",
+        "value": "Wedding reception"
+      },
+      {
+        "label": "Guest count",
+        "value": "60"
+      },
+      {
+        "label": "Event starts",
+        "value": "12 Sep 2026 · 4:00 pm"
+      },
+      {
+        "label": "Event ends",
+        "value": "14 Sep 2026 · 10:00 am"
+      },
+      {
+        "label": "Venue name",
+        "value": "Willow & Stone Estate"
+      },
+      {
+        "label": "Venue postcode",
+        "value": "3000"
+      },
+      {
+        "label": "Add a venue photo or floor plan",
+        "value": "Optional upload area",
+        "wide": true,
+        "area": true
+      }
+    ]
+  },
+  "step3": {
+    "eyebrow": "STEP 3",
+    "title": "Your details",
+    "fields": [
+      {
+        "label": "First name",
+        "value": "Amelia"
+      },
+      {
+        "label": "Last name",
+        "value": "Thompson"
+      },
+      {
+        "label": "Email",
+        "value": "amelia.t@example.com"
+      },
+      {
+        "label": "Mobile",
+        "value": "0412 345 678"
+      },
+      {
+        "label": "Company / organisation",
+        "value": "Optional"
+      },
+      {
+        "label": "Preferred contact",
+        "value": "Email"
+      }
+    ]
+  },
+  "step4": {
+    "eyebrow": "STEP 4",
+    "title": "Review your quotation request",
+    "blocks": [
+      {
+        "title": "Event details",
+        "rows": [
+          [
+            "Event",
+            "Wedding reception"
+          ],
+          [
+            "Guests",
+            "60"
+          ],
+          [
+            "Dates",
+            "12–14 September 2026"
+          ],
+          [
+            "Venue",
+            "Willow & Stone Estate"
+          ]
+        ]
+      },
+      {
+        "title": "Your details",
+        "rows": [
+          [
+            "Name",
+            "Amelia Thompson"
+          ],
+          [
+            "Email",
+            "amelia.t@example.com"
+          ],
+          [
+            "Mobile",
+            "0412 345 678"
+          ],
+          [
+            "Contact method",
+            "Email"
+          ]
+        ]
+      }
+    ],
+    "selectedItemsTitle": "Selected items",
+    "selectedItems": [
+      "100 × White Tiffany Chairs",
+      "8 × Round Banquet Tables",
+      "3 × Warm Festoon Lighting runs"
+    ],
+    "noticeTitle": "Quotation request only",
+    "noticeText": "No payment will be taken and stock is not reserved until you approve the issued quotation."
+  },
+  "summary": {
+    "eyebrow": "YOUR ESTIMATE",
+    "title": "Quote request summary",
+    "event": "Wedding reception",
+    "date": "12–14 September 2026",
+    "rows": [
+      [
+        "Hire items",
+        "$684.00"
+      ],
+      [
+        "Estimated GST",
+        "$68.40"
+      ]
+    ],
+    "total": "$752.40",
+    "button": "Submit quote request",
+    "footerText": "No payment required · No stock reserved"
+  }
+}

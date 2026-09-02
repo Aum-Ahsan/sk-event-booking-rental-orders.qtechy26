@@ -1,0 +1,277 @@
+{
+  "hero": {
+    "eyebrow": "EVENT PLANNING & CONSULTATION",
+    "title": "Your event,<br />thoughtfully planned.",
+    "description": "From product choices and quantities to delivery, setup and event-day details, our Melbourne team helps turn your ideas into one practical plan.",
+    "links": [
+      {
+        "text": "Contact our planning team",
+        "href": "/contact"
+      },
+      {
+        "text": "Request a quote",
+        "href": "/request-quote"
+      }
+    ],
+    "small": "FROM $120 · CLEAR SCOPE BEFORE YOU COMMIT",
+    "image": "/images/warehouse-team.png",
+    "imageAlt": "Event planner preparing a customer plan"
+  },
+  "support": {
+    "eyebrow": "CHOOSE YOUR SUPPORT",
+    "title": "Choose the support you need",
+    "description": "Start with one area or select a complete plan. We’ll confirm scope and timing before work begins.",
+    "options": [
+      [
+        "Equipment advice",
+        "Products, quantities and practical alternatives."
+      ],
+      [
+        "Styling direction",
+        "A coordinated visual direction for furniture, linen and décor."
+      ],
+      [
+        "Venue & logistics",
+        "Access, delivery, setup, pack-down and weather planning."
+      ],
+      [
+        "On-site coordination",
+        "A clear supplier and event-day handover plan."
+      ],
+      [
+        "Full event plan",
+        "One connected plan from the first conversation to event day."
+      ]
+    ]
+  },
+  "events": {
+    "eyebrow": "EVENTS WE SUPPORT",
+    "title": "Events we can help with",
+    "description": "Every plan is shaped around the venue, guest experience, timing and practical requirements.",
+    "items": [
+      [
+        "Weddings",
+        "Ceremony, dining, lighting and weather-ready reception planning.",
+        "/images/marquee-product.png"
+      ],
+      [
+        "Private celebrations",
+        "Birthdays, anniversaries and intimate milestone events.",
+        "/images/decor-product.png"
+      ],
+      [
+        "Long-table dinners",
+        "Practical layouts, tableware, linen and warm lighting.",
+        "/images/hero-event.png"
+      ],
+      [
+        "Baby showers",
+        "Relaxed seating, shade, tables and coordinated details.",
+        "/images/lounge-product.png"
+      ],
+      [
+        "Backyard events",
+        "Flexible outdoor plans with cover and lighting options.",
+        "/images/lighting-product.png"
+      ],
+      [
+        "Corporate events",
+        "Professional guest flow, staging, furniture and logistics.",
+        "/images/flooring-product.png"
+      ],
+      [
+        "Community events",
+        "Scalable layouts, equipment, access and supplier timing.",
+        "/images/tables-product.png"
+      ],
+      [
+        "Cultural celebrations",
+        "Respectful layouts, dining, staging and guest-flow planning.",
+        "/images/tableware-product.png"
+      ],
+      [
+        "School & university events",
+        "Graduations, presentations, seating and practical site logistics.",
+        "/images/chairs-product.png"
+      ]
+    ]
+  },
+  "teamwork": {
+    "eyebrow": "ONE PRACTICAL TEAM",
+    "title": "One team for the practical details",
+    "description": "Use only the services your event needs. Your planner keeps the products, venue details and timing connected.",
+    "items": [
+      "Product selection & quantities",
+      "Styling and colour direction",
+      "Venue access review",
+      "Delivery and collection plan",
+      "Setup and pack-down timing",
+      "Weather and contingency planning",
+      "Supplier coordination",
+      "Event-day support"
+    ],
+    "linkText": "Discuss your event",
+    "linkHref": "/contact",
+    "images": [
+      {
+        "src": "/images/hero-event.png",
+        "alt": "Warm garden dining setup"
+      },
+      {
+        "src": "/images/warehouse-team.png",
+        "alt": "Delivery team"
+      },
+      {
+        "src": "/images/chairs-product.png",
+        "alt": "Prepared event chairs"
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "A CLEAR, SUPPORTED PROCESS",
+    "title": "A clear plan from first conversation to event day",
+    "items": [
+      [
+        "01",
+        "Share your event"
+      ],
+      [
+        "02",
+        "Review the venue"
+      ],
+      [
+        "03",
+        "Build the plan"
+      ],
+      [
+        "04",
+        "Confirm every detail"
+      ],
+      [
+        "05",
+        "Deliver the event"
+      ]
+    ],
+    "stepDescription": "Clear decisions, responsibilities and next steps at every stage."
+  },
+  "pricing": {
+    "eyebrow": "CLEAR STARTING POINTS",
+    "title": "Planning support that fits your event",
+    "description": "Choose a focused consultation or a tailored planning scope.",
+    "consultation": {
+      "eyebrow": "EVENT CONSULTATION",
+      "price": "$120",
+      "description": "A focused session covering priorities, quantities, layout and next steps.",
+      "items": [
+        "60-minute consultation",
+        "Practical recommendation summary",
+        "Product and service shortlist"
+      ],
+      "linkText": "Book a consultation",
+      "linkHref": "/contact"
+    },
+    "tailored": {
+      "eyebrow": "TAILORED EVENT PLAN",
+      "price": "Tailored quote",
+      "description": "For events needing a connected product, supplier and logistics plan.",
+      "items": [
+        "Venue and access planning",
+        "Product and service recommendations",
+        "Run sheet and supplier coordination"
+      ],
+      "linkText": "Contact the planning team",
+      "linkHref": "/contact"
+    }
+  },
+  "meetTeam": {
+    "eyebrow": "MEET YOUR PLANNING TEAM",
+    "title": "Meet the people behind the plan",
+    "planner": {
+      "image": "/images/warehouse-team.png",
+      "imageAlt": "Event planning consultant",
+      "title": "Your planning consultant",
+      "description": "Brief, layout and styling coordination",
+      "linkText": "Meet the planning team →",
+      "linkHref": "/contact"
+    },
+    "operations": {
+      "image": "/images/hero-event.png",
+      "imageAlt": "Event operations team",
+      "title": "Your event operations team",
+      "description": "Products, delivery, setup and collection",
+      "linkText": "How delivery works →",
+      "linkHref": "/contact"
+    }
+  },
+  "insights": {
+    "eyebrow": "PLANNING INSIGHTS",
+    "title": "See the thinking behind each event",
+    "items": [
+      [
+        "Weather-ready garden reception",
+        "/images/hero-event.png"
+      ],
+      [
+        "Practical venue access plan",
+        "/images/warehouse-team.png"
+      ],
+      [
+        "A coordinated dining layout",
+        "/images/tableware-product.png"
+      ]
+    ],
+    "itemDescription": "See the product, timing and logistics decisions that made the event work.",
+    "linkText": "Read case study →",
+    "linkHref": "/gallery"
+  },
+  "remembered": {
+    "eyebrow": "WHAT CUSTOMERS REMEMBER",
+    "title": "Support customers remember",
+    "quote": "“The plan was calm, clear and practical. Every supplier knew the timing and the setup looked exactly as discussed.”",
+    "author": "Verified Melbourne event customer",
+    "linkText": "Read verified reviews →",
+    "linkHref": "/reviews",
+    "image": "/images/marquee-product.png",
+    "imageAlt": "Completed marquee celebration"
+  },
+  "cta": {
+    "eyebrow": "READY TO PLAN?",
+    "title": "Let’s turn the details into a clear plan.",
+    "links": [
+      {
+        "text": "Contact our planning team",
+        "href": "/contact"
+      },
+      {
+        "text": "Request a quotation",
+        "href": "/request-quote"
+      }
+    ]
+  },
+  "curatedPackages": [
+    [
+      "Backyard Celebration",
+      "40 guests · outdoor",
+      "$420",
+      "/images/chairs-product.png"
+    ],
+    [
+      "Celebration Dinner",
+      "60 guests · dining",
+      "$1,050",
+      "/images/tableware-product.png"
+    ],
+    [
+      "Outdoor Winter Event",
+      "80 guests · covered",
+      "$2,450",
+      "/images/lighting-product.png"
+    ],
+    [
+      "Corporate Presentation",
+      "100 guests · theatre",
+      "$1,900",
+      "/images/flooring-product.png"
+    ]
+  ]
+}

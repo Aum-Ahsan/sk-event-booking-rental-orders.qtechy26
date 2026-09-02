@@ -1,0 +1,60 @@
+{
+  "hero": {
+    "image": "/images/hero-event.png",
+    "imageAlt": "SK Event Hire product catalogue",
+    "crumbHome": "Home",
+    "crumbCurrent": "Hire Products",
+    "eyebrow": "Melbourne event hire",
+    "title": "Professional event hire, delivered.",
+    "description": "Browse our full range of chairs, tables, marquees, lighting and tableware. Filter by event type, date and guest count to find exactly what you need."
+  },
+  "rail": {
+    "eyebrow": "Browse by category",
+    "title": "What are you looking for?",
+    "viewAll": "View all"
+  },
+  "planner": {
+    "title": "Check availability for your event",
+    "description": "Enter your event details to filter products available for your dates and postcode.",
+    "buttonText": "Check availability",
+    "incompleteMsg": "Please complete your event date, return date and postcode to check availability.",
+    "defaultAvailabilityMsg": "Enter your event details above to check real-time availability.",
+    "buttonCta": "Start planning",
+    "href": "/request-quote"
+  },
+  "workspace": {
+    "refineEyebrow": "Filter products",
+    "refineTitle": "Refine results",
+    "clearAll": "Clear all",
+    "availabilityLegend": "Availability",
+    "availableForDates": "Available for selected dates",
+    "showAlternatives": "Show alternatives",
+    "categoryLegend": "Category",
+    "allProducts": "All products",
+    "eventLegend": "Event type",
+    "allEvents": "All event types",
+    "priceLegend": "Max daily price",
+    "clearFilters": "Clear filters",
+    "emptyTitle": "No products match your filters",
+    "emptyDesc": "Try adjusting your category, event type or price range to see more results."
+  },
+  "advice": {
+    "image": "/images/warehouse-team.png",
+    "imageAlt": "SK Event Hire planning team",
+    "eyebrow": "Need help choosing?",
+    "title": "Talk to our event team",
+    "description": "Not sure which products are right for your event? Our team can recommend the best combination for your venue, guest count and budget.",
+    "links": ["Get a free quote →", "Call 03 9000 0000 →"]
+  },
+  "cta": {
+    "small": "Ready to hire?",
+    "title": "Tell us what your event needs.",
+    "description": "Get a clear, no-obligation quote covering products, logistics, setup and GST.",
+    "button1": { "text": "Request a quote", "href": "/request-quote" },
+    "button2": { "text": "Browse packages", "href": "/packages" }
+  },
+  "search": {
+    "placeholder": "Search chairs, tables, marquees…",
+    "buttonText": "Search"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "showcaseCards": [
+    {
+      "title": "Garden wedding under warm lights",
+      "meta": "Wedding · Richmond",
+      "image": "/images/hero-event.png",
+      "tags": [
+        "Wedding",
+        "Outdoor",
+        "Warm lighting"
+      ],
+      "details": "An 80-guest garden reception with timber dining, weather cover, festoon lighting and full setup support.",
+      "slug": "garden-wedding-warm-lights"
+    },
+    {
+      "title": "Rustic table styling",
+      "meta": "Wedding · Yarra Valley",
+      "image": "/images/tableware-product.png",
+      "tags": [
+        "Wedding",
+        "Indoor",
+        "Rustic"
+      ],
+      "details": "A vineyard reception combining long timber tables, neutral tableware and natural centrepiece styling.",
+      "slug": "rustic-table-styling"
+    },
+    {
+      "title": "Corporate presentation setup",
+      "meta": "Corporate · Docklands",
+      "image": "/images/flooring-product.png",
+      "tags": [
+        "Corporate",
+        "Indoor",
+        "Modern"
+      ],
+      "details": "A polished presentation and networking layout with staging, audience seating and clear circulation zones.",
+      "slug": "corporate-presentation-setup"
+    },
+    {
+      "title": "Winter celebration dining",
+      "meta": "Private event · Carlton",
+      "image": "/images/lighting-product.png",
+      "tags": [
+        "Private event",
+        "Indoor",
+        "Warm lighting"
+      ],
+      "details": "An intimate winter dinner with layered lighting, heaters and a warm seated dining arrangement.",
+      "slug": "winter-celebration-dining"
+    },
+    {
+      "title": "Candlelit dinner setting",
+      "meta": "Wedding · Brighton",
+      "image": "/images/decor-product.png",
+      "tags": [
+        "Wedding",
+        "Indoor",
+        "Elegant"
+      ],
+      "details": "A refined evening reception using candlelight, ivory décor and coordinated dining furniture.",
+      "slug": "candlelit-dinner-setting"
+    },
+    {
+      "title": "White garden ceremony",
+      "meta": "Ceremony · Kew",
+      "image": "/images/chairs-product.png",
+      "tags": [
+        "Wedding",
+        "Outdoor",
+        "Elegant white"
+      ],
+      "details": "A clean garden ceremony layout with white guest seating, a central aisle and signing-table setup.",
+      "slug": "white-garden-ceremony"
+    },
+    {
+      "title": "Warm timber reception",
+      "meta": "Wedding · Fitzroy",
+      "image": "/images/tables-product.png",
+      "tags": [
+        "Wedding",
+        "Indoor",
+        "Warm lighting"
+      ],
+      "details": "A relaxed reception built around warm timber tables, bentwood chairs and soft ambient lighting.",
+      "slug": "warm-timber-reception"
+    },
+    {
+      "title": "Festoon-lit courtyard",
+      "meta": "Outdoor party · Brunswick",
+      "image": "/images/lighting-product.png",
+      "tags": [
+        "Party",
+        "Outdoor",
+        "Warm lighting"
+      ],
+      "details": "A courtyard celebration with overhead festoons, cocktail zones and flexible weather-ready seating.",
+      "slug": "festoon-lit-courtyard"
+    },
+    {
+      "title": "Relaxed marquee lounge",
+      "meta": "Birthday · Mornington",
+      "image": "/images/marquee-product.png",
+      "tags": [
+        "Birthday",
+        "Outdoor",
+        "Marquee"
+      ],
+      "details": "A coastal birthday with a covered lounge, casual dining and a practical wind-and-weather plan.",
+      "slug": "relaxed-marquee-lounge"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "packages": [
+    {
+      "slug": "seated-dining-50",
+      "title": "Seated Dining · 50 Guests",
+      "event": "Weddings & private dining",
+      "guests": "50 guests",
+      "price": "$895 indicative",
+      "image": "/images/tables-product.png",
+      "items": "50× Cross-Back Chairs, 7× Round Timber Tables 1.5m, 7× Timber trestle table cloths, Delivery & collection"
+    },
+    {
+      "slug": "garden-party-80",
+      "title": "Garden Party · 80 Guests",
+      "event": "Outdoor celebrations",
+      "guests": "80 guests",
+      "price": "$1,250 indicative",
+      "image": "/images/hero-event.png",
+      "items": "80× Bistro Chairs, 16× Round Tables, Festoon Lighting Set × 3, 6×9m Marquee, Delivery & collection"
+    },
+    {
+      "slug": "corporate-conference-100",
+      "title": "Conference Setup · 100 Guests",
+      "event": "Corporate events",
+      "guests": "100 guests",
+      "price": "$1,650 indicative",
+      "image": "/images/flooring-product.png",
+      "items": "100× Padded Conference Chairs, 10× 1.8m Trestle Tables, Staging Platform 4m × 2m, Lectern, Delivery & collection"
+    },
+    {
+      "slug": "cocktail-party-60",
+      "title": "Cocktail Party · 60 Guests",
+      "event": "Cocktail & networking",
+      "guests": "60 guests",
+      "price": "$750 indicative",
+      "image": "/images/lounge-product.png",
+      "items": "8× Bar Stools, 8× Cocktail Tables, 2× Lounge Sets, Lighting Package, Delivery & collection"
+    }
+  ],
+  "landingPackages": [
+    [
+      "Backyard Party",
+      "A complete casual setup.",
+      "From $450",
+      "/images/decor-product.png"
+    ],
+    [
+      "Celebration Dinner",
+      "Elegant dining for 50.",
+      "From $850",
+      "/images/tableware-product.png"
+    ],
+    [
+      "Outdoor Winter",
+      "Heated and weather-proof.",
+      "From $1,200",
+      "/images/marquee-product.png"
+    ],
+    [
+      "Corporate Presentation",
+      "Professional AV and seating.",
+      "From $900",
+      "/images/flooring-product.png"
+    ]
+  ]
+}

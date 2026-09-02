@@ -1,0 +1,40 @@
+{
+  "cards": [
+    [
+      "Wedding collections",
+      "Elegant chairs, tables, linen and décor for your perfect day.",
+      "/images/hero-event.png",
+      "/collections?type=wedding"
+    ],
+    [
+      "Corporate events",
+      "Staging, seating and AV-ready setups for professional events.",
+      "/images/flooring-product.png",
+      "/collections?type=corporate"
+    ],
+    [
+      "Birthday parties",
+      "Festoon lighting, cocktail furniture and lounge packages.",
+      "/images/lighting-product.png",
+      "/collections?type=birthday"
+    ],
+    [
+      "Outdoor events",
+      "Marquees, weather cover and flexible outdoor solutions.",
+      "/images/marquee-product.png",
+      "/collections?type=outdoor"
+    ],
+    [
+      "Baby showers",
+      "Soft décor, elegant tables and styled seating packages.",
+      "/images/decor-product.png",
+      "/collections?type=baby-shower"
+    ],
+    [
+      "Christmas parties",
+      "Festive tableware, chair covers and celebration décor.",
+      "/images/tableware-product.png",
+      "/collections?type=christmas"
+    ]
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "glanceGrid": [
+    [
+      "Category",
+      "Chairs"
+    ],
+    [
+      "Price",
+      "$2.50 per day"
+    ],
+    [
+      "Minimum hire",
+      "10 units"
+    ],
+    [
+      "Dimensions",
+      "520 × 520 × 920mm"
+    ],
+    [
+      "Weight",
+      "4.5 kg per chair"
+    ],
+    [
+      "Finishes",
+      "Natural, White, Black"
+    ]
+  ],
+  "included": [
+    "Chair assembled and ready to use",
+    "Inspected and cleaned before delivery",
+    "Delivery and collection as per quotation",
+    "Complimentary basic damage assessment"
+  ],
+  "delivery": [
+    [
+      "Standard delivery",
+      "Within 48hrs of event date, Melbourne metro"
+    ],
+    [
+      "Setup included",
+      "Team places chairs at your venue"
+    ],
+    [
+      "Collection",
+      "Collected at agreed time post-event"
+    ],
+    [
+      "Warehouse pickup",
+      "Available Mon–Sat 8am–4pm"
+    ]
+  ],
+  "safety": [
+    [
+      "Weight limit",
+      "130 kg per chair"
+    ],
+    [
+      "Outdoor use",
+      "Suitable for covered outdoor areas"
+    ],
+    [
+      "Surface",
+      "Flat, stable ground required"
+    ],
+    [
+      "Stacking",
+      "Do not stack more than 8 chairs high"
+    ]
+  ]
+}

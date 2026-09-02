@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "eyebrow": "SK EVENT HIRE PLATFORMS",
+    "title": "Choose the platform you need.",
+    "description": "Public customers, registered customers and operations staff use separate frontend applications. Their data can connect through shared backend services without mixing navigation or page code."
+  },
+  "platforms": [
+    {
+      "title": "Public landing site",
+      "description": "Browse products, request quotations, complete checkout and contact the event team.",
+      "href": "/",
+      "linkText": "Open public site"
+    },
+    {
+      "title": "Customer account",
+      "description": "A separate customer application for saved quotations, bookings, payments and messages.",
+      "href": "https://sk-event-hire-customer-account.qtechy26.chatgpt.site",
+      "linkText": "Open customer platform",
+      "id": "customer-platform"
+    },
+    {
+      "title": "Admin operations",
+      "description": "A separate internal application for inventory, orders, logistics and reporting.",
+      "href": "https://sk-event-hire-admin-operations.qtechy26.chatgpt.site",
+      "linkText": "Open admin platform",
+      "id": "admin-platform"
+    }
+  ],
+  "separation": {
+    "title": "Separate frontends. Shared business data.",
+    "description": "The public website never drops visitors into account or admin screens. Customer and admin applications are packaged and deployed independently, while approved APIs can share inventory, quotation and booking records."
+  }
+}

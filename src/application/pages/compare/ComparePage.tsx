@@ -1,4 +1,4 @@
-import { ComparePage as CompareExperience } from "../../../../components/pages/public-commerce/sections/PublicCommerceSections";
+import { ComparePage as CompareExperience } from "../../../components/pages/compare/ComparePage";
 
 export function ComparePage() {
   return <CompareExperience />;

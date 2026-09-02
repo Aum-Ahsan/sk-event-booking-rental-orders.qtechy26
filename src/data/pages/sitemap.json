@@ -1,0 +1,113 @@
+{
+  "hero": {
+    "eyebrow": "Public website directory",
+    "title": "Sitemap",
+    "description": "Find every public product, package, quotation, planning, company and support page."
+  },
+  "groups": [
+    {
+      "title": "Hire products",
+      "links": [
+        {
+          "text": "Catalogue & filters",
+          "href": "/products"
+        },
+        {
+          "text": "Product comparison",
+          "href": "/compare"
+        },
+        {
+          "text": "Event collections",
+          "href": "/collections"
+        },
+        {
+          "text": "Hire packages",
+          "href": "/packages"
+        },
+        {
+          "text": "Hire basket",
+          "href": "/basket"
+        }
+      ]
+    },
+    {
+      "title": "Plan & enquire",
+      "links": [
+        {
+          "text": "Request a quotation",
+          "href": "/request-quote"
+        },
+        {
+          "text": "Event planning",
+          "href": "/planning"
+        },
+        {
+          "text": "Planning roadmap",
+          "href": "/roadmap"
+        },
+        {
+          "text": "Gallery & case studies",
+          "href": "/gallery"
+        },
+        {
+          "text": "Verified reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Planning resources",
+          "href": "/blog"
+        }
+      ]
+    },
+    {
+      "title": "Company",
+      "links": [
+        {
+          "text": "About SK Event Hire",
+          "href": "/about"
+        },
+        {
+          "text": "Contact & service areas",
+          "href": "/contact"
+        },
+        {
+          "text": "Help centre",
+          "href": "/help"
+        },
+        {
+          "text": "Complete FAQs",
+          "href": "/faq"
+        },
+        {
+          "text": "Referral program",
+          "href": "/referrals"
+        },
+        {
+          "text": "Our story",
+          "href": "/our-story"
+        }
+      ]
+    },
+    {
+      "title": "Policies",
+      "links": [
+        {
+          "text": "Terms & policies",
+          "href": "/rental-terms"
+        },
+        {
+          "text": "Payment policy",
+          "href": "/payment-policy"
+        },
+        {
+          "text": "Cancellation policy",
+          "href": "/cancellation-policy"
+        },
+        {
+          "text": "Privacy policy",
+          "href": "/privacy"
+        }
+      ]
+    }
+  ]
+}

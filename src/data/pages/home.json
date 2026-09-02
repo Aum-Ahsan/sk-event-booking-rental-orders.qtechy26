@@ -1,0 +1,132 @@
+{
+  "occasions": [
+    [
+      "Wedding",
+      "/images/hero-event.png",
+      "/collections?type=wedding"
+    ],
+    [
+      "Corporate",
+      "/images/flooring-product.png",
+      "/collections?type=corporate"
+    ],
+    [
+      "Birthday",
+      "/images/lighting-product.png",
+      "/collections?type=birthday"
+    ],
+    [
+      "Outdoor Party",
+      "/images/marquee-product.png",
+      "/collections?type=outdoor"
+    ],
+    [
+      "Baby Shower",
+      "/images/decor-product.png",
+      "/collections?type=baby-shower"
+    ]
+  ],
+  "articles": [
+    [
+      "How to plan a seated dinner for 60 guests",
+      "/images/tables-product.png"
+    ],
+    [
+      "Marquee hire in Melbourne: what to expect",
+      "/images/marquee-product.png"
+    ],
+    [
+      "Getting the lighting right for an outdoor event",
+      "/images/lighting-product.png"
+    ]
+  ],
+  "popular": [
+    [
+      "Cross-Back Chair",
+      "Chairs",
+      "$2.50/day",
+      "/images/chairs-product.png",
+      "/products/cross-back-chair"
+    ],
+    [
+      "Round Timber Table",
+      "Tables",
+      "$12.00/day",
+      "/images/tables-product.png",
+      "/products/round-timber-table"
+    ],
+    [
+      "Festoon Lighting Set",
+      "Lighting",
+      "$45.00/day",
+      "/images/lighting-product.png",
+      "/products/festoon-set"
+    ],
+    [
+      "6m x 9m Marquee",
+      "Marquees",
+      "$180/day",
+      "/images/marquee-product.png",
+      "/products/marquee-6x9"
+    ]
+  ],
+  "services": [
+    [
+      "Delivery & Setup",
+      "We deliver, set up and collect at agreed times.",
+      "Custom quote",
+      "/images/warehouse-team.png"
+    ],
+    [
+      "Full Event Styling",
+      "From tables to lighting, we style your vision.",
+      "Custom quote",
+      "/images/decor-product.png"
+    ],
+    [
+      "Package Hire",
+      "Curated bundles at reduced rates for common event formats.",
+      "From $350",
+      "/images/hero-event.png"
+    ]
+  ],
+  "reviews": [
+    {
+      "name": "Sarah M.",
+      "initials": "SM",
+      "address": "Fitzroy, VIC",
+      "rating": "5.0",
+      "count": "32 reviews",
+      "quote": "Absolutely seamless from start to finish. Everything was exactly as described and the team were brilliant on the day.",
+      "event": "Wedding · 80 guests",
+      "date": "March 2025"
+    },
+    {
+      "name": "James K.",
+      "initials": "JK",
+      "address": "Docklands, VIC",
+      "rating": "5.0",
+      "count": "18 reviews",
+      "quote": "The marquee and furniture were in perfect condition. Setup crew were professional and punctual. Would absolutely hire again.",
+      "event": "Corporate · 120 guests",
+      "date": "Feb 2025"
+    },
+    {
+      "name": "Rachel T.",
+      "initials": "RT",
+      "address": "Brighton, VIC",
+      "rating": "5.0",
+      "count": "11 reviews",
+      "quote": "Great communication, beautiful products. Our birthday party looked amazing.",
+      "event": "Birthday · 40 guests",
+      "date": "Jan 2025"
+    }
+  ],
+  "faqs": [
+    "How long is the standard hire period?",
+    "Can I modify or cancel my booking?",
+    "Do you deliver outside Melbourne?",
+    "How far in advance should I book?",
+    "Are there minimum hire quantities?"
+  ]
+}

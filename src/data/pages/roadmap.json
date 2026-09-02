@@ -1,0 +1,97 @@
+{
+  "hero": {
+    "eyebrow": "YOUR EVENT HIRE ROADMAP",
+    "title": "A clear path from idea to final collection.",
+    "description": "See what happens at every stage, who owns the next action and which details must be confirmed before your event moves forward.",
+    "linkText": "Start your event plan →",
+    "linkHref": "/request-quote",
+    "image": "/images/hero-event.png",
+    "imageAlt": "Completed Melbourne event hire setup"
+  },
+  "flow": {
+    "eyebrow": "SEVEN CONNECTED STAGES",
+    "title": "Know what happens next",
+    "phases": [
+      [
+        "01",
+        "Discover",
+        "Browse products, packages, availability and planning guidance."
+      ],
+      [
+        "02",
+        "Plan",
+        "Confirm your date, venue, guest count, access and service requirements."
+      ],
+      [
+        "03",
+        "Quote",
+        "Receive an itemised quotation with products, logistics, GST and terms."
+      ],
+      [
+        "04",
+        "Confirm",
+        "Approve the current quote and pay the required deposit securely."
+      ],
+      [
+        "05",
+        "Prepare",
+        "Follow warehouse checks, delivery timing and venue access updates."
+      ],
+      [
+        "06",
+        "Event day",
+        "Receive, use and care for the hired equipment as confirmed."
+      ],
+      [
+        "07",
+        "Return",
+        "Complete collection, condition review, final documents and rewards."
+      ]
+    ]
+  },
+  "checkpoints": {
+    "eyebrow": "IMPORTANT CHECKPOINTS",
+    "title": "Nothing important is assumed.",
+    "description": "Stock, price, delivery, setup and payment remain visible and require confirmation at the correct stage.",
+    "items": [
+      [
+        "Availability",
+        "Rechecked before reservation"
+      ],
+      [
+        "Venue access",
+        "Confirmed before dispatch"
+      ],
+      [
+        "Final quantities",
+        "Approved in the current quote"
+      ],
+      [
+        "Payment",
+        "Recorded before confirmation"
+      ],
+      [
+        "Return condition",
+        "Documented after collection"
+      ],
+      [
+        "Referral rewards",
+        "Released after eligibility checks"
+      ]
+    ]
+  },
+  "cta": {
+    "title": "Ready for stage one?",
+    "description": "Start with products, a package or a conversation with the planning team.",
+    "links": [
+      {
+        "text": "Browse products",
+        "href": "/products"
+      },
+      {
+        "text": "Talk to our team",
+        "href": "/contact"
+      }
+    ]
+  }
+}

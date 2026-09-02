@@ -1,0 +1,28 @@
+{
+  "steps": [
+    "Method",
+    "Details",
+    "Verify",
+    "Confirm"
+  ],
+  "methods": [
+    [
+      "payid",
+      "📲",
+      "PayID",
+      "Transfer using your banking app to the event PayID."
+    ],
+    [
+      "bank",
+      "🏦",
+      "Bank transfer",
+      "Direct EFT transfer using the account details provided."
+    ],
+    [
+      "cash",
+      "💵",
+      "Cash",
+      "Cash payment arranged and receipted via the event team."
+    ]
+  ]
+}

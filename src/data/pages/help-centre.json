@@ -1,0 +1,327 @@
+{
+  "hero": {
+    "eyebrow": "SK EVENT HIRE HELP CENTRE",
+    "title": "Practical support for every event.",
+    "description": "Browse clear guidance for bookings, products, delivery, returns, payments, changes and customer support.",
+    "links": [
+      {
+        "text": "Browse complete FAQs →",
+        "href": "/faq"
+      },
+      {
+        "text": "Contact support",
+        "href": "#support-form"
+      }
+    ],
+    "small": "Guidance for delivery · deposits · returns · cancellations",
+    "image": "/images/warehouse-team.png",
+    "imageAlt": "SK Event Hire support and warehouse team preparing customer equipment"
+  },
+  "topics": {
+    "eyebrow": "START BY TOPIC",
+    "title": "Browse help topics",
+    "description": "Choose a topic to find the right guidance quickly.",
+    "items": [
+      [
+        "Rental & booking",
+        "Quotes and reservations",
+        "booking-article"
+      ],
+      [
+        "Products & availability",
+        "Stock and substitutions",
+        "faq-products"
+      ],
+      [
+        "Delivery, setup & returns",
+        "Logistics information",
+        "delivery-help"
+      ],
+      [
+        "Changes, weather & cancellation",
+        "Order updates",
+        "booking-article"
+      ],
+      [
+        "Deposits & payments",
+        "Invoices and bonds",
+        "faq-payments"
+      ],
+      [
+        "Damage, loss & missing items",
+        "Reporting issues",
+        "faq-damage"
+      ],
+      [
+        "Account, privacy & support",
+        "Your information",
+        "policy-links"
+      ]
+    ]
+  },
+  "popular": {
+    "eyebrow": "POPULAR QUESTIONS",
+    "title": "Frequently asked",
+    "description": "Answers to the questions customers ask most often.",
+    "items": [
+      {
+        "question": "What is the minimum hire period?",
+        "answer": "Most items have a one-day minimum hire. Your quotation shows the exact hire window and any weekend arrangements.",
+        "link": "/rental-terms"
+      },
+      {
+        "question": "Can I collect my order?",
+        "answer": "Availability, timing, access and applicable charges are confirmed in your quotation or booking.",
+        "link": "#booking-article"
+      },
+      {
+        "question": "What is the bond and when is it returned?",
+        "answer": "Availability, timing, access and applicable charges are confirmed in your quotation or booking.",
+        "link": "#booking-article"
+      },
+      {
+        "question": "Can I change quantities after booking?",
+        "answer": "Availability, timing, access and applicable charges are confirmed in your quotation or booking.",
+        "link": "#booking-article"
+      },
+      {
+        "question": "What if equipment is damaged?",
+        "answer": "Availability, timing, access and applicable charges are confirmed in your quotation or booking.",
+        "link": "#booking-article"
+      },
+      {
+        "question": "How do payments and refunds work?",
+        "answer": "Availability, timing, access and applicable charges are confirmed in your quotation or booking.",
+        "link": "#booking-article"
+      }
+    ]
+  },
+  "article": {
+    "sidebar": {
+      "title": "IN THIS ARTICLE",
+      "links": [
+        {
+          "text": "Before requesting a change",
+          "href": "#change-before"
+        },
+        {
+          "text": "Change options",
+          "href": "#change-options"
+        },
+        {
+          "text": "What happens next?",
+          "href": "#change-next"
+        },
+        {
+          "text": "Related policies",
+          "href": "/rental-terms"
+        },
+        {
+          "text": "Ask for help",
+          "href": "#support-form"
+        }
+      ]
+    },
+    "eyebrow": "BOOKING CHANGES",
+    "title": "Can I change product quantities after booking?",
+    "lead": "Yes. Quantity changes can be requested, but they remain subject to stock, delivery, labour and price confirmation.",
+    "quote": "✓ Your existing booking remains confirmed until an updated version is approved.",
+    "sections": [
+      {
+        "id": "change-before",
+        "title": "Before requesting a change",
+        "text": "Have your booking reference ready and tell us which product, current quantity and requested quantity you want changed."
+      },
+      {
+        "id": "change-next",
+        "title": "What happens next?",
+        "text": "We send a revised quotation or booking change for your approval. Nothing changes until you accept it."
+      }
+    ],
+    "options": [
+      [
+        "Open your booking",
+        "Use the reference from your confirmation email."
+      ],
+      [
+        "Request the quantity update",
+        "Choose the item and enter the required quantity."
+      ],
+      [
+        "Wait for confirmation",
+        "We recheck availability, logistics and pricing."
+      ]
+    ],
+    "note": "Changes close to delivery may affect warehouse preparation, labour or transport charges.",
+    "helpful": {
+      "text": "Was this article helpful?",
+      "yes": "Yes",
+      "no": "No",
+      "contact": "Need more help? Contact support →",
+      "contactHref": "#support-form"
+    }
+  },
+  "guidance": {
+    "eyebrow": "DELIVERY, SETUP & RETURN",
+    "title": "Prepare, collect and return smoothly",
+    "sections": [
+      {
+        "image": "/images/hero-event.png",
+        "imageAlt": "Prepared event delivery site",
+        "eyebrow": "BEFORE DELIVERY",
+        "title": "Prepare for delivery",
+        "items": [
+          "Confirm venue access, loading and parking",
+          "Clear the setup area and protect pathways",
+          "Provide an on-site contact and phone number",
+          "Keep children, guests and pets clear of the crew",
+          "Confirm power, lifts, stairs and surface conditions"
+        ],
+        "link": {
+          "text": "Read the delivery guide →",
+          "href": "/contact"
+        }
+      },
+      {
+        "image": "/images/warehouse-team.png",
+        "imageAlt": "Event equipment being collected",
+        "eyebrow": "COLLECTION & RETURN",
+        "title": "Collect and return smoothly",
+        "items": [
+          "Keep equipment dry, secure and grouped",
+          "Do not dismantle items unless instructed",
+          "Remove personal items and rubbish",
+          "Report damage or missing pieces promptly",
+          "Be ready for the confirmed collection window"
+        ],
+        "link": {
+          "text": "Read the return guide →",
+          "href": "/contact"
+        }
+      }
+    ]
+  },
+  "safeUse": {
+    "eyebrow": "SAFE USE & CARE",
+    "title": "Use hired items correctly",
+    "description": "Follow product instructions and use equipment only for its intended event purpose.",
+    "items": [
+      [
+        "Use as intended",
+        "Do not climb, stand on or modify furniture."
+      ],
+      [
+        "Watch the weather",
+        "Secure outdoor items and follow wind restrictions."
+      ],
+      [
+        "Age & capacity",
+        "Observe weight, age and occupancy limits."
+      ],
+      [
+        "Report urgent issues",
+        "Stop using unsafe items and contact us."
+      ]
+    ],
+    "quote": "⚠ Do not relocate marquees, heaters, staging or electrical equipment after professional setup."
+  },
+  "policyLinks": {
+    "eyebrow": "POLICIES & IMPORTANT INFORMATION",
+    "title": "Understand the terms that apply",
+    "description": "Read the current terms before accepting your quotation.",
+    "items": [
+      [
+        "Hire terms",
+        "/rental-terms"
+      ],
+      [
+        "Changes & cancellations",
+        "/cancellation-policy"
+      ],
+      [
+        "Delivery & collection",
+        "/rental-terms"
+      ],
+      [
+        "Damage, loss & bond",
+        "/rental-terms"
+      ],
+      [
+        "Privacy",
+        "/privacy"
+      ],
+      [
+        "Accessibility",
+        "/privacy"
+      ]
+    ],
+    "linkText": "View the current policy →"
+  },
+  "support": {
+    "eyebrow": "CUSTOMER SUPPORT",
+    "title": "We’re here to help.",
+    "description": "For booking changes, delivery questions or event-day support, send the details below.",
+    "image": "/images/warehouse-team.png",
+    "imageAlt": "Customer support conversation",
+    "methods": [
+      {
+        "text": "Call 03 9000 0000",
+        "href": "tel:0390000000"
+      },
+      {
+        "text": "Email support",
+        "href": "mailto:help@skeventhire.com.au"
+      }
+    ],
+    "form": {
+      "topicLabel": "What do you need help with?",
+      "topics": [
+        "Booking or hiring",
+        "Delivery or collection",
+        "Payment or refund",
+        "Damage or missing item"
+      ],
+      "fields": {
+        "firstName": "First name *",
+        "lastName": "Last name *",
+        "mobile": "Mobile *",
+        "email": "Email *",
+        "subject": "Subject *",
+        "help": "How can we help? *"
+      },
+      "attachmentLabel": "Attachment",
+      "consentText": "I confirm these details are correct and accept the privacy policy.",
+      "submitText": "Submit support request →"
+    },
+    "received": {
+      "eyebrow": "REQUEST SUBMITTED",
+      "title": "Your support request has been received.",
+      "description": "Our team will review the booking details and reply within one business day.",
+      "reference": "SUP-2026-00482",
+      "details": [
+        {
+          "label": "Category",
+          "value": "Booking or hiring"
+        },
+        {
+          "label": "Priority",
+          "value": "Standard support"
+        },
+        {
+          "label": "Contact",
+          "value": "Email & mobile"
+        }
+      ],
+      "links": [
+        {
+          "text": "Send another enquiry",
+          "href": "/contact"
+        },
+        {
+          "text": "Return to Help Centre",
+          "href": "/help"
+        }
+      ]
+    }
+  }
+}
