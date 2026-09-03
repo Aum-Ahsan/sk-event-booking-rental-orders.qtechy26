@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { PublicHeader } from "../../common/PublicHeader";
 import { PublicFooter } from "../../common/PublicFooter";
 import pageData from "../../../data/pages/packages.json";
+import { HomePackagesGridSection } from "../home/sections/HomePackagesGridSection";
 
 const curatedPackages = pageData.landingPackages;
 export function PackagesCollectionsLanding() {
@@ -95,7 +96,7 @@ export function PackagesCollectionsLanding() {
           </div>
           <small>
             Recommended for {eventType.toLowerCase()} · 4 packages · 6
-            collections <a href="#packages">View packages →</a>
+            collections  <a href="#packages"> View packages →</a>
           </small>
         </section>
         <section className="editorial-section event-types">
@@ -158,97 +159,7 @@ export function PackagesCollectionsLanding() {
             ))}
           </div>
         </section>
-        <section id="packages" className="package-cards-wrap">
-          <div className="editorial-section">
-            <div className="split-heading">
-              <div>
-                <span className="section-kicker">POPULAR EVENT STARTERS</span>
-                <h2>A simpler way to hire</h2>
-                <p>
-                  Start with a clear package, then customise products, colours
-                  and service.
-                </p>
-              </div>
-              <a href="#compare-packages">View package guide →</a>
-            </div>
-            <div className="curated-package-grid">
-              {curatedPackages.map((x, i) => (
-                <article key={x[0]}>
-                  <div className="package-image">
-                    <img src={x[3]} alt={x[0]} />
-                    <span>
-                      {
-                        [
-                          "MOST POPULAR",
-                          "BEST FOR DINING",
-                          "WEATHER READY",
-                          "COMPLETE AV",
-                        ][i]
-                      }
-                    </span>
-                    <i>♡</i>
-                  </div>
-                  <div>
-                    <small>EVENT HIRE PACKAGE</small>
-                    <h3>{x[0]}</h3>
-                    <p>{x[1]}</p>
-                    <ul>
-                      <li>
-                        {
-                          [
-                            "40 white folding chairs",
-                            "6 trestle tables",
-                            "80 seats and tables",
-                            "100 conference chairs",
-                          ][i]
-                        }
-                      </li>
-                      <li>
-                        {
-                          [
-                            "White table linen",
-                            "Cutlery and glassware",
-                            "Clearspan marquee",
-                            "Stage and lectern",
-                          ][i]
-                        }
-                      </li>
-                      <li>
-                        {
-                          [
-                            "Warm festoon lighting",
-                            "Table décor starter",
-                            "Heating and lighting",
-                            "Presentation lighting",
-                          ][i]
-                        }
-                      </li>
-                    </ul>
-                    <b>
-                      {x[2]} <em>starting price</em>
-                    </b>
-                    <a
-                      href={`/package-${["backyard", "celebration-dinner", "outdoor-winter", "corporate-presentation"][i]}`}
-                    >
-                      View & customise
-                    </a>
-                    <button
-                      type="button"
-                      onClick={() => (location.href = matchHref)}
-                    >
-                      ＋ Compare package
-                    </button>
-                  </div>
-                </article>
-              ))}
-            </div>
-            <div className="package-note">
-              <span>Packages are flexible.</span> Swap colours, change
-              quantities, add accessories or request a complete custom plan.
-              <a href="/contact">Ask about a package</a>
-            </div>
-          </div>
-        </section>
+        <HomePackagesGridSection />
         <section className="editorial-section package-collections">
           <div className="split-heading">
             <div>
@@ -358,43 +269,43 @@ export function PackagesCollectionsLanding() {
           <div className="package-compare-table">
             <b>Package</b>
             {curatedPackages.map((x) => (
-              <span key={x[0]}>
-                <img src={x[3]} alt="" />
-                <strong>{x[0]}</strong>
-                <em>{x[2]}</em>
+              <span key={x.name}>
+                <img src={x.image} alt="" />
+                <strong>{x.name}</strong>
+                <em>{x.price}</em>
               </span>
             ))}
             <b>Recommended guests</b>
             {curatedPackages.map((x, i) => (
-              <span key={x[0]}>
+              <span key={x.name}>
                 {["30–60", "50–90", "60–120", "80–150"][i]}
               </span>
             ))}
             <b>Seating & tables</b>
             {curatedPackages.map((x) => (
-              <span key={x[0]}>Included</span>
+              <span key={x.name}>Included</span>
             ))}
             <b>Marquee</b>
             {curatedPackages.map((x, i) => (
-              <span key={x[0]}>{i === 2 ? "Included" : "Optional"}</span>
+              <span key={x.name}>{i === 2 ? "Included" : "Optional"}</span>
             ))}
             <b>Heating</b>
             {curatedPackages.map((x, i) => (
-              <span key={x[0]}>{i === 2 ? "Optional" : "—"}</span>
+              <span key={x.name}>{i === 2 ? "Optional" : "—"}</span>
             ))}
             <b>Lighting</b>
             {curatedPackages.map((x, i) => (
-              <span key={x[0]}>{i > 1 ? "Included" : "Optional"}</span>
+              <span key={x.name}>{i > 1 ? "Included" : "Optional"}</span>
             ))}
             <b>Setup support</b>
             {curatedPackages.map((x, i) => (
-              <span key={x[0]}>{i === 3 ? "Included" : "Optional"}</span>
+              <span key={x.name}>{i === 3 ? "Included" : "Optional"}</span>
             ))}
             <b></b>
             {curatedPackages.map((x, i) => (
               <a
                 href={`/package-${["backyard", "celebration-dinner", "outdoor-winter", "corporate-presentation"][i]}`}
-                key={x[0]}
+                key={x.name}
               >
                 View package
               </a>
@@ -425,7 +336,7 @@ export function PackagesCollectionsLanding() {
           <div>
             <span className="section-kicker">PACKAGE QUESTIONS</span>
             <h2>Before you choose</h2>
-            <a href="/help">View all FAQs</a>
+            <a href="/help" style={{ display: 'inline-block', marginTop: '16px' }}>View all FAQs</a>
           </div>
           <div>
             {[

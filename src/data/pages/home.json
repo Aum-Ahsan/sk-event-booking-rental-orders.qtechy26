@@ -49,84 +49,90 @@
   ],
   "popular": [
     {
-      "name": "Cross-Back Chair",
-      "category": "Chairs",
-      "price": "$2.50/day",
+      "name": "White Bistro Chair",
+      "category": "CHAIRS",
+      "price": "From $8.50",
       "image": "/images/chairs-product.png",
-      "url": "/products/cross-back-chair"
+      "url": "/products/white-bistro-chair"
     },
     {
-      "name": "Round Timber Table",
-      "category": "Tables",
-      "price": "$12.00/day",
+      "name": "1.8m Trestle Table",
+      "category": "TABLES",
+      "price": "From $32.00",
       "image": "/images/tables-product.png",
       "url": "/products/round-timber-table"
     },
     {
-      "name": "Festoon Lighting Set",
-      "category": "Lighting",
-      "price": "$45.00/day",
+      "name": "Mushroom Gas Heater",
+      "category": "HEATING",
+      "price": "From $75.00",
       "image": "/images/lighting-product.png",
-      "url": "/products/festoon-set"
+      "url": "/products/mushroom-gas-heater"
     },
     {
-      "name": "6m x 9m Marquee",
-      "category": "Marquees",
-      "price": "$180/day",
+      "name": "3m × 6m Pop-up Marquee",
+      "category": "MARQUEES",
+      "price": "From $390.00",
       "image": "/images/marquee-product.png",
       "url": "/products/marquee-6x9"
     }
   ],
   "services": [
     {
-      "name": "Delivery & Setup",
-      "description": "We deliver, set up and collect at agreed times.",
-      "price": "Custom quote",
-      "image": "/images/warehouse-team.png"
+      "name": "Event equipment hire",
+      "description": "Furniture, tableware, marquees and lighting, prepared for your date.",
+      "price": "From $420",
+      "image": "/images/tables-product.png"
     },
     {
-      "name": "Full Event Styling",
-      "description": "From tables to lighting, we style your vision.",
-      "price": "Custom quote",
+      "name": "Marquee hire",
+      "description": "Weather-ready structures with flooring, walling and installation options.",
+      "price": "From $1,850",
+      "image": "/images/marquee-product.png"
+    },
+    {
+      "name": "Outdoor wedding hire",
+      "description": "Coordinated ceremony and reception equipment for garden venues.",
+      "price": "From $2,450",
       "image": "/images/decor-product.png"
     },
     {
-      "name": "Package Hire",
-      "description": "Curated bundles at reduced rates for common event formats.",
-      "price": "From $350",
-      "image": "/images/hero-event.png"
+      "name": "Corporate presentation",
+      "description": "Staging, seating, tables and practical lighting for business events.",
+      "price": "From $1,500",
+      "image": "/images/flooring-product.png"
     }
   ],
   "reviews": [
     {
-      "name": "Sarah M.",
+      "name": "Mia & James",
       "initials": "SM",
-      "address": "Fitzroy, VIC",
-      "rating": "5.0",
-      "count": "32 reviews",
-      "quote": "Absolutely seamless from start to finish. Everything was exactly as described and the team were brilliant on the day.",
-      "event": "Wedding · 80 guests",
-      "date": "March 2025"
-    },
-    {
-      "name": "James K.",
-      "initials": "JK",
-      "address": "Docklands, VIC",
+      "address": "Richmond, VIC",
       "rating": "5.0",
       "count": "18 reviews",
-      "quote": "The marquee and furniture were in perfect condition. Setup crew were professional and punctual. Would absolutely hire again.",
-      "event": "Corporate · 120 guests",
-      "date": "Feb 2025"
+      "quote": "The team made our backyard wedding feel completely manageable. Delivery was on time, every item was spotless and the warm lighting looked beautiful.",
+      "event": "Backyard wedding · 86 guests",
+      "date": "Hired in November 2025"
     },
     {
-      "name": "Rachel T.",
-      "initials": "RT",
-      "address": "Brighton, VIC",
-      "rating": "5.0",
+      "name": "Olivia Chen",
+      "initials": "OC",
+      "address": "Docklands, VIC",
+      "rating": "4.9",
       "count": "11 reviews",
-      "quote": "Great communication, beautiful products. Our birthday party looked amazing.",
-      "event": "Birthday · 40 guests",
-      "date": "Jan 2025"
+      "quote": "Clear quotation, friendly advice and excellent furniture. The delivery window was accurate and the whole corporate event ran smoothly.",
+      "event": "Corporate celebration · 140 guests",
+      "date": "Hired in March 2026"
+    },
+    {
+      "name": "Sarah Patel",
+      "initials": "SP",
+      "address": "Brighton, VIC",
+      "rating": "4.8",
+      "count": "7 reviews",
+      "quote": "The products were spotless and the collection process was simple. The team helped us choose the correct quantities and we would happily hire again.",
+      "event": "Garden birthday · 64 guests",
+      "date": "Hired in February 2026"
     }
   ],
   "faqs": [
@@ -342,5 +348,84 @@
     "text_20": "View all services →",
     "text_21": "EVENT HIRE SERVICE",
     "text_22": "✓ Verified hire"
-  }
+  },
+  "packagesGrid": {
+    "eyebrow": "POPULAR EVENT STARTERS",
+    "title": "A simpler way to hire",
+    "description": "Start with a clear package, then customise products, colours and service.",
+    "ctaText": "View package guide →",
+    "bannerText": "Packages are flexible.",
+    "bannerSubtext": "Swap colours, change quantities, add accessories or request a complete custom plan.",
+    "bannerCta": "Ask about a package"
+  },
+  "packages": [
+    {
+      "tag": "MOST POPULAR",
+      "category": "EVENT HIRE PACKAGE",
+      "name": "Backyard Celebration",
+      "guests": "40 guests · outdoor",
+      "items": [
+        "40 white folding chairs",
+        "White table linen",
+        "Warm festoon lighting"
+      ],
+      "price": "$420",
+      "priceSubtext": "starting price",
+      "image": "/images/chairs-product.png",
+      "url": "#",
+      "buttonText": "View & customise",
+      "compareText": "+ Compare package"
+    },
+    {
+      "tag": "BEST FOR DINING",
+      "category": "EVENT HIRE PACKAGE",
+      "name": "Celebration Dinner",
+      "guests": "60 guests · dining",
+      "items": [
+        "6 trestle tables",
+        "Cutlery and glassware",
+        "Table décor starter"
+      ],
+      "price": "$1,050",
+      "priceSubtext": "starting price",
+      "image": "/images/tableware-product.png",
+      "url": "#",
+      "buttonText": "View & customise",
+      "compareText": "+ Compare package"
+    },
+    {
+      "tag": "WEATHER READY",
+      "category": "EVENT HIRE PACKAGE",
+      "name": "Outdoor Winter Event",
+      "guests": "80 guests · covered",
+      "items": [
+        "80 seats and tables",
+        "Clearspan marquee",
+        "Heating and lighting"
+      ],
+      "price": "$2,450",
+      "priceSubtext": "starting price",
+      "image": "/images/lighting-product.png",
+      "url": "#",
+      "buttonText": "View & customise",
+      "compareText": "+ Compare package"
+    },
+    {
+      "tag": "COMPLETE AV",
+      "category": "EVENT HIRE PACKAGE",
+      "name": "Corporate Presentation",
+      "guests": "100 guests · theatre",
+      "items": [
+        "100 conference chairs",
+        "Stage and lectern",
+        "Presentation lighting"
+      ],
+      "price": "$1,900",
+      "priceSubtext": "starting price",
+      "image": "/images/flooring-product.png",
+      "url": "#",
+      "buttonText": "View & customise",
+      "compareText": "+ Compare package"
+    }
+  ]
 }

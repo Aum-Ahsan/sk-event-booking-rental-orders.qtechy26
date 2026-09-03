@@ -26,7 +26,7 @@ export function QuoteJourneyPage() {
             <a href={pageData.aside.linkHref}>{pageData.aside.linkText}</a>
           </aside>
         </section>
-        
+
         <div className="quote-progress">
           {pageData.steps.map((x, i) => (
             <button
@@ -40,7 +40,7 @@ export function QuoteJourneyPage() {
             </button>
           ))}
         </div>
-        
+
         <div className="wizard-actions">
           <button
             type="button"
@@ -64,7 +64,7 @@ export function QuoteJourneyPage() {
             </button>
           )}
         </div>
-        
+
         <section className="quote-form-layout">
           <div>
             <section className="quote-card" hidden={step !== 0}>
@@ -88,7 +88,7 @@ export function QuoteJourneyPage() {
                 </div>
               ))}
             </section>
-            
+
             <section className="quote-card" hidden={step !== 1}>
               <div className="quote-card-title">
                 <span>{pageData.step2.eyebrow}</span>
@@ -101,7 +101,7 @@ export function QuoteJourneyPage() {
                 ))}
               </div>
             </section>
-            
+
             <section className="quote-card" hidden={step !== 2}>
               <div className="quote-card-title">
                 <span>{pageData.step3.eyebrow}</span>
@@ -113,7 +113,7 @@ export function QuoteJourneyPage() {
                 ))}
               </div>
             </section>
-            
+
             <section
               className="quote-card quote-review-card"
               hidden={step !== 3}

@@ -3,12 +3,12 @@ import { PublicHeader } from "../../common/PublicHeader";
 import { PublicFooter } from "../../common/PublicFooter";
 import pageData from "../../../data/pages/faq.json";
 
-function completeFaqItems(group: { name: string; items: readonly (readonly [string, string])[] }) {
+function completeFaqItems(group: { name: string; items: readonly { question: string; answer: string }[] }) {
   const topic = group.name.toLowerCase();
-  const additional: [string, string][] = pageData.completeFaqItems.map(item => [
-    item.q.replace("{topic}", topic),
-    item.a.replace("{topic}", topic)
-  ]);
+  const additional = pageData.completeFaqItems.map(item => ({
+    question: item.q.replace(/{topic}/g, topic),
+    answer: item.a.replace(/{topic}/g, topic)
+  }));
   return [...group.items, ...additional.slice(0, Math.max(0, 10 - group.items.length))];
 }
 
@@ -19,7 +19,7 @@ export function FaqPage() {
     .map((group) => ({
       ...group,
       items: completeFaqItems(group).filter((item) =>
-        `${item[0]} ${item[1]}`.toLowerCase().includes(search.toLowerCase()),
+        `${item.question} ${item.answer}`.toLowerCase().includes(search.toLowerCase()),
       ),
     }))
     .filter(
@@ -80,12 +80,12 @@ export function FaqPage() {
               <section key={group.name}>
                 <div>
                   {group.items.map((item, index) => (
-                    <details open={index === 0 && groups.length === 1} key={item[0]}>
+                    <details key={item.question}>
                       <summary>
-                        {item[0]}
+                        {item.question}
                         <span>＋</span>
                       </summary>
-                      <p>{item[1]}</p>
+                      <p>{item.answer}</p>
                     </details>
                   ))}
                 </div>

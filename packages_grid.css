@@ -1,0 +1,214 @@
+/* Home Packages Section Styles */
+.home-packages-section {
+  background-color: #FDF8F4;
+  padding: 60px 50px;
+  border-radius: 20px;
+  max-width: 1400px;
+  margin: 40px auto;
+}
+.packages-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.packages-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+.packages-heading-text {
+  max-width: 600px;
+}
+.packages-eyebrow {
+  color: var(--coral);
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 12px;
+}
+.packages-heading h2 {
+  font-size: 38px;
+  color: var(--navy);
+  margin: 0 0 12px 0;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+.packages-heading p {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+}
+.packages-guide-link {
+  color: var(--coral);
+  font-weight: 800;
+  font-size: 12px;
+}
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.package-card {
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #ddd6c9;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.package-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(8, 43, 80, 0.08);
+}
+.package-image-container {
+  position: relative;
+  height: 170px;
+}
+.package-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.package-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--coral);
+  color: white;
+  padding: 4px 8px;
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-radius: 0 0 8px 0;
+}
+.package-heart-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 26px;
+  height: 26px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--coral);
+  cursor: pointer;
+}
+.package-heart-btn svg {
+  width: 12px;
+  height: 12px;
+}
+.package-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.package-category {
+  color: var(--coral);
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  letter-spacing: 0.05em;
+}
+.package-name {
+  color: var(--navy);
+  font-size: 18px;
+  margin: 0 0 4px 0;
+  font-weight: 400;
+}
+.package-guests {
+  color: var(--muted);
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+.package-items {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+  flex: 1;
+}
+.package-items li {
+  color: var(--muted);
+  font-size: 12px;
+  margin-bottom: 5px;
+  padding-left: 0;
+}
+.package-price-wrap {
+  margin-bottom: 18px;
+}
+.package-price {
+  color: var(--navy);
+  font-size: 22px;
+  font-weight: 800;
+}
+.package-price-sub {
+  color: var(--muted);
+  font-size: 11px;
+}
+.package-btn {
+  display: block;
+  width: 100%;
+  background: var(--coral);
+  color: white;
+  text-align: center;
+  padding: 12px;
+  border-radius: 5px;
+  font-weight: 800;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+.package-compare {
+  display: block;
+  text-align: center;
+  color: var(--navy);
+  font-size: 11px;
+  font-weight: 800;
+}
+.packages-banner {
+  background: white;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e2e8ed;
+  border-left: 4px solid #efb44e;
+}
+.banner-text {
+  color: var(--muted);
+  font-size: 12px;
+}
+.banner-text strong {
+  color: var(--navy);
+}
+.banner-link {
+  color: var(--coral);
+  font-weight: 800;
+  font-size: 12px;
+}
+@media(max-width: 1050px) {
+  .packages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media(max-width: 700px) {
+  .packages-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+  .packages-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+}

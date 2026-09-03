@@ -16,7 +16,7 @@ export function HelpTopicsSection({ jump }: HelpTopicsSectionProps) {
               <div>
                 {pageData.topics.items.map((x, i) => (
                   <button type="button" onClick={() => jump(x[2])} key={x[0]}>
-                    <i>{["▤", "◇", "▣", "↻", "$", "!", "♡"][i]}</i>
+                    <i>{["▤", "◇", "▣", "▱", "↻", "$", "✎", "!", "♡"][i]}</i>
                     <span>
                       <b>{x[0]}</b>
                       <small>{x[1]}</small>

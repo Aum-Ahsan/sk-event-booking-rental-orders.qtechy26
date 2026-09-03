@@ -13,7 +13,7 @@ export function AboutPreparedSection() {
               <div className="prepared-list">
                 {prepared.items.map(x => (
                   <article key={x[0]}>
-                    <b>{x[0]}</b>
+                    <b><span className="prepared-check">✓</span> {x[0]}</b>
                     <p>{x[1]}</p>
                   </article>
                 ))}

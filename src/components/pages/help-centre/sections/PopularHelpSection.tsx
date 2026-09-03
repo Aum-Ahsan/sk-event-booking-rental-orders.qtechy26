@@ -12,7 +12,7 @@ export function PopularHelpSection() {
                 </header>
                 <div>
                   {pageData.popular.items.map((q, i) => (
-                    <details open={i < 2} key={q.question}>
+                    <details key={q.question}>
                       <summary>
                         {q.question}
                         <b>＋</b>

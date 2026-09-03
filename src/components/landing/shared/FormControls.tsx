@@ -36,10 +36,10 @@ export function ReviewBlock({
     <article className="review-block">
       <h3>{title}</h3>
       {rows.map(([label, value]) => (
-        <p key={label}>
+        <div key={label}>
           <span>{label}</span>
           <b>{value}</b>
-        </p>
+        </div>
       ))}
     </article>
   );

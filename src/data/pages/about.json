@@ -112,20 +112,36 @@
     "imageAlt": "Team preparing chairs",
     "items": [
       [
-        "Checked",
-        "Items are checked for quality before leaving the warehouse."
+        "Inspect",
+        "Condition check"
       ],
       [
-        "Cleaned",
-        "Furniture is wiped, washed or laundered between events."
+        "Clean",
+        "Commercial clean"
       ],
       [
-        "Protected",
-        "Transported safely in protective covers and strapping."
+        "Count",
+        "Quantities confirmed"
       ],
       [
-        "Supported",
-        "Delivery teams briefed on your specific venue and timings."
+        "Pack",
+        "Protected for transport"
+      ],
+      [
+        "Dispatch check",
+        "Booking and loading verified"
+      ],
+      [
+        "Deliver & set up",
+        "Handled by event crew"
+      ],
+      [
+        "Return inspection",
+        "Recorded after hire"
+      ],
+      [
+        "Maintain",
+        "Repair-first approach"
       ]
     ]
   },

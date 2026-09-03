@@ -23,38 +23,48 @@
     "description": "Choose a topic to find the right guidance quickly.",
     "items": [
       [
-        "Rental & booking",
-        "Quotes and reservations",
+        "Booking & hired items",
+        "Quotes, reservations and item changes",
         "booking-article"
       ],
       [
         "Products & availability",
-        "Stock and substitutions",
+        "Stock checks, substitutions and colours",
         "faq-products"
       ],
       [
-        "Delivery, setup & returns",
-        "Logistics information",
-        "delivery-help"
-      ],
-      [
-        "Changes, weather & cancellation",
-        "Order updates",
+        "Quotes & bookings",
+        "Accepting, revising and confirming a quote",
         "booking-article"
       ],
       [
-        "Deposits & payments",
-        "Invoices and bonds",
+        "Delivery & setup",
+        "Access, timing, placement and crew",
+        "delivery-help"
+      ],
+      [
+        "Collection & returns",
+        "Packing, collection windows and checks",
+        "delivery-help"
+      ],
+      [
+        "Payments",
+        "Deposits, balances, GST and refunds",
         "faq-payments"
       ],
       [
-        "Damage, loss & missing items",
-        "Reporting issues",
+        "Changes & cancellations",
+        "What can change and when charges apply",
+        "booking-article"
+      ],
+      [
+        "Policies & damage",
+        "Care, damage, cleaning and missing items",
         "faq-damage"
       ],
       [
-        "Account, privacy & support",
-        "Your information",
+        "Account & contact",
+        "Sign-in, saved details and support requests",
         "policy-links"
       ]
     ]

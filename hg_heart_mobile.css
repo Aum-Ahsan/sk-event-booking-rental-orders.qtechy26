@@ -1,0 +1,11 @@
+@media (max-width: 700px) {
+  .hg-card {
+    position: relative;
+  }
+  .hg-image-container {
+    position: static;
+  }
+  .hg-heart-btn {
+    border: 1px solid #ddd6c9;
+  }
+}

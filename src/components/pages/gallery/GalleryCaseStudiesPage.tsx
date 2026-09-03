@@ -1,4 +1,4 @@
-﻿import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { PublicHeader } from "../../common/PublicHeader";
 import { PublicFooter } from "../../common/PublicFooter";
 import { GalleryStoryPage } from "./GalleryStoryPage";
@@ -10,6 +10,19 @@ export function GalleryCaseStudiesPage({ story = false }: { story?: boolean }) {
   const [preview, setPreview] = useState<(typeof pageData.showcaseCards)[number] | null>(
     null,
   );
+  
+  const sliderRef = useRef<HTMLDivElement>(null);
+  
+  const scrollSlider = (direction: 'left' | 'right') => {
+    if (sliderRef.current) {
+      const scrollAmount = sliderRef.current.clientWidth * 0.85;
+      sliderRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   const shown = pageData.showcaseCards.filter(
     (x) => activeTag === "All" || x.tags.includes(activeTag),
   );
@@ -49,7 +62,9 @@ export function GalleryCaseStudiesPage({ story = false }: { story?: boolean }) {
                 </button>
               ))}
             </div>
-            <div className="masonry-gallery gallery-event-grid">
+            <div className="gallery-slider-wrapper">
+              <button className="gallery-slider-btn prev" onClick={() => scrollSlider('left')} aria-label="Previous image">❮</button>
+              <div className="masonry-gallery gallery-event-grid" ref={sliderRef}>
               {shown.slice(0, visible).map((x) => (
                 <article key={x.title}>
                   <button
@@ -83,6 +98,8 @@ export function GalleryCaseStudiesPage({ story = false }: { story?: boolean }) {
                   </div>
                 </article>
               ))}
+              </div>
+              <button className="gallery-slider-btn next" onClick={() => scrollSlider('right')} aria-label="Next image">❯</button>
             </div>
             {visible < shown.length && (
               <button

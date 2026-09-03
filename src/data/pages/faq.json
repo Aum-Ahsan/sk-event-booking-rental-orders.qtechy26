@@ -460,6 +460,14 @@
     {
       "q": "Will a {topic} request change my confirmed booking automatically?",
       "a": "No. A request does not alter the confirmed order until availability and adjustments are approved and re-issued by the event team."
+    },
+    {
+      "q": "How will a decision about {topic} be recorded?",
+      "a": "We record all decisions in your booking history and confirm approved changes via email."
+    },
+    {
+      "q": "Can I ask for a review of a {topic} decision?",
+      "a": "Yes. You can contact our customer care team to request a review of any decision regarding your booking."
     }
   ]
 }

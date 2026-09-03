@@ -5,7 +5,7 @@ export function PublicResultSection() {
   return (
     <section className="public-result">
                 <i>✓</i>
-                <div className="eyebrow">{pageData.extracted.text_1}</div>
+                <span className="eyebrow" style={{ display: 'block', marginTop: '20px' }}>{pageData.extracted.text_1}</span>
                 <h1>{pageData.extracted.text_2}</h1>
                 <p>{pageData.hero.description}</p>
                 <div>

@@ -1,4 +1,4 @@
-﻿import React, { useState } from "react";
+import React, { useState } from "react";
 import pageData from "../../../../data/pages/home.json";
 
 export function HomeTestimonialSection() {
@@ -37,11 +37,10 @@ export function HomeTestimonialSection() {
                 </div>
               </header>
               <p>“{review.quote}”</p>
-              <footer style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "24px", paddingTop: "16px", borderTop: "1px solid #e2e8eb" }}>
-                <div style={{ lineHeight: 1.5, color: "#17364e", fontSize: "14px", paddingRight: "10px", flexWrap: "wrap", minWidth: 0 }}>
-                  <span style={{ fontWeight: 600 }}>{review.event.replace('·', '-')}</span>
-                  <span style={{ margin: "0 8px", color: "#a0aec0" }}>|</span>
-                  <span style={{ fontWeight: 600, color: "#4a5568" }}>{review.date}</span>
+              <footer style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "auto", paddingTop: "16px", borderTop: "1px solid #e2e8eb" }}>
+                <div style={{ display: "flex", flexDirection: "column", gap: "2px", lineHeight: 1.5, fontSize: "14px", paddingRight: "10px", minWidth: 0 }}>
+                  <span style={{ fontWeight: 900, color: "#123b58" }}>{review.event}</span>
+                  <span style={{ fontWeight: 900, color: "#718591" }}>{review.date}</span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center" }}>
                   <nav style={{ display: "flex", alignItems: "center", gap: "12px", margin: 0, minHeight: "auto", borderTop: "none", paddingTop: 0 }}>
