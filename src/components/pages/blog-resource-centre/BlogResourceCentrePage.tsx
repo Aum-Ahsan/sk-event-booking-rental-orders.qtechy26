@@ -28,18 +28,34 @@ export function BlogResourceCentrePage() {
     <div className="public-site blog-resource">
       <PublicHeader active="Blog" />
       <main>
-        <BlogHeroSection />
+        <BlogHeroSection
+          query={query}
+          setQuery={setQuery}
+          setActiveCategory={setActiveCategory}
+        />
         <FeaturedGuideSection />
-        <TopicBrowserSection />
-        <LatestGuidesSection />
+        <TopicBrowserSection
+          activeCategory={activeCategory}
+          setActiveCategory={setActiveCategory}
+          setQuery={setQuery}
+        />
+        <LatestGuidesSection
+          activeCategory={activeCategory}
+          setActiveCategory={setActiveCategory}
+          query={query}
+          setQuery={setQuery}
+          filtered={filtered}
+        />
         <ArticleEntrySection />
         <MentionedProductsSection />
         <BlogAdviceSection />
-        <KeepPlanningSection />
-        <NewsletterSection />
+        <KeepPlanningSection activeCategory={activeCategory} />
+        <NewsletterSection
+          subscribed={subscribed}
+          setSubscribed={setSubscribed}
+        />
       </main>
       <PublicFooter />
     </div>
   );
 }
-

@@ -22,7 +22,7 @@ export function HelpCentrePage() {
       <PublicHeader />
       <main>
         <HelpHeroSection />
-        <HelpTopicsSection />
+        <HelpTopicsSection jump={jump} />
         <PopularHelpSection />
         <article id="booking-article" className="help-article">
           <div className="help-width">
@@ -68,7 +68,7 @@ export function HelpCentrePage() {
         <DeliveryGuidanceSection />
         <SafeUseSection />
         <PolicyLinksSection />
-        <SupportContactSection />
+        <SupportContactSection jump={jump} setSent={setSent} />
         {sent && (
           <section id="support-received" className="support-received">
             <i>✓</i>

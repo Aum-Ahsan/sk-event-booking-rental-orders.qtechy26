@@ -1,7 +1,18 @@
 import React from "react";
+import { blogCategories } from "../../../../../app/blogData";
 import pageData from "../../../../data/pages/blog-resource-centre.json";
 
-export function TopicBrowserSection() {
+interface TopicBrowserSectionProps {
+  activeCategory: string;
+  setActiveCategory: (val: string) => void;
+  setQuery: (val: string) => void;
+}
+
+export function TopicBrowserSection({
+  activeCategory,
+  setActiveCategory,
+  setQuery,
+}: TopicBrowserSectionProps) {
   return (
     <section className="topic-browser editorial-section">
               <span>{pageData.extracted.text_5}</span>

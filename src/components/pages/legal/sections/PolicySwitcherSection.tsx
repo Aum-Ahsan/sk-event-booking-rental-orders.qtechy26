@@ -1,7 +1,24 @@
 import React from "react";
+import { policyLibrary } from "../../faq/FaqPage";
 import pageData from "../../../../data/pages/legal.json";
 
-export function PolicySwitcherSection() {
+export type PolicyKey = keyof typeof policyLibrary;
+
+interface PolicySwitcherSectionProps {
+  active: PolicyKey;
+  setActive: (key: PolicyKey) => void;
+  policy: (typeof policyLibrary)[PolicyKey];
+  optional: boolean;
+  setOptional: (val: boolean) => void;
+}
+
+export function PolicySwitcherSection({
+  active,
+  setActive,
+  policy,
+  optional,
+  setOptional,
+}: PolicySwitcherSectionProps) {
   return (
     <section className="policy-switcher legal-width">
               <header>

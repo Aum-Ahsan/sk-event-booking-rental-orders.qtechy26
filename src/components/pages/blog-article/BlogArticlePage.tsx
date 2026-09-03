@@ -78,7 +78,7 @@ export function BlogArticlePage({ guide }: { guide: BlogGuide }) {
             </div>
           </div>
         </article>
-        <KeepPlanningSection />
+        <KeepPlanningSection guide={guide} related={related} />
       </main>
       <PublicFooter />
     </div>

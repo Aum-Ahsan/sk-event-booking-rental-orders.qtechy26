@@ -1,7 +1,11 @@
 import React from "react";
 import pageData from "../../../../data/pages/help-centre.json";
 
-export function HelpTopicsSection() {
+interface HelpTopicsSectionProps {
+  jump: (id: string) => void;
+}
+
+export function HelpTopicsSection({ jump }: HelpTopicsSectionProps) {
   return (
     <section className="help-topics help-width">
               <header>

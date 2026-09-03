@@ -1,7 +1,13 @@
 import React from "react";
+import { Field } from "../../../landing/shared/FormControls";
 import pageData from "../../../../data/pages/help-centre.json";
 
-export function SupportContactSection() {
+interface SupportContactSectionProps {
+  jump: (id: string) => void;
+  setSent: (val: boolean) => void;
+}
+
+export function SupportContactSection({ jump, setSent }: SupportContactSectionProps) {
   return (
     <section id="support-form" className="support-contact">
               <div className="help-width">

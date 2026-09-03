@@ -1,7 +1,17 @@
 import React from "react";
 import pageData from "../../../../data/pages/blog-resource-centre.json";
 
-export function BlogHeroSection() {
+interface BlogHeroSectionProps {
+  query: string;
+  setQuery: (val: string) => void;
+  setActiveCategory: (val: string) => void;
+}
+
+export function BlogHeroSection({
+  query,
+  setQuery,
+  setActiveCategory,
+}: BlogHeroSectionProps) {
   return (
     <section className="blog-hero">
               <div>

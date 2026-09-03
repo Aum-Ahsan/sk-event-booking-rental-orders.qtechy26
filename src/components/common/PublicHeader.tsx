@@ -5,8 +5,8 @@ export function PublicHeader({ active = "" }: { active?: string }) {
   return (
     <>
       <div className="announcement">
-        {headerData.announcement.text}
-        <span>{headerData.announcement.linkText}</span>
+        <span className="announcement-msg">{headerData.announcement.text}</span>
+        <span className="announcement-link">{headerData.announcement.linkText}</span>
       </div>
       <header className="public-header">
         <a

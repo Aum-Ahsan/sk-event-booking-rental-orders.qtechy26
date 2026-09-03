@@ -1,7 +1,15 @@
 import React from "react";
 import pageData from "../../../../data/pages/blog-resource-centre.json";
 
-export function NewsletterSection() {
+interface NewsletterSectionProps {
+  subscribed: boolean;
+  setSubscribed: (val: boolean) => void;
+}
+
+export function NewsletterSection({
+  subscribed,
+  setSubscribed,
+}: NewsletterSectionProps) {
   return (
     <section className="newsletter">
               <div>

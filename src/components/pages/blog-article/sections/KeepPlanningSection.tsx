@@ -1,7 +1,13 @@
 import React from "react";
+import type { BlogGuide } from "../../../../../app/blogData";
 import pageData from "../../../../data/pages/blog-article.json";
 
-export function KeepPlanningSection() {
+interface KeepPlanningSectionProps {
+  guide: BlogGuide;
+  related: BlogGuide[];
+}
+
+export function KeepPlanningSection({ guide, related }: KeepPlanningSectionProps) {
   return (
     <section className="keep-planning editorial-section article-related">
               <span>{pageData.related.kickerPrefix} {guide.category.toUpperCase()}</span>

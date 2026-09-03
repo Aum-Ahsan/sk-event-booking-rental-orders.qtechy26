@@ -1,7 +1,12 @@
 import React from "react";
+import { blogGuides } from "../../../../../app/blogData";
 import pageData from "../../../../data/pages/blog-resource-centre.json";
 
-export function KeepPlanningSection() {
+interface KeepPlanningSectionProps {
+  activeCategory: string;
+}
+
+export function KeepPlanningSection({ activeCategory }: KeepPlanningSectionProps) {
   return (
     <section className="keep-planning editorial-section">
               <span>{pageData.extracted.text_25}</span>

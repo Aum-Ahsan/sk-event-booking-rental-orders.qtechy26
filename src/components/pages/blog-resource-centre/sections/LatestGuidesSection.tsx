@@ -1,7 +1,22 @@
 import React from "react";
+import type { BlogGuide } from "../../../../../app/blogData";
 import pageData from "../../../../data/pages/blog-resource-centre.json";
 
-export function LatestGuidesSection() {
+interface LatestGuidesSectionProps {
+  activeCategory: string;
+  setActiveCategory: (val: string) => void;
+  query: string;
+  setQuery: (val: string) => void;
+  filtered: BlogGuide[];
+}
+
+export function LatestGuidesSection({
+  activeCategory,
+  setActiveCategory,
+  query,
+  setQuery,
+  filtered,
+}: LatestGuidesSectionProps) {
   return (
     <section id="latest-guides" className="latest-guides">
               <div className="editorial-section">

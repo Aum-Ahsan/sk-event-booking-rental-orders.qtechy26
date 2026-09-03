@@ -26,7 +26,13 @@ export function LegalPage({ kind }: { kind: string }) {
       <PublicHeader />
       <main>
         <LegalHeroSection />
-        <PolicySwitcherSection />
+        <PolicySwitcherSection
+          active={active}
+          setActive={setActive}
+          policy={policy}
+          optional={optional}
+          setOptional={setOptional}
+        />
       </main>
       <PublicFooter />
     </div>

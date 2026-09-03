@@ -2,6 +2,17 @@ import React, { useState, useEffect } from "react";
 import { PublicHeader } from "../../common/PublicHeader";
 import { PublicFooter } from "../../common/PublicFooter";
 import eventTypes from "../../../data/commerce/eventTypes.json";
+
+type ReferralRecord = {
+  id: number;
+  referredName: string;
+  referredEmail: string;
+  eventType: string;
+  status: string;
+  commissionCents: number;
+  createdAt: string;
+};
+
 export function ReferralPage() {
   const [records, setRecords] = useState<ReferralRecord[]>([]);
   const [loading, setLoading] = useState(true);
