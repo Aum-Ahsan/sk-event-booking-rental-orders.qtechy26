@@ -16,7 +16,7 @@ export function EditorialSectionSection() {
               </div>
               <img
                 src="/images/warehouse-team.png"
-                alt={pageData.extracted.attr_6}
+                alt="Event warehouse preparation"
               />
             </section>
   );

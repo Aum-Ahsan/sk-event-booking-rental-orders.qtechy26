@@ -72,12 +72,12 @@ export function HireProductsCategoryRailSection({
       >
         {categories.map((c) => (
           <button
-            className={category === c[0] ? "active" : ""}
-            onClick={() => setCategory(c[0])}
-            key={c[0]}
+            className={category === c.name ? "active" : ""}
+            onClick={() => setCategory(c.name)}
+            key={c.name}
           >
-            <img src={c[2]} alt={c[0]} />
-            <b>{c[0]}</b>
+            <img src={c.image} alt={c.name} />
+            <b>{c.name}</b>
           </button>
         ))}
       </div>

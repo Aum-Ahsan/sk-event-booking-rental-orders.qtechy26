@@ -57,7 +57,7 @@ export function SupportContactSection({ jump, setSent }: SupportContactSectionPr
                     <input type="file" />
                   </label>
                   <label className="consent">
-                    <input type="checkbox" required defaultChecked /> {pageData.support.form.consentText}
+                    <input type="checkbox" required /> {pageData.support.form.consentText}
                   </label>
                   <button>{pageData.support.form.submitText}</button>
                 </form>

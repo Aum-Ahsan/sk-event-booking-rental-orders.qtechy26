@@ -4,21 +4,21 @@
     "imageAlt": "SK Event Hire product catalogue",
     "crumbHome": "Home",
     "crumbCurrent": "Hire Products",
-    "eyebrow": "Melbourne event hire",
-    "title": "Professional event hire, delivered.",
-    "description": "Browse our full range of chairs, tables, marquees, lighting and tableware. Filter by event type, date and guest count to find exactly what you need."
+    "eyebrow": "Product hire for every event",
+    "title": "Everything for your event, in one place.",
+    "description": "Browse beautifully prepared furniture, marquees, lighting, tableware and décor."
   },
   "rail": {
-    "eyebrow": "Browse by category",
+    "eyebrow": "Browse your way",
     "title": "What are you looking for?",
-    "viewAll": "View all"
+    "viewAll": "View all categories"
   },
   "planner": {
-    "title": "Check availability for your event",
-    "description": "Enter your event details to filter products available for your dates and postcode.",
+    "title": "See what’s available for your event",
+    "description": "Set your dates, location and guest count to check relevant hire stock.",
     "buttonText": "Check availability",
     "incompleteMsg": "Please complete your event date, return date and postcode to check availability.",
-    "defaultAvailabilityMsg": "Enter your event details above to check real-time availability.",
+    "defaultAvailabilityMsg": "Set your dates, postcode and guest count, then check availability.",
     "buttonCta": "Start planning",
     "href": "/request-quote"
   },
@@ -41,17 +41,17 @@
   "advice": {
     "image": "/images/warehouse-team.png",
     "imageAlt": "SK Event Hire planning team",
-    "eyebrow": "Need help choosing?",
-    "title": "Talk to our event team",
-    "description": "Not sure which products are right for your event? Our team can recommend the best combination for your venue, guest count and budget.",
-    "links": ["Get a free quote →", "Call 03 9000 0000 →"]
+    "eyebrow": "Helpful hire advice",
+    "title": "Plan with confidence",
+    "description": "Choose products for your guest count, venue access and weather. Our team can help with quantities, practical layouts and safe setup.",
+    "links": ["How many chairs and tables do I need? →", "Choosing the right marquee size →", "Outdoor event heating checklist →"]
   },
   "cta": {
-    "small": "Ready to hire?",
-    "title": "Tell us what your event needs.",
-    "description": "Get a clear, no-obligation quote covering products, logistics, setup and GST.",
-    "button1": { "text": "Request a quote", "href": "/request-quote" },
-    "button2": { "text": "Browse packages", "href": "/packages" }
+    "small": "NEED A COMPLETE EVENT PACKAGE?",
+    "title": "Let’s make planning easier.",
+    "description": "Tell us your guest count, venue and date. We’ll recommend products that work together.",
+    "button1": { "text": "Get a tailored quote", "href": "/request-quote" },
+    "button2": { "text": "Talk to our team", "href": "/contact" }
   },
   "search": {
     "placeholder": "Search chairs, tables, marquees…",

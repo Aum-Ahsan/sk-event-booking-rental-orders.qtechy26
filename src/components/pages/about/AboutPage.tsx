@@ -1,17 +1,19 @@
 import React from "react";
 import { PublicHeader } from "../../common/PublicHeader";
 import { PublicFooter } from "../../common/PublicFooter";
-import pageData from "../../../data/pages/about.json";
 
 import { AboutMainHeroSection } from "./sections/AboutMainHeroSection";
 import { AboutStorySection } from "./sections/AboutStorySection";
 import { AboutExpectSection } from "./sections/AboutExpectSection";
 import { AboutProcessSection } from "./sections/AboutProcessSection";
 import { AboutPreparedSection } from "./sections/AboutPreparedSection";
-import { AboutCtaSection } from "./sections/AboutCtaSection";
+import { AboutVenuePlanningSection } from "./sections/AboutVenuePlanningSection";
+import { AboutPeopleBehindSection } from "./sections/AboutPeopleBehindSection";
+import { AboutLocalKnowledgeSection } from "./sections/AboutLocalKnowledgeSection";
+import { AboutHireCareSection } from "./sections/AboutHireCareSection";
+import { AboutFinalCtaSection } from "./sections/AboutFinalCtaSection";
 
 export function AboutPage() {
-  const { hero, story, expect, process, prepared, cta, standards } = pageData;
   return (
     <div className="public-site about-editorial">
       <PublicHeader active="About" />
@@ -21,7 +23,11 @@ export function AboutPage() {
         <AboutExpectSection />
         <AboutProcessSection />
         <AboutPreparedSection />
-        <AboutCtaSection />
+        <AboutVenuePlanningSection />
+        <AboutPeopleBehindSection />
+        <AboutLocalKnowledgeSection />
+        <AboutHireCareSection />
+        <AboutFinalCtaSection />
       </main>
       <PublicFooter />
     </div>

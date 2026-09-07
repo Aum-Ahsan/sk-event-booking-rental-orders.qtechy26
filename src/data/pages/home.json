@@ -182,13 +182,13 @@
     "steps": [
       {
         "step": "1",
-        "title": "Submit your wishlist",
-        "desc": "Browse products or packages and request a free quote online."
+        "title": "Choose dates & products",
+        "desc": "Tell us the event date, venue and what you need."
       },
       {
         "step": "2",
-        "title": "Our team reviews it",
-        "desc": "We check stock, coordinate logistics and suggest any helpful additions."
+        "title": "Select package or delivery",
+        "desc": "Choose self-pickup, delivery, setup or a tailored package."
       },
       {
         "step": "3",

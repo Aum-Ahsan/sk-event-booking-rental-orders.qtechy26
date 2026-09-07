@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useSyncExternalStore } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 import { blogGuides } from "../../app/blogData";
 import { BlogArticlePage, BlogPage } from "../application/pages/blog/BlogPages";
 import {
@@ -48,9 +48,37 @@ const serverPath = () => "";
 
 export function AppRouter() {
   const path = useSyncExternalStore(subscribePath, currentPath, serverPath);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    window.dispatchEvent(new PopStateEvent("popstate"));
+    setMounted(true);
+
+    // Intercept all internal anchor clicks → SPA navigation (no full reload)
+    const onLinkClick = (event: MouseEvent) => {
+      const target = (event.target as Element).closest("a");
+      if (!target) return;
+      const href = target.getAttribute("href");
+      if (!href) return;
+      // Only intercept same-origin, non-hash, non-external links
+      if (
+        target.target === "_blank" ||
+        href.startsWith("mailto:") ||
+        href.startsWith("tel:") ||
+        href.startsWith("http") ||
+        href.startsWith("//")
+      )
+        return;
+      // Allow hash-only links to work normally (scroll to anchor)
+      if (href.startsWith("#")) return;
+      event.preventDefault();
+      const newPath = href.startsWith("/") ? href : `/${href}`;
+      if (window.location.pathname !== newPath) {
+        window.history.pushState(null, "", newPath);
+        window.dispatchEvent(new PopStateEvent("popstate"));
+        window.scrollTo({ top: 0, behavior: "instant" });
+      }
+    };
+
     const onToggle = (event: Event) => {
       const target = event.target as HTMLDetailsElement;
       if (target.tagName !== "DETAILS" || !target.open) return;
@@ -58,10 +86,37 @@ export function AppRouter() {
         if (node !== target) (node as HTMLDetailsElement).open = false;
       });
     };
+
+    document.addEventListener("click", onLinkClick, true);
     document.addEventListener("toggle", onToggle, true);
-    return () => document.removeEventListener("toggle", onToggle, true);
+
+    // Reload when viewport crosses device breakpoints (mobile ↔ tablet ↔ desktop)
+    // BUT skip reload if the change was caused by browser zoom (devicePixelRatio changes on zoom)
+    let lastPixelRatio = window.devicePixelRatio;
+    const breakpoints = [
+      window.matchMedia("(max-width: 700px)"),
+      window.matchMedia("(min-width: 701px) and (max-width: 1024px)"),
+    ];
+    const onBreakpointChange = () => {
+      const currentRatio = window.devicePixelRatio;
+      // If pixel ratio changed → user zoomed, not resized → skip reload
+      if (Math.abs(currentRatio - lastPixelRatio) > 0.05) {
+        lastPixelRatio = currentRatio;
+        return;
+      }
+      lastPixelRatio = currentRatio;
+      window.location.reload();
+    };
+    breakpoints.forEach((mq) => mq.addEventListener("change", onBreakpointChange));
+
+    return () => {
+      document.removeEventListener("click", onLinkClick, true);
+      document.removeEventListener("toggle", onToggle, true);
+      breakpoints.forEach((mq) => mq.removeEventListener("change", onBreakpointChange));
+    };
   }, []);
 
+  if (!mounted) return null;
   if (!path) return <HomePage />;
   if (path === "products" || path === "search") return <ProductsPage />;
   if (path === "compare") return <ComparePage />;

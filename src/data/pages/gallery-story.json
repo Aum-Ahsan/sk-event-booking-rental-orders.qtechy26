@@ -56,10 +56,18 @@
       "title": "More from this event"
     },
     "cta": {
-      "title": "Planning a similar event?",
-      "description": "We can help recreate this look or tailor a package for your venue.",
-      "btnPrimary": "Browse products",
-      "btnSecondary": "Get a quote"
+      "kicker": "PLANNING YOUR EVENT?",
+      "title": "Use this event as a practical starting point.",
+      "description": "Tell us what you liked and we'll adapt the products, quantities and logistics for your venue.",
+      "btnPrimary": "Build a similar event",
+      "btnSecondary": "Explore hire range"
+    },
+    "layout": {
+      "kicker": "WHY THIS LAYOUT WORKED",
+      "title": "A clear layout, covered dining and an organised setup sequence",
+      "description": "One circulation route kept service practical while the lighting layers made the garden feel intimate after dark.",
+      "takeaway": "Practical takeaway: build the weather plan into the layout from the beginning.",
+      "btnText": "Build my event options"
     }
   }
 }
